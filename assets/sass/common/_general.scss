@@ -1,0 +1,289 @@
+/*--------------------------------------------------------------
+  4. General
+----------------------------------------------------------------*/
+/* Global Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* Global Reset */
+.cs_fs_12 {
+  font-size: 12px;
+  line-height: 2.16em;
+}
+.cs_fs_14 {
+  font-size: 14px;
+  line-height: 2em;
+  // 20px, 26px
+}
+.cs_fs_16 {
+  font-size: 16px;
+  line-height: 1.625em;
+  // 16px, 20px, 25px, 28px
+}
+.cs_fs_17 {
+  font-size: 17px;
+  line-height: 2.12em;
+  // 16px
+}
+.cs_fs_18 {
+  font-size: 18px;
+  line-height: 1.445em;
+  //28px
+}
+.cs_fs_20 {
+  font-size: 20px;
+  line-height: 1.3em;
+}
+.cs_fs_22 {
+  font-size: 22px;
+  line-height: 1.5em;
+  // 30px, 32px, 34px
+}
+.cs_fs_24 {
+  font-size: 24px;
+  line-height: 1.5em;
+  // 26px, 34px, 35px
+}
+.cs_fs_25 {
+  font-size: 25px;
+  line-height: 1.4em;
+}
+.cs_fs_30 {
+  font-size: 30px;
+  line-height: 1.4em;
+}
+.cs_fs_32 {
+  font-size: 32px;
+  line-height: 1.31em;
+  @media (max-width: 1199px) {
+    font-size: 28px;
+  }
+}
+.cs_fs_35 {
+  font-size: 35px;
+  line-height: 1.2em;
+}
+.cs_fs_36 {
+  font-size: 36px;
+  line-height: 1.25em;
+}
+.cs_fs_42 {
+  font-size: 42px;
+  line-height: 1.34em;
+}
+.cs_fs_45 {
+  font-size: 45px;
+  line-height: 1.4445em;
+}
+.cs_fs_48 {
+  font-size: 48px;
+  line-height: 1.4375em;
+}
+.cs_fs_54 {
+  font-size: 54px;
+  line-height: 1.185em;
+  @media (max-width: 1199px) {
+    font-size: 48px;
+  }
+  @media (max-width: 767px) {
+    font-size: 42px;
+  }
+  @media (max-width: 575px) {
+    font-size: 34px;
+  }
+}
+.cs_fs_55 {
+  font-size: 55px;
+  line-height: 1.18em;
+}
+.cs_fs_65 {
+  font-size: 65px;
+  line-height: 1.154em;
+}
+.cs_fs_72 {
+  font-size: 72px;
+  line-height: 1.139em;
+  @media (max-width: 1199px) {
+    font-size: 60px;
+  }
+  @media (max-width: 767px) {
+    font-size: 50px;
+  }
+  @media (max-width: 575px) {
+    font-size: 42px;
+  }
+}
+
+.cs_light {
+  font-weight: 300;
+}
+.cs_normal {
+  font-weight: 400;
+}
+.cs_medium {
+  font-weight: 500;
+}
+.cs_semibold {
+  font-weight: 600;
+}
+.cs_bold {
+  font-weight: 700;
+}
+
+.cs_mp_0 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cs_gap_y_24 {
+  gap: 24px 0;
+}
+.cs_gap_y_30 {
+  gap: 30px 0;
+}
+.cs_gap_y_40 {
+  gap: 40px 0;
+}
+.cs_gap_y_50 {
+  gap: 50px 0;
+}
+
+hr {
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-top: 1px solid currentColor;
+  opacity: 1;
+}
+
+.cs_bg_filed {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.cs_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cs_center_column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cs_accent_color {
+  color: var(--accent-color);
+}
+.cs_accent_color_op16 {
+  background-color: rgba(87, 60, 255, 0.16);
+}
+
+.cs_heading_color {
+  color: var(--heading-color);
+}
+.cs_heading_color_op10 {
+  color: rgba(0, 41, 53, 0.1);
+}
+.cs_heading_color_op60 {
+  color: rgba(0, 41, 53, 0.6);
+}
+.cs_heading_color_op65 {
+  color: rgba(0, 41, 53, 0.65);
+}
+
+.cs_body_color {
+  color: var(--body-color);
+}
+.cs_body_color_op50 {
+  color: rgba(116, 116, 116, 0.5);
+}
+.cs_body_color_op15 {
+  color: rgba(116, 116, 116, 0.15);
+}
+
+.cs_rating_color {
+  color: var(--rating-color);
+}
+.cs_white_color {
+  color: var(--white-color);
+}
+.cs_white_color_op15 {
+  color: rgba(255, 255, 255, 0.15);
+}
+.cs_black_color {
+  color: var(--black-color);
+}
+
+.cs_bg_primary {
+  background-color: var(--bg-primary);
+}
+.cs_bg_secondary {
+  background-color: var(--body-color);
+}
+.cs_bg_white {
+  background-color: var(--white-color);
+}
+
+//
+.cs_bg_color_2 {
+  background-color: #ebf4f4;
+}
+.cs_bg_color_2_op80 {
+  background-color: rgba(235, 244, 244, 0.8);
+}
+.cs_bg_color_3 {
+  background-color: #eff6f6;
+}
+.cs_bg_color_3_op45 {
+  background: rgba(239, 246, 246, 0.45);
+}
+
+.cs_op10 {
+  opacity: 0.1;
+}
+.cs_op20 {
+  opacity: 0.2;
+}
+.cs_op30 {
+  opacity: 0.3;
+}
+.cs_op40 {
+  opacity: 0.4;
+}
+.cs_op50 {
+  opacity: 0.5;
+}
+
+.cs_ls_2x7 {
+  letter-spacing: 2.7px;
+}
+
+.cs_radius_1 {
+  border-radius: 1px;
+}
+.cs_radius_2 {
+  border-radius: 2px;
+}
+.cs_radius_3 {
+  border-radius: 3px;
+}
+.cs_radius_5 {
+  border-radius: 5px;
+}
+/*=============================================
+  Global Break Tag Remove
+===============================================*/
+@media (max-width: 991px) {
+  br {
+    display: none;
+  }
+}
+/*=============================================
+  
+===============================================*/

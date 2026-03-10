@@ -1,0 +1,51 @@
+/*=======================================================
+  Heading
+=========================================================*/
+//Style 1
+.cs_heading_style_1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  .cs_heading_column_1 {
+    max-width: calc(55% - 15px);
+  }
+  .cs_minititle {
+    text-transform: uppercase;
+  }
+
+  .cs_heading_column_2 {
+    max-width: calc(45% - 15px);
+  }
+
+  @media (max-width: 991px) {
+    flex-direction: column;
+    align-items: flex-start;
+    .cs_heading_column_1,
+    .cs_heading_column_2 {
+      max-width: 100%;
+    }
+  }
+}
+// Style 2
+.cs_heading_style_2 {
+  .cs_minititle {
+    text-transform: uppercase;
+    display: flex;
+    gap: 0px 8px;
+    align-items: center;
+    img {
+      height: 20px;
+      width: 20px;
+    }
+  }
+
+  // @media (max-width: 991px) {
+  //   flex-direction: column;
+  //   align-items: flex-start;
+  //   .cs_heading_column_1,
+  //   .cs_heading_column_2 {
+  //     max-width: 100%;
+  //   }
+  // }
+}

@@ -1,0 +1,46 @@
+/*===============================================
+ Iconbox
+ ================================================*/
+.cs_iconbox_border {
+  margin-bottom: 25px;
+  border-right: 1px solid rgba(221, 221, 221, 0.3);
+  &:nth-child(3n) {
+    border-right: none;
+  }
+  &:last-child {
+    border-right: none;
+  }
+  @media (max-width: 991px) {
+    border-right: none;
+  }
+}
+.cs_iconbox_style_1 {
+  height: 100%;
+  transition: all 0.4s ease;
+  @media (max-width: 991px) {
+    justify-content: start;
+  }
+  .cs_iconbox_icon {
+    height: 85px;
+    width: 85px;
+    margin-right: 32px;
+    @media (max-width: 1199px) {
+      height: 70px;
+      width: 70px;
+      margin-right: 20px;
+    }
+  }
+  .cs_iconbox_info {
+    width: min(100%, 230px);
+    .cs_iconbox_title,
+    .cs_iconbox_details {
+      color: var(--white-color);
+    }
+    .cs_iconbox_title {
+      margin-bottom: 12px;
+    }
+    .cs_iconbox_details {
+      line-height: 1.364em;
+    }
+  }
+}

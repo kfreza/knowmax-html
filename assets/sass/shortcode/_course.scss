@@ -1,0 +1,313 @@
+/*=======================================================
+    Course Category Card
+=========================================================*/
+.cs_course_category_style_1_wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 40px 30px;
+  margin-left: -13px;
+  margin-right: -13px;
+  @media (max-width: 1199px) {
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 0;
+    margin-right: 0;
+  }
+  @media (max-width: 767px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 575px) {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 20px;
+  }
+  .cs_course_category_style_1 {
+    position: relative;
+    padding: 52px 20px 55px;
+    background-color: var(--white-color);
+    box-shadow: 0 0 45px 0 rgba(0, 0, 0, 0.1);
+    &::before {
+      content: "";
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -9999;
+      border: 2px solid rgba(0, 41, 53, 0.1);
+      transform: rotate(4.703deg) translateZ(0);
+      transition: all 0.4s ease;
+    }
+    &:hover::before {
+      background-color: var(--accent-color);
+      border-color: var(--accent-color);
+    }
+    &:hover {
+      .cs_course_category_thumbnail {
+        img {
+          transition: all 0.4s ease;
+          filter: brightness(0) saturate(100%) invert(39%) sepia(81%)
+            saturate(7498%) hue-rotate(245deg) brightness(100%) contrast(105%);
+        }
+      }
+    }
+  }
+
+  .cs_course_category_thumbnail {
+    margin-bottom: 40px;
+    img {
+      height: 75px;
+      width: 75px;
+      object-fit: cover;
+      overflow: hidden;
+      transition: all 0.4s ease;
+      filter: brightness(0) saturate(100%) invert(11%) sepia(59%)
+        saturate(1356%) hue-rotate(158deg) brightness(99%) contrast(104%);
+    }
+  }
+  .cs_course_category_info {
+    margin-top: auto;
+    text-align: center;
+    a {
+      transition: all 0.4s ease;
+    }
+  }
+  .cs_course_counter {
+    gap: 0px 10px;
+  }
+}
+
+/*=======================================================
+  Course Category
+=========================================================*/
+.cs_course_category_wrapper {
+  gap: 20px 40px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  @media (max-width: 1399px) {
+    gap: 10px 24px;
+  }
+  @media (max-width: 991px) {
+    justify-content: flex-start;
+  }
+  .cs_course_category {
+    text-wrap: nowrap;
+  }
+}
+.cs_course_category_wrapper_2 {
+  // gap: 0 10px;
+  .cs_course_category {
+    height: 100%;
+    padding: 6px 34px 9px;
+    &:first-child {
+      padding-left: 12px;
+    }
+    &:last-child {
+      padding-right: 12px;
+    }
+    &.active,
+    &:hover {
+      clip-path: polygon(18% 0, 100% 0, 82% 100%, 0 100%);
+      background-color: var(--accent-color);
+      transition: all 0.4s ease;
+      &:first-child {
+        clip-path: polygon(0 0, 100% 0, 76% 100%, 0 100%);
+      }
+      &:last-child {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
+      }
+      a {
+        color: var(--white-color);
+      }
+    }
+  }
+}
+/*=======================================================
+  Course Card Style 1
+=========================================================*/
+.cs_course_style_1,
+.cs_course_style_2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.4s ease;
+  &:hover {
+    box-shadow: 0 0 45px 0 rgba(0, 0, 0, 0.1);
+  }
+  .cs_course_thumbnail {
+    .cs_thumb_overlay {
+      height: 100%;
+      width: 100%;
+      background: rgba(0, 41, 53, 0.1);
+      top: 0;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+    .cs_thumb_meta {
+      padding: 20px 15px;
+      top: 0;
+    }
+    .cs_btn_style_1 {
+      padding: 2px 15px;
+      background-color: var(--white-color);
+      color: var(--accent-color);
+      border-color: var(--white-color);
+      transition: all 0.4s ease;
+      &:hover {
+        background-color: var(--accent-color);
+        border-color: var(--accent-color);
+        a {
+          color: var(--white-color);
+        }
+      }
+    }
+    .cs_thumb_shopping {
+      color: var(--white-color);
+      font-size: 20px;
+      line-height: 1em;
+      gap: 0px 10px;
+      .cs_thumb_wishlist,
+      .cs_thumb_cart {
+        height: 20px;
+        width: 20px;
+        padding: 0;
+        background-color: transparent;
+        outline: none;
+        border: none;
+        transition: all 0.4s ease;
+        i {
+          vertical-align: middle;
+        }
+        &:hover {
+          color: var(--accent-color);
+        }
+      }
+    }
+  }
+  .cs_course_info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 20px;
+    @media (max-width: 1199px) {
+      padding: 15px;
+    }
+    .cs_course_meta {
+      text-wrap: nowrap;
+      gap: 0 15px;
+      transition: all 0.4s ease;
+      i {
+        color: var(--accent-color);
+      }
+    }
+    .cs_meta_lesson,
+    .cs_meta_time {
+      gap: 0px 10px;
+      transition: inherit;
+      line-height: 1.4375em;
+      i {
+        font-size: 18px;
+        line-height: 1em;
+      }
+    }
+    .cs_course_title {
+      line-height: 1.4544em;
+    }
+    .cs_cource_price {
+      margin-top: auto;
+    }
+    .cs_regular_price,
+    .cs_price_devider {
+      line-height: 1.45em;
+    }
+    .cs_discounted_price {
+      line-height: 1.611112em;
+    }
+    hr {
+      width: 100%;
+      margin: 0 0 18px;
+    }
+    .cs_course_author {
+      gap: 10px;
+      @media (max-width: 1199px) {
+        flex-wrap: wrap;
+      }
+    }
+    .cs_author_avatar {
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: 10px;
+      flex: none;
+    }
+    .cs_author_title {
+      display: -webkit-box;
+      line-clamp: 1;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .cs_rating_wrapper {
+      transform: scale(0.75);
+      transform-origin: right;
+      @media (max-width: 1199px) {
+        transform: scale(0.9);
+        transform-origin: left;
+      }
+    }
+    .cs_rated_number {
+      margin-left: 9px;
+    }
+  }
+}
+/*=======================================================
+    Course Card Style 2
+=========================================================*/
+.cs_course_style_2 {
+  box-shadow: 0 0 45px 0 rgba(0, 0, 0, 0.1);
+  .cs_course_thumbnail {
+    .cs_thumb_overlay {
+      background: rgba(0, 41, 53, 0.2);
+    }
+    .cs_thumb_shopping {
+      top: 0;
+      right: 0;
+      padding: 20px;
+    }
+    .cs_thumb_dept {
+      left: 20px;
+      bottom: -10px;
+      background-color: var(--heading-color);
+      border-color: var(--heading-color);
+      color: var(--white-color);
+    }
+  }
+  .cs_course_info {
+    padding-top: 33px;
+    padding-bottom: 16px;
+    background-color: var(--white-color);
+    hr {
+      margin-bottom: 12px;
+    }
+    .cs_course_author {
+      margin-top: auto;
+      margin-bottom: 26px;
+    }
+    .cs_cource_price {
+      margin-top: 0;
+    }
+    .cs_price_cart {
+      gap: 0px 10px;
+      padding: 0;
+      border: none;
+      outline: none;
+      background-color: transparent;
+      i {
+        color: var(--accent-color);
+      }
+    }
+  }
+}

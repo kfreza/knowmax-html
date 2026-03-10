@@ -1,0 +1,88 @@
+/*=======================================================
+  Team
+=========================================================*/
+.cs_product_style_1 {
+  height: 100%;
+  background-color: var(--white-color);
+  display: flex;
+  flex-direction: column;
+  .cs_product_thumb {
+    position: relative;
+    border-radius: 3px 3px 0px 0px;
+    background-color: #ebedf4;
+  }
+  .cs_product_thumb_img {
+    img {
+      width: 100%;
+      border-radius: 3px 3px 0px 0px;
+    }
+  }
+  .cs_product_thumb_badge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 20px;
+  }
+  .cs_badge_style_1 {
+    padding: 9px 19px 8px;
+    line-height: 1em;
+    border-radius: 3px;
+    &:hover {
+      background-color: transparent;
+      color: var(--heading-color);
+    }
+  }
+
+  //
+  .cs_product_info {
+    margin-top: auto;
+    padding: 23px 20px 28px;
+
+    border-radius: 3px;
+  }
+  .cs_price_option {
+    line-height: 0.9412em;
+  }
+  //
+  .cs_product_purchase {
+    gap: 0px 10px;
+  }
+  // 
+  .cs_btn_style_1 {
+    width: 100%;
+    background-color: #ebedf4;
+    border-color: transparent;
+    transition: all 0.4s ease;
+    color: var(--heading-color);
+    padding: 6px 10px;
+    &:hover {
+      background-color: var(--accent-color);
+      border-color: var(--accent-color);
+      color: var(--white-color);
+    }
+  }
+  // 
+  .cs_wishlist {
+    height: 40px;
+    width: 44px;
+    padding: 0;
+    border: 1px solid #ebedf4;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 1em;
+    background-color: transparent;
+    transition: all 0.4s ease;
+    flex: none;
+    i {
+      vertical-align: middle;
+    }
+    &:hover {
+      color: var(--accent-color);
+      border-color: var(--accent-color);
+    }
+  }
+}
+//
+// .cs_team_style_2 {
+
+// }

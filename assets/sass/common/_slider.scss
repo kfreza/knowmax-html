@@ -1,0 +1,175 @@
+/*--------------------------------------------------------------
+  5. Slider
+----------------------------------------------------------------*/
+// Slider Design Starts from here
+.cs_slider {
+  position: relative;
+}
+
+//Slide From Right Side
+.cs_full_screen_right {
+  width: calc(60vw + 663px);
+}
+
+// Remove Overflow for Shadow Effect
+.cs_remove_overflow {
+  .slick-list {
+    overflow: visible;
+  }
+  .slick-slide {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s linear;
+    &.slick-active {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+// Draggable & Arrow Cursor For Slider
+.slick-arrow {
+  cursor: pointer;
+}
+// .draggable {
+//   cursor:
+//     url(../img/drag.png) 16 9,
+//     ew-resize !important;
+// }
+
+// Default For Backup (Not To Break Design)
+.slick-slide > div {
+  display: flex;
+  flex-direction: column;
+}
+
+// Start of Slider Gap
+.cs_slider_gap_24 {
+  .slick-slide {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .slick-list {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+}
+.cs_slider_gap_36 {
+  .slick-slide {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+  .slick-list {
+    margin-left: -18px;
+    margin-right: -18px;
+  }
+}
+
+.cs_slider_gap_166 {
+  .slick-slide {
+    padding-left: 83px;
+    padding-right: 83px;
+  }
+  .slick-list {
+    margin-left: -83px;
+    margin-right: -83px;
+  }
+  @media (max-width: 1399px) {
+    .slick-slide {
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+    .slick-list {
+      margin-left: -60px;
+      margin-right: -60px;
+    }
+  }
+  @media (max-width: 1199px) {
+    .slick-slide {
+      padding-left: 39px;
+      padding-right: 39px;
+    }
+    .slick-list {
+      margin-left: -39px;
+      margin-right: -39px;
+    }
+  }
+  @media (max-width: 991px) {
+    .slick-slide {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+    .slick-list {
+      margin-left: -32px;
+      margin-right: -32px;
+    }
+  }
+}
+// End of Slider Gap
+
+//End of Default Peoperties
+
+// Homepage Slider Pagination
+.cs_pagination.cs_style_1 {
+  display: flex;
+  justify-content: center;
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex !important;
+    gap: 12px;
+  }
+  li {
+    display: flex;
+    flex: 1;
+    button {
+      width: 40px;
+      height: 6px;
+      font-size: 0;
+      color: transparent;
+      padding: 0;
+      background-color: rgb(255 255 255 / 20%);
+      border-radius: 8px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    &:hover button {
+      background-color: var(--accent-color);
+    }
+    &.slick-active {
+      button {
+        background-color: var(--accent-color);
+        width: 70px;
+      }
+    }
+  }
+}
+// Homepage Brands Section
+// .cs_brands_section_1 {
+//   .cs_slider_wrapper {
+//     background-color: rebeccapurple;
+//     padding: 0 18px;
+//   }
+// }
+// Slider Arrows
+.cs_slider_arrows.cs_style_1 {
+  display: flex;
+  gap: 20px;
+  .slick-arrow {
+    height: 50px;
+    width: 50px;
+    border: 1px solid var(--accent-color);
+    border-radius: 50%;
+    color: var(--white-color);
+    background-color: var(--accent-color);
+    transition: all 0.4s ease;
+    &:hover {
+      background-color: transparent;
+      color: var(--accent-color);
+    }
+  }
+}
+// End of Slider Arrows

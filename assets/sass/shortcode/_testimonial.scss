@@ -1,0 +1,113 @@
+/*=======================================================
+  Testimonial
+=========================================================*/
+.cs_testimonial_style_1 {
+  // border-radius: 5px;
+  // overflow: hidden;
+  // background: var(--accent-color);
+  padding-top: 35px;
+  filter: drop-shadow(0 0 45px rgba(0, 0, 0, 0.1));
+  //box-shadow: 0 0 45px rgba(0, 0, 0, 0.1);
+
+  .cs_card_info {
+    width: 100%;
+    height: 100%;
+    padding: 104px 24px 53px;
+    //box-shadow: 0 0 45px rgba(0, 0, 0, 0.1);
+  }
+  .cs_testimonial_bg_shape {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    top: 17px;
+  }
+  .cs_avatar_info,
+  .cs_card_text {
+    position: relative;
+    z-index: 1;
+    display: -webkit-box;
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .cs_avatar_icon {
+    position: absolute;
+    top: 0;
+    left: 30px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .cs_avatar_title {
+    line-height: 1.16em;
+  }
+  .cs_avatar_subtitle {
+    line-height: 1em;
+  }
+  .cs_rating_wrapper {
+    position: absolute;
+    top: 72px;
+    right: 24px;
+    width: 120px;
+  }
+  .cs_card_text {
+    opacity: 1;
+    line-height: 1.625em;
+    font-style: normal;
+  }
+  @media (max-width: 1399px) {
+    .cs_testimonial_bg_shape {
+      top: 1px;
+    }
+    .cs_card_info {
+      padding: 85px 20px 53px 30px;
+    }
+    .cs_avatar_icon {
+      left: 23px;
+      height: 90px;
+      width: 90px;
+    }
+  }
+  @media (max-width: 1199px) {
+    .cs_testimonial_bg_shape {
+      top: 30px;
+    }
+    .cs_card_info {
+      padding: 100px 30px 53px;
+    }
+    .cs_avatar_icon {
+      left: 38px;
+      height: 100px;
+      width: 100px;
+    }
+  }
+  @media (max-width: 991px) {
+    background-color: var(--white-color);
+    box-shadow: 0 0 45px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+
+    .cs_testimonial_bg_shape {
+      display: none;
+    }
+    .cs_card_info {
+      padding: 100px 30px 53px;
+    }
+    .cs_avatar_icon {
+      border: 5px solid var(--bg-primary);
+      left: 20px;
+      top: 20px;
+    }
+  }
+}
+//
+// .cs_testimonial_style_2 {
+
+// }

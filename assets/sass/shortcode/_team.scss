@@ -1,0 +1,70 @@
+/*=======================================================
+  Team
+=========================================================*/
+.cs_team_style_1 {
+  .cs_team_thumb {
+    position: relative;
+    border-radius: 3px;
+  }
+  .cs_team_thumb_img {
+    img {
+      width: 100%;
+      border-radius: 3px;
+    }
+  }
+  .cs_team_thumb_badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .cs_team_thumb_rating {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px 20px 8px 0px;
+    display: inline-flex;
+    background-color: rgba(0, 41, 53, 0.65);
+    .cs_rating_wrapper {
+      transform: scale(0.75);
+      // transform-origin: right;
+    }
+    .cs_number {
+      line-height: 1.43em;
+      // margin-left: 9px;
+    }
+  }
+  .cs_team_info {
+    padding: 20px;
+    box-shadow: 0 0 45px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+  }
+  .cs_team_milestones {
+    gap: 10px;
+    flex-wrap: wrap;
+    img {
+      height: 30px;
+      width: 30px;
+    }
+  }
+  .cs_team_btn {
+    width: 100%;
+  }
+  .cs_btn_style_1 {
+    width: 100%;
+    background-color: rgba(87, 60, 255, 0.16);
+    border-color: transparent;
+    transition: all 0.4s ease;
+    color: var(--heading-color);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    &:hover {
+      background-color: var(--accent-color);
+      border-color: var(--accent-color);
+      color: var(--white-color);
+    }
+  }
+}
+//
+// .cs_team_style_2 {
+
+// }

@@ -1,0 +1,120 @@
+/*=======================================================
+  FAQ
+=========================================================*/
+.cs_faq_style_1 {
+  margin-left: -44px;
+  padding: 93px 78px 93px 0;
+  height: 100%;
+  @media (max-width: 1440px) {
+    margin-left: 0;
+  }
+  @media (max-width: 1399px) {
+    padding-right: 30px;
+  }
+  @media (max-width: 991px) {
+    padding: 50px 0;
+  }
+
+  // .cs_faq_heading {
+  // width: min(100%, 460px);
+  // @media (max-width: 991px) {
+  //   width: min(100%, 100%);
+  // }
+  // }
+
+  .cs_accordian.cs_style_1 {
+    background-color: var(--white-color);
+    border: 1px solid rgba(221, 221, 221, 0.45);
+    border-radius: 2px;
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+    &.active {
+      .cs_accordian_head {
+        padding-top: 27px;
+        padding-bottom: 20px;
+        pointer-events: none;
+      }
+      .cs_accordian_toggler {
+        background-color: var(--accent-color);
+        .cs_accordian_toggler_icon {
+          transform: rotateX(180deg);
+        }
+      }
+    }
+    .cs_accordian_head {
+      padding: 17px 100px 17px 26px;
+      cursor: pointer;
+      transition: all 0.4s ease;
+    }
+    .cs_accordian_toggler {
+      width: 56px;
+      height: 62px;
+      top: -1px;
+      right: -1px;
+      background-color: rgba(184, 184, 184, 0.8);
+      color: var(--white-color);
+      font-size: 20px;
+      line-height: 1em;
+      transition: all 0.3s ease;
+      .cs_accordian_toggler_icon {
+        transition: all 0.3s ease;
+      }
+    }
+    .cs_accordian_body {
+      line-height: 1.625em;
+      padding: 0 100px 27px 26px;
+    }
+  }
+}
+
+// FAQ Thumbnail
+.cs_faq_thumbnail {
+  color: var(--white-color);
+  margin-left: -12px;
+  height: 100%;
+  min-height: 860px;
+  width: 50vw;
+  @media (max-width: 991px) {
+    width: 100%;
+    margin-left: 0;
+    min-height: 660px;
+  }
+  .cs_faq_thumb_info {
+    background-color: var(--accent-color);
+    width: 56%;
+    padding: 54px 20px 52px;
+    > img {
+      width: 100%;
+    }
+    @media (max-width: 991px) {
+      padding: 30px 20px;
+    }
+    @media (max-width: 575px) {
+      width: 100%;
+      padding: 20px;
+    }
+  }
+  .cs_faq_thumb_info_icon {
+    height: 80px;
+    width: 80px;
+    margin-bottom: 10px;
+  }
+  .cs_faq_thumb_info_contact {
+    a {
+      transition: all 0.4s ease;
+      &:hover {
+        color: var(--heading-color);
+      }
+    }
+  }
+  .cs_btn_style_1 {
+    background-color: var(--white-color);
+    color: var(--accent-color);
+    &:hover {
+      color: var(--heading-color);
+    }
+  }
+}
+//

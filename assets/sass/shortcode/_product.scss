@@ -1,7 +1,8 @@
 /*=======================================================
-  Team
+  Product Style
 =========================================================*/
-.cs_product_style_1 {
+.cs_product_style_1,
+.cs_product_style_2 {
   height: 100%;
   background-color: var(--white-color);
   display: flex;
@@ -47,7 +48,7 @@
   .cs_product_purchase {
     gap: 0px 10px;
   }
-  // 
+  //
   .cs_btn_style_1 {
     width: 100%;
     background-color: #ebedf4;
@@ -61,7 +62,7 @@
       color: var(--white-color);
     }
   }
-  // 
+  //
   .cs_wishlist {
     height: 40px;
     width: 44px;
@@ -83,6 +84,60 @@
   }
 }
 //
-// .cs_team_style_2 {
-
-// }
+.cs_product_style_2 {
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  &:hover {
+    .cs_thumb_shopping {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  .cs_product_thumb {
+    height: 74%;
+    border-radius: 6px;
+    background-color: #eff6f6;
+    padding: 50px 25px;
+    width: calc(100% + 2px);
+    margin-top: -1px;
+    margin-left: -1px;
+    position: relative;
+  }
+  .cs_thumb_shopping {
+    gap: 10px;
+    position: absolute;
+    right: 23px;
+    top: 15px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease;
+    button {
+      border: none;
+      outline: none;
+      padding: 0;
+      height: 35px;
+      width: 35px;
+      font-size: 16px;
+      line-height: 1em;
+      background-color: var(--white-color);
+      border-radius: 50%;
+      transition: all 0.4s ease;
+      &:hover {
+        background-color: var(--accent-color);
+        color: var(--white-color);
+      }
+    }
+  }
+  .cs_product_info {
+    padding-bottom: 20px;
+  }
+  .cs_rating {
+    scale: 0.7;
+  }
+  .cs_product_title {
+    margin-top: 6px;
+  }
+  .cs_price_option {
+    line-height: 1.4375em;
+  }
+}

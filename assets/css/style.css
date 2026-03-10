@@ -2823,28 +2823,6 @@ hr {
 .cs_footer_section_style_1 .cs_footer_row .cs_footer_widget + .cs_footer_widget {
   margin-top: 21px;
 }
-.cs_footer_section_style_1 .cs_footer_row .cs_social_btns {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-top: 36px;
-}
-.cs_footer_section_style_1 .cs_footer_row .cs_social_btns a {
-  background: var(--white-color);
-  height: 42px;
-  width: 42px;
-  border-radius: 2px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 18px;
-  line-height: 1em;
-  color: var(--accent-color);
-}
-.cs_footer_section_style_1 .cs_footer_row .cs_social_btns a:hover {
-  background-color: var(--accent-color);
-  color: var(--white-color);
-}
 .cs_footer_section_style_1 {
   /*==========================================
    Newsletter
@@ -3414,6 +3392,49 @@ hr {
   color: var(--white-color);
 }
 
+.cs_team_style_2 {
+  padding: 35px 30px 45px;
+  background-color: var(--white-color);
+  box-shadow: 0 0 35px 0 rgba(0, 0, 0, 0.1);
+  border-bottom: 4px solid rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+.cs_team_style_2::before {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  width: 0;
+  height: 4px;
+  background: var(--accent-color);
+  transition: all 0.4s ease-in-out;
+  transform: translateX(-50%);
+}
+.cs_team_style_2:hover::before {
+  width: 100%;
+}
+.cs_team_style_2 .cs_team_thumb {
+  height: 260px;
+  width: 260px;
+}
+.cs_team_style_2 .cs_team_thumb img {
+  border-radius: 50%;
+}
+.cs_team_style_2 .cs_team_title {
+  line-height: 1.333em;
+}
+.cs_team_style_2 .cs_social_btns {
+  margin-top: 0;
+}
+.cs_team_style_2 .cs_social_btns a {
+  height: 45px;
+  width: 45px;
+  color: #787878;
+  border: 1px solid #d9d9d9;
+  background-color: transparent;
+  border-radius: 50%;
+}
+
 /*===============================================
  Card Style
  ================================================*/
@@ -3731,6 +3752,32 @@ hr {
 }
 .cs_badge_style_5:hover {
   pointer-events: none;
+}
+
+/*=======================================================
+  Social Buttons
+=========================================================*/
+.cs_social_btns {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 36px;
+}
+.cs_social_btns a {
+  background: var(--white-color);
+  height: 42px;
+  width: 42px;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  line-height: 1em;
+  color: var(--accent-color);
+}
+.cs_social_btns a:hover {
+  background-color: var(--accent-color);
+  color: var(--white-color);
 }
 
 /*=======================================================
@@ -4347,50 +4394,60 @@ hr {
 }
 
 /*=======================================================
-  Team
+  Product Style
 =========================================================*/
-.cs_product_style_1 {
+.cs_product_style_1,
+.cs_product_style_2 {
   height: 100%;
   background-color: var(--white-color);
   display: flex;
   flex-direction: column;
 }
-.cs_product_style_1 .cs_product_thumb {
+.cs_product_style_1 .cs_product_thumb,
+.cs_product_style_2 .cs_product_thumb {
   position: relative;
   border-radius: 3px 3px 0px 0px;
   background-color: #ebedf4;
 }
-.cs_product_style_1 .cs_product_thumb_img img {
+.cs_product_style_1 .cs_product_thumb_img img,
+.cs_product_style_2 .cs_product_thumb_img img {
   width: 100%;
   border-radius: 3px 3px 0px 0px;
 }
-.cs_product_style_1 .cs_product_thumb_badge {
+.cs_product_style_1 .cs_product_thumb_badge,
+.cs_product_style_2 .cs_product_thumb_badge {
   position: absolute;
   top: 0;
   left: 0;
   margin: 20px;
 }
-.cs_product_style_1 .cs_badge_style_1 {
+.cs_product_style_1 .cs_badge_style_1,
+.cs_product_style_2 .cs_badge_style_1 {
   padding: 9px 19px 8px;
   line-height: 1em;
   border-radius: 3px;
 }
-.cs_product_style_1 .cs_badge_style_1:hover {
+.cs_product_style_1 .cs_badge_style_1:hover,
+.cs_product_style_2 .cs_badge_style_1:hover {
   background-color: transparent;
   color: var(--heading-color);
 }
-.cs_product_style_1 .cs_product_info {
+.cs_product_style_1 .cs_product_info,
+.cs_product_style_2 .cs_product_info {
   margin-top: auto;
   padding: 23px 20px 28px;
   border-radius: 3px;
 }
-.cs_product_style_1 .cs_price_option {
+.cs_product_style_1 .cs_price_option,
+.cs_product_style_2 .cs_price_option {
   line-height: 0.9412em;
 }
-.cs_product_style_1 .cs_product_purchase {
+.cs_product_style_1 .cs_product_purchase,
+.cs_product_style_2 .cs_product_purchase {
   gap: 0px 10px;
 }
-.cs_product_style_1 .cs_btn_style_1 {
+.cs_product_style_1 .cs_btn_style_1,
+.cs_product_style_2 .cs_btn_style_1 {
   width: 100%;
   background-color: #ebedf4;
   border-color: transparent;
@@ -4398,12 +4455,14 @@ hr {
   color: var(--heading-color);
   padding: 6px 10px;
 }
-.cs_product_style_1 .cs_btn_style_1:hover {
+.cs_product_style_1 .cs_btn_style_1:hover,
+.cs_product_style_2 .cs_btn_style_1:hover {
   background-color: var(--accent-color);
   border-color: var(--accent-color);
   color: var(--white-color);
 }
-.cs_product_style_1 .cs_wishlist {
+.cs_product_style_1 .cs_wishlist,
+.cs_product_style_2 .cs_wishlist {
   height: 40px;
   width: 44px;
   padding: 0;
@@ -4415,12 +4474,70 @@ hr {
   transition: all 0.4s ease;
   flex: none;
 }
-.cs_product_style_1 .cs_wishlist i {
+.cs_product_style_1 .cs_wishlist i,
+.cs_product_style_2 .cs_wishlist i {
   vertical-align: middle;
 }
-.cs_product_style_1 .cs_wishlist:hover {
+.cs_product_style_1 .cs_wishlist:hover,
+.cs_product_style_2 .cs_wishlist:hover {
   color: var(--accent-color);
   border-color: var(--accent-color);
+}
+
+.cs_product_style_2 {
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+.cs_product_style_2:hover .cs_thumb_shopping {
+  opacity: 1;
+  visibility: visible;
+}
+.cs_product_style_2 .cs_product_thumb {
+  height: 74%;
+  border-radius: 6px;
+  background-color: #eff6f6;
+  padding: 50px 25px;
+  width: calc(100% + 2px);
+  margin-top: -1px;
+  margin-left: -1px;
+  position: relative;
+}
+.cs_product_style_2 .cs_thumb_shopping {
+  gap: 10px;
+  position: absolute;
+  right: 23px;
+  top: 15px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease;
+}
+.cs_product_style_2 .cs_thumb_shopping button {
+  border: none;
+  outline: none;
+  padding: 0;
+  height: 35px;
+  width: 35px;
+  font-size: 16px;
+  line-height: 1em;
+  background-color: var(--white-color);
+  border-radius: 50%;
+  transition: all 0.4s ease;
+}
+.cs_product_style_2 .cs_thumb_shopping button:hover {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+.cs_product_style_2 .cs_product_info {
+  padding-bottom: 20px;
+}
+.cs_product_style_2 .cs_rating {
+  scale: 0.7;
+}
+.cs_product_style_2 .cs_product_title {
+  margin-top: 6px;
+}
+.cs_product_style_2 .cs_price_option {
+  line-height: 1.4375em;
 }
 
 /*=======================================================

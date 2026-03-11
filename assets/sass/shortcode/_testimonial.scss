@@ -108,6 +108,40 @@
   }
 }
 //
-// .cs_testimonial_style_2 {
-
-// }
+.cs_testimonial_style_2 {
+  border: 1px solid var(--accent-color);
+  padding: 23px 25px 40px;
+  @media (max-width: 320px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .cs_testimonial_info_wrapper {
+    gap: 0px 10px;
+  }
+  .cs_testimonial_info {
+    gap: 0px 15px;
+    @media (max-width: 320px) {
+      gap: 0px 10px;
+    }
+  }
+  .cs_testimonial_avatar {
+    height: 60px;
+    width: 60px;
+    img {
+      height: 100%;
+      width: 100%;
+      border-radius: 50%;
+    }
+  }
+  .cs_testimonial_title {
+    line-height: 1.2272em;
+  }
+  .cs_testimonial_icon {
+    height: 55px;
+    width: 55px;
+    @media (max-width: 320px) {
+      height: 30px;
+      width: 30px;
+    }
+  }
+}

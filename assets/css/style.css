@@ -34,6 +34,7 @@
 31. Product
 32. Tab
 33. About
+34. Work
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
  ** Google Fonts Integration
@@ -3331,6 +3332,50 @@ hr {
   }
 }
 
+.cs_testimonial_style_2 {
+  border: 1px solid var(--accent-color);
+  padding: 23px 25px 40px;
+}
+@media (max-width: 320px) {
+  .cs_testimonial_style_2 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+.cs_testimonial_style_2 .cs_testimonial_info_wrapper {
+  gap: 0px 10px;
+}
+.cs_testimonial_style_2 .cs_testimonial_info {
+  gap: 0px 15px;
+}
+@media (max-width: 320px) {
+  .cs_testimonial_style_2 .cs_testimonial_info {
+    gap: 0px 10px;
+  }
+}
+.cs_testimonial_style_2 .cs_testimonial_avatar {
+  height: 60px;
+  width: 60px;
+}
+.cs_testimonial_style_2 .cs_testimonial_avatar img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+.cs_testimonial_style_2 .cs_testimonial_title {
+  line-height: 1.2272em;
+}
+.cs_testimonial_style_2 .cs_testimonial_icon {
+  height: 55px;
+  width: 55px;
+}
+@media (max-width: 320px) {
+  .cs_testimonial_style_2 .cs_testimonial_icon {
+    height: 30px;
+    width: 30px;
+  }
+}
+
 /*=======================================================
   Team
 =========================================================*/
@@ -4609,4 +4654,50 @@ hr {
 }
 .cs_about_style_1 .cs_btn_style_1:hover {
   border-color: var(--accent-color);
+}
+
+/*=======================================================
+  Work
+=========================================================*/
+.cs_work_style_1 {
+  padding-top: 41px;
+}
+.cs_work_style_1 .cs_work_thumbnail {
+  margin-left: 41px;
+  padding: 15px;
+  border: 1px dashed var(--accent-color);
+  border-radius: 5px;
+  height: 200px;
+  width: 200px;
+  transform: rotate(-45deg);
+}
+.cs_work_style_1 .cs_work_thumb_image {
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  width: 180px;
+  height: 180px;
+  transform: rotate(45deg);
+  flex: none;
+  border-radius: 5px;
+  scale: 1.4;
+}
+.cs_work_style_1 .cs_work_thumb_image img {
+  border-radius: 5px;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.cs_work_style_1 .cs_work_thumb_overlay {
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 41, 53, 0.2);
+  border-radius: 5px;
+}
+.cs_work_style_1 .cs_work_info {
+  margin-top: 66px;
+}
+.cs_work_style_1 .cs_work_details {
+  line-height: 1.8125em;
 }/*# sourceMappingURL=style.css.map */

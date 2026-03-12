@@ -91,8 +91,16 @@
   margin: 0 auto;
   background-color: yellowgreen;
 }
-.cs_post_info{
-  bottom: 41px;
-  left: 40px;
-  width: min(380px, 100%);
+.cs_post_style_2 {
+  .cs_post_info {
+    bottom: 41px;
+    left: 40px;
+    width: min(380px, 100%);
+  }
+  &.cs_type_1 {
+    .cs_post_info {
+      bottom: 31px;
+      left: 30px;
+    }
+  }
 }

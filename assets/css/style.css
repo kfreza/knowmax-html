@@ -1541,6 +1541,11 @@ label {
   line-height: 2em;
 }
 
+.cs_fs_15 {
+  font-size: 15px;
+  line-height: 1.6666em;
+}
+
 .cs_fs_16 {
   font-size: 16px;
   line-height: 1.625em;
@@ -3582,10 +3587,14 @@ hr {
   background-color: yellowgreen;
 }
 
-.cs_post_info {
+.cs_post_style_2 .cs_post_info {
   bottom: 41px;
   left: 40px;
   width: min(380px, 100%);
+}
+.cs_post_style_2.cs_type_1 .cs_post_info {
+  bottom: 31px;
+  left: 30px;
 }
 
 /*=======================================================

@@ -1,0 +1,31 @@
+/*=======================================================
+  Form Style 1
+=========================================================*/
+.cs_form_style_1 {
+  .cs_form_text {
+    background-color: yellowgreen;
+  }
+  .cs_minititle {
+    line-height: 1em;
+  }
+  .cs_title {
+    line-height: 1.3333em;
+  }
+  .cs_details {
+    margin-top: 2px;
+  }
+  .cs_form_tagline {
+    position: absolute;
+    left: -25%;
+    bottom: 0;
+    padding: 75px 96px;
+    background-color: var(--accent-color);
+    width: 76%;
+    // text-align: end;
+  }
+
+  .cs_registration_form_1 {
+    background-color: rebeccapurple;
+    padding-left: 64px;
+  }
+}

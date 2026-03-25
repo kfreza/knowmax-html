@@ -1,5 +1,5 @@
 /*=======================================================
-    Course Category Card
+    Course Category Card Style 1
 =========================================================*/
 .cs_course_category_style_1_wrapper {
   display: grid;
@@ -76,7 +76,34 @@
 }
 
 /*=======================================================
-  Course Category
+    Course Category Card Style 2
+=========================================================*/
+.cs_course_category_style_2 {
+  .cs_course_category_thumbnail {
+    border-radius: 3px;
+  }
+  .cs_thumb_overlay {
+    inset: 0;
+    background: linear-gradient(360deg, #002935 0%, rgba(0, 41, 53, 0) 100%);
+  }
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+  }
+  .cs_course_category_info {
+    width: 100%;
+    bottom: 27px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .cs_course_counter {
+    gap: 0px 10px;
+  }
+}
+
+/*=======================================================
+  Course Category Tab 
 =========================================================*/
 .cs_course_category_wrapper {
   gap: 20px 40px;
@@ -311,3 +338,6 @@
     }
   }
 }
+/*=======================================================
+    Course Card Style 3
+=========================================================*/

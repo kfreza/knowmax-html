@@ -56,7 +56,11 @@
 }
 
 .cs_version_2 {
-  --accent-color: #007A70;
+  --accent-color: #007a70;
+}
+
+.cs_version_3 {
+  --accent-color: #0d5ef4;
 }
 
 /*--------------------------------------------------------------
@@ -4163,7 +4167,7 @@ hr {
 }
 
 /*=======================================================
-    Course Category Card
+    Course Category Card Style 1
 =========================================================*/
 .cs_course_category_style_1_wrapper {
   display: grid;
@@ -4240,7 +4244,32 @@ hr {
 }
 
 /*=======================================================
-  Course Category
+    Course Category Card Style 2
+=========================================================*/
+.cs_course_category_style_2 .cs_course_category_thumbnail {
+  border-radius: 3px;
+}
+.cs_course_category_style_2 .cs_thumb_overlay {
+  inset: 0;
+  background: linear-gradient(360deg, #002935 0%, rgba(0, 41, 53, 0) 100%);
+}
+.cs_course_category_style_2 img {
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+}
+.cs_course_category_style_2 .cs_course_category_info {
+  width: 100%;
+  bottom: 27px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.cs_course_category_style_2 .cs_course_counter {
+  gap: 0px 10px;
+}
+
+/*=======================================================
+  Course Category Tab 
 =========================================================*/
 .cs_course_category_wrapper {
   gap: 20px 40px;
@@ -4520,6 +4549,9 @@ hr {
   color: var(--accent-color);
 }
 
+/*=======================================================
+    Course Card Style 3
+=========================================================*/
 /*=======================================================
   Product Style
 =========================================================*/

@@ -1,7 +1,8 @@
 /*=======================================================
   Hero Homepage 1
 =========================================================*/
-.cs_hero_style_1 {
+.cs_hero_style_1,
+.cs_hero_style_3 {
   padding-top: 350px;
   padding-bottom: 280px;
   @media (max-width: 991px) {
@@ -54,7 +55,8 @@
     }
   }
 }
-.cs_hero_section_1 {
+.cs_hero_section_1,
+.cs_hero_section_3 {
   .cs_slider_arrows.cs_style_1 {
     position: absolute;
     bottom: 73px;
@@ -187,3 +189,48 @@
 /*=======================================================
   Hero Homepage 3
 =========================================================*/
+.cs_hero_style_3 {
+  padding-top: 352px;
+  padding-bottom: 225px;
+  .cs_hero_overlay {
+    background-color: rgba(0, 41, 53, 0.65);
+  }
+  .cs_hero_title {
+    width: min(100%, 850px);
+    text-align: center;
+  }
+  .cs_hero_minititle,
+  .cs_hero_details {
+    width: min(100%, 600px);
+    text-align: center;
+  }
+}
+.cs_hero_section_3 {
+  .cs_slider_arrows.cs_style_1 {
+    position: absolute;
+    bottom: 50%;
+    transform: translate(0, -50%);
+    right: unset;
+    left: 63px;
+    // @media (max-width: 1440px) {
+    //   bottom: 50px;
+    // }
+    // @media (max-width: 1199px) {
+    //   bottom: 35px;
+    // }
+    // @media (max-width: 991px) {
+    //   bottom: 20px;
+    // }
+    // @media (max-width: 576px) {
+    //   bottom: -15px;
+    //   right: 20px;
+    // }
+    .cs_left_arrow {
+      position: absolute;
+      left: 63px;
+    }
+    .cs_right_arrow {
+      right: 63px;
+    }
+  }
+}

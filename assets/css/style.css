@@ -2952,17 +2952,20 @@ hr {
 /*=======================================================
   Hero Homepage 1
 =========================================================*/
-.cs_hero_style_1 {
+.cs_hero_style_1,
+.cs_hero_style_3 {
   padding-top: 350px;
   padding-bottom: 280px;
 }
 @media (max-width: 991px) {
-  .cs_hero_style_1 {
+  .cs_hero_style_1,
+  .cs_hero_style_3 {
     padding-top: 250px;
     padding-bottom: 200px;
   }
 }
-.cs_hero_style_1 .cs_hero_overlay {
+.cs_hero_style_1 .cs_hero_overlay,
+.cs_hero_style_3 .cs_hero_overlay {
   top: 0;
   left: 0;
   height: 100%;
@@ -2972,76 +2975,96 @@ hr {
 .cs_hero_style_1 .cs_hero_minititle,
 .cs_hero_style_1 .cs_hero_title,
 .cs_hero_style_1 .cs_hero_details,
-.cs_hero_style_1 .cs_meta {
+.cs_hero_style_1 .cs_meta,
+.cs_hero_style_3 .cs_hero_minititle,
+.cs_hero_style_3 .cs_hero_title,
+.cs_hero_style_3 .cs_hero_details,
+.cs_hero_style_3 .cs_meta {
   position: relative;
 }
-.cs_hero_style_1 .cs_hero_title {
+.cs_hero_style_1 .cs_hero_title,
+.cs_hero_style_3 .cs_hero_title {
   width: min(100%, 800px);
 }
 .cs_hero_style_1 .cs_hero_minititle,
-.cs_hero_style_1 .cs_hero_details {
+.cs_hero_style_1 .cs_hero_details,
+.cs_hero_style_3 .cs_hero_minititle,
+.cs_hero_style_3 .cs_hero_details {
   width: min(100%, 600px);
 }
-.cs_hero_style_1 .cs_meta {
+.cs_hero_style_1 .cs_meta,
+.cs_hero_style_3 .cs_meta {
   gap: 25px;
 }
 @media (max-width: 575px) {
-  .cs_hero_style_1 .cs_meta {
+  .cs_hero_style_1 .cs_meta,
+  .cs_hero_style_3 .cs_meta {
     flex-direction: column-reverse;
     align-items: flex-start;
   }
 }
-.cs_hero_style_1 .cs_google_rating {
+.cs_hero_style_1 .cs_google_rating,
+.cs_hero_style_3 .cs_google_rating {
   gap: 0px 13px;
 }
-.cs_hero_style_1 .cs_google_rating i {
+.cs_hero_style_1 .cs_google_rating i,
+.cs_hero_style_3 .cs_google_rating i {
   font-size: 60px;
   line-height: 1em;
 }
-.cs_hero_style_1 .cs_hero_bottom_shape {
+.cs_hero_style_1 .cs_hero_bottom_shape,
+.cs_hero_style_3 .cs_hero_bottom_shape {
   position: absolute;
   bottom: -1px;
   left: 0;
   width: 100%;
 }
-.cs_hero_style_1 .cs_hero_bottom_shape img {
+.cs_hero_style_1 .cs_hero_bottom_shape img,
+.cs_hero_style_3 .cs_hero_bottom_shape img {
   width: 100%;
   height: 100%;
 }
 
-.cs_hero_section_1 .cs_slider_arrows.cs_style_1 {
+.cs_hero_section_1 .cs_slider_arrows.cs_style_1,
+.cs_hero_section_3 .cs_slider_arrows.cs_style_1 {
   position: absolute;
   bottom: 73px;
   right: 71px;
 }
 @media (max-width: 1440px) {
-  .cs_hero_section_1 .cs_slider_arrows.cs_style_1 {
+  .cs_hero_section_1 .cs_slider_arrows.cs_style_1,
+  .cs_hero_section_3 .cs_slider_arrows.cs_style_1 {
     bottom: 50px;
   }
 }
 @media (max-width: 1199px) {
-  .cs_hero_section_1 .cs_slider_arrows.cs_style_1 {
+  .cs_hero_section_1 .cs_slider_arrows.cs_style_1,
+  .cs_hero_section_3 .cs_slider_arrows.cs_style_1 {
     bottom: 35px;
   }
 }
 @media (max-width: 991px) {
-  .cs_hero_section_1 .cs_slider_arrows.cs_style_1 {
+  .cs_hero_section_1 .cs_slider_arrows.cs_style_1,
+  .cs_hero_section_3 .cs_slider_arrows.cs_style_1 {
     bottom: 20px;
   }
 }
 @media (max-width: 576px) {
-  .cs_hero_section_1 .cs_slider_arrows.cs_style_1 {
+  .cs_hero_section_1 .cs_slider_arrows.cs_style_1,
+  .cs_hero_section_3 .cs_slider_arrows.cs_style_1 {
     bottom: -15px;
     right: 20px;
   }
 }
-.cs_hero_section_1 .cs_slider_arrows.cs_style_1 .slick-arrow {
+.cs_hero_section_1 .cs_slider_arrows.cs_style_1 .slick-arrow,
+.cs_hero_section_3 .cs_slider_arrows.cs_style_1 .slick-arrow {
   height: 95px;
   width: 95px;
   border: 2px solid var(--accent-color);
   background-color: transparent;
 }
-.cs_hero_section_1 .cs_slider_arrows.cs_style_1 .slick-arrow i {
+.cs_hero_section_1 .cs_slider_arrows.cs_style_1 .slick-arrow i,
+.cs_hero_section_3 .cs_slider_arrows.cs_style_1 .slick-arrow i {
   height: 80px;
   width: 80px;
   border-radius: 50%;
@@ -3054,7 +3077,8 @@ hr {
   line-height: 1em;
   flex: none;
 }
-.cs_hero_section_1 .cs_slider_arrows.cs_style_1 .slick-arrow:hover i {
+.cs_hero_section_1 .cs_slider_arrows.cs_style_1 .slick-arrow:hover i,
+.cs_hero_section_3 .cs_slider_arrows.cs_style_1 .slick-arrow:hover i {
   background-color: var(--white-color);
   color: var(--accent-color);
 }
@@ -3145,6 +3169,38 @@ hr {
 /*=======================================================
   Hero Homepage 3
 =========================================================*/
+.cs_hero_style_3 {
+  padding-top: 352px;
+  padding-bottom: 225px;
+}
+.cs_hero_style_3 .cs_hero_overlay {
+  background-color: rgba(0, 41, 53, 0.65);
+}
+.cs_hero_style_3 .cs_hero_title {
+  width: min(100%, 850px);
+  text-align: center;
+}
+.cs_hero_style_3 .cs_hero_minititle,
+.cs_hero_style_3 .cs_hero_details {
+  width: min(100%, 600px);
+  text-align: center;
+}
+
+.cs_hero_section_3 .cs_slider_arrows.cs_style_1 {
+  position: absolute;
+  bottom: 50%;
+  transform: translate(0, -50%);
+  right: unset;
+  left: 63px;
+}
+.cs_hero_section_3 .cs_slider_arrows.cs_style_1 .cs_left_arrow {
+  position: absolute;
+  left: 63px;
+}
+.cs_hero_section_3 .cs_slider_arrows.cs_style_1 .cs_right_arrow {
+  right: 63px;
+}
+
 /*--------------------------------------------------------------
   10. Sidebar
 ----------------------------------------------------------------*/
@@ -4846,8 +4902,27 @@ hr {
 /*=======================================================
   Form Style 1
 =========================================================*/
+.cs_registration_section_1 {
+  padding-bottom: 216px;
+  background-color: red;
+}
+
+.cs_section_bg {
+  width: 100%;
+  height: 100%;
+  min-height: 602px;
+}
+
+.cs_form_text_wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .cs_form_style_1 .cs_form_text {
   background-color: yellowgreen;
+  width: min(100%, 615px);
 }
 .cs_form_style_1 .cs_minititle {
   line-height: 1em;
@@ -4859,14 +4934,26 @@ hr {
   margin-top: 2px;
 }
 .cs_form_style_1 .cs_form_tagline {
-  position: absolute;
-  left: -25%;
-  bottom: 0;
-  padding: 75px 96px;
+  padding: 76px 96px 75px;
   background-color: var(--accent-color);
-  width: 76%;
+  width: calc(54vw + 12px);
+  margin-left: calc(-50vw + 100%);
+  margin-bottom: -216px;
 }
 .cs_form_style_1 .cs_registration_form_1 {
-  background-color: rebeccapurple;
-  padding-left: 64px;
+  background-color: var(--white-color);
+  box-shadow: 0 0 45px 0 rgba(0, 0, 0, 0.1);
+  margin-top: 4px;
+  border-radius: 10px;
+  padding: 59px 57px 58px 56px;
+  width: min(572px, 100%);
+  margin-left: auto;
+  margin-bottom: -216px;
+}
+.cs_form_style_1 .cs_registration_form_1 .cs_form_title {
+  line-height: 1.657em;
+}
+.cs_form_style_1 .cs_registration_form_1 form input,
+.cs_form_style_1 .cs_registration_form_1 form textarea {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

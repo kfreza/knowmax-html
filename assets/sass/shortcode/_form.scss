@@ -3,76 +3,74 @@
 =========================================================*/
 .cs_registration_section_1 {
   padding-bottom: 213px;
-}
-.cs_section_bg {
-  width: 100%;
-  height: 100%;
-  min-height: 602px;
-}
-.cs_section_bg_overlay {
-  inset: 0;
-  background: rgba(0, 41, 53, 0.65);
-}
-.cs_form_text_wrapper {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.cs_form_style_1 {
-  .cs_form_text {
-    width: min(100%, 615px);
+  .cs_section_bg {
+    width: 100%;
+    height: 100%;
+    min-height: 602px;
   }
-  .cs_minititle {
-    line-height: 1em;
+  .cs_section_bg_overlay {
+    inset: 0;
+    background: rgba(0, 41, 53, 0.65);
   }
-  .cs_title {
-    line-height: 1.3333em;
+  .cs_form_text_wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
-  .cs_details {
-    margin-top: 2px;
-  }
-  .cs_form_tagline {
-    padding: 76px 96px 75px;
-    background-color: var(--accent-color);
-    width: calc(54vw + 12px);
-    margin-left: calc(-50vw + 100%);
-    margin-bottom: -216px;
-  }
-
-  .cs_registration_form_1 {
-    background-color: var(--white-color);
-    box-shadow: 0 0 45px 0 rgba(0, 0, 0, 0.1);
-    margin-top: 4px;
-    border-radius: 10px;
-    padding: 59px 57px 58px 56px;
-    width: min(572px, 100%);
-    margin-left: auto;
-    margin-bottom: -216px;
-    .cs_reg_form_shape {
-      border-radius: 0 10px 0 0;
-      top: 0;
-      right: 0;
+  .cs_form_style_1 {
+    .cs_form_text {
+      width: min(100%, 615px);
     }
-    .cs_form_title {
-      line-height: 1.657em;
+    .cs_minititle {
+      line-height: 1em;
     }
-    form {
-      .cs_form_field {
-        display: block;
-        width: 100%;
-        background-color: #f6f6f6;
-        border: none;
-        outline: none;
-        border-radius: 5px;
-        padding: 17px 21px;
-        line-height: 1.7142em;
-        // margin-bottom: 0;
+    .cs_title {
+      line-height: 1.3333em;
+    }
+    .cs_details {
+      margin-top: 2px;
+    }
+    .cs_form_tagline {
+      padding: 76px 96px 75px;
+      background-color: var(--accent-color);
+      width: calc(54vw + 12px);
+      margin-left: calc(-50vw + 100%);
+      margin-bottom: -216px;
+    }
+    .cs_registration_form_1 {
+      background-color: var(--white-color);
+      box-shadow: 0 0 45px 0 rgba(0, 0, 0, 0.1);
+      margin-top: 4px;
+      border-radius: 10px;
+      padding: 59px 57px 58px 56px;
+      width: min(572px, 100%);
+      margin-left: auto;
+      margin-bottom: -216px;
+      .cs_reg_form_shape {
+        border-radius: 0 10px 0 0;
+        top: 0;
+        right: 0;
       }
-      .cs_btn_style_1 {
-        margin-top: 23px;
-        line-height: 1.5em;
-        padding: 16px 35px 15px 36px;
+      .cs_form_title {
+        line-height: 1.657em;
+      }
+      form {
+        .cs_form_field {
+          display: block;
+          width: 100%;
+          background-color: #f6f6f6;
+          border: none;
+          outline: none;
+          border-radius: 5px;
+          padding: 17px 21px;
+          line-height: 1.7142em;
+        }
+        .cs_btn_style_1 {
+          margin-top: 23px;
+          line-height: 1.5em;
+          padding: 16px 35px 15px 36px;
+        }
       }
     }
   }

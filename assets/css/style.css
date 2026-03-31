@@ -1702,6 +1702,10 @@ label {
   padding: 0;
 }
 
+.cs_gap_y_17 {
+  gap: 17px 0;
+}
+
 .cs_gap_y_24 {
   gap: 24px 0;
 }
@@ -4903,7 +4907,7 @@ hr {
   Form Style 1
 =========================================================*/
 .cs_registration_section_1 {
-  padding-bottom: 216px;
+  padding-bottom: 213px;
   background-color: red;
 }
 
@@ -4950,10 +4954,26 @@ hr {
   margin-left: auto;
   margin-bottom: -216px;
 }
+.cs_form_style_1 .cs_registration_form_1 .cs_reg_form_shape {
+  border-radius: 0 10px 0 0;
+  top: 0;
+  right: 0;
+}
 .cs_form_style_1 .cs_registration_form_1 .cs_form_title {
   line-height: 1.657em;
 }
-.cs_form_style_1 .cs_registration_form_1 form input,
-.cs_form_style_1 .cs_registration_form_1 form textarea {
+.cs_form_style_1 .cs_registration_form_1 form .cs_form_field {
+  display: block;
   width: 100%;
+  background-color: #f6f6f6;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 17px 21px;
+  line-height: 1.7142em;
+}
+.cs_form_style_1 .cs_registration_form_1 form .cs_btn_style_1 {
+  margin-top: 23px;
+  line-height: 1.5em;
+  padding: 16px 35px 15px 36px;
 }/*# sourceMappingURL=style.css.map */

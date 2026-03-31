@@ -2,7 +2,7 @@
   Form Style 1
 =========================================================*/
 .cs_registration_section_1 {
-  padding-bottom: 216px;
+  padding-bottom: 213px;
   background-color: red;
 }
 .cs_section_bg {
@@ -47,16 +47,30 @@
     width: min(572px, 100%);
     margin-left: auto;
     margin-bottom: -216px;
+    .cs_reg_form_shape {
+      border-radius: 0 10px 0 0;
+      top: 0;
+      right: 0;
+    }
     .cs_form_title {
       line-height: 1.657em;
     }
     form {
-      // div {
-      //   margin-bottom: 0;
-      // }
-      input,
-      textarea {
+      .cs_form_field {
+        display: block;
         width: 100%;
+        background-color: #f6f6f6;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        padding: 17px 21px;
+        line-height: 1.7142em;
+        // margin-bottom: 0;
+      }
+      .cs_btn_style_1 {
+        margin-top: 23px;
+        line-height: 1.5em;
+        padding: 16px 35px 15px 36px;
       }
     }
   }

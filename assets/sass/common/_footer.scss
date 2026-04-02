@@ -135,13 +135,16 @@
       width: 180px;
       background-color: var(--accent-color);
       color: var(--white-color);
-      padding: 14px 25px;
+      padding: 13px 25px;
       font-weight: 600;
       outline: none;
       display: inline-flex;
       justify-content: center;
       align-items: center;
       border: 1px solid var(--accent-color);
+      .cs_btn_right_arrow {
+        margin-left: 16px;
+      }
       &:hover {
         background: transparent;
         border: 1px solid var(--accent-color);
@@ -232,6 +235,17 @@
   10. Footer Home v2
 =============================================================*/
 .cs_footer_section_style_2 {
+  > * {
+    position: relative;
+    z-index: 1;
+  }
+  .cs_footer_left_shape {
+    height: 100%;
+    width: 36%;
+    top: 0;
+    left: 0;
+    background-color: var(--accent-color);
+  }
   .cs_footer_top {
     padding: 40px 0;
     gap: 0 10px;
@@ -246,12 +260,120 @@
     // display: flex;
     flex-direction: row;
     gap: 0 24px;
-    width: 50%;
+    width: 52%;
     .cs_newsletter_input {
       background-color: var(--white-color);
       border: 1px solid rgba(234, 24, 38, 0.25);
       padding: 14px 19px 13px;
       width: min(463px, 100%);
+    }
+  }
+  .cs_footer_main {
+    .cs_footer_row {
+      padding: 72px 0 50px;
+    }
+    .cs_footer_col {
+      // flex: 1;
+      max-width: 376px;
+      &:nth-child(2) {
+        // flex: 1;
+        max-width: 312px;
+      }
+      &:nth-child(3) {
+        // flex: 1;
+        max-width: 182px;
+        li {
+          // display: flex;
+          // gap: 0px 16px;
+          .cs_footer_widget_menu_icon_style_1 {
+            line-height: 2.118em;
+          }
+          a {
+            font-size: 17px;
+            line-height: 2.118em;
+          }
+          &:not(:last-child) {
+            margin-bottom: 0;
+          }
+        }
+      }
+      &:last-child {
+        // flex: 1;
+        max-width: 278px;
+      }
+    }
+    .cs_footer_widget {
+    }
+    .cs_footer_text_widget {
+      width: min(100%, 289px);
+      p {
+        margin-top: 34px;
+        margin-bottom: 22px;
+      }
+    }
+    .cs_work_hour {
+    }
+    .cs_work_title {
+      margin-bottom: 12px;
+    }
+    .cs_work_schedule {
+      margin-bottom: 0;
+      font-weight: 500;
+      line-height: 2.104em;
+    }
+    .cs_footer_widget_title {
+      margin-bottom: 37px;
+    }
+    .cs_post_wrapper {
+    }
+    .cs_post {
+      display: flex;
+      gap: 0 20px;
+    }
+    .cs_post_thumb {
+      flex: none;
+      img {
+        height: 85px;
+        width: 85px;
+        border-radius: 50%;
+      }
+    }
+    .cs_post_meta {
+    }
+    .cs_post_date {
+      margin-bottom: 8px;
+    }
+    .cs_date {
+      line-height: 1.25em;
+    }
+    .cs_post_title {
+    }
+    .cs_insta_feed {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .cs_instagram_thumb {
+      position: relative;
+      &:hover {
+        .cs_instagram_icon {
+          transform: translate(-50%, -50%) scaleX(1);
+        }
+      }
+    }
+    .cs_instagram_icon {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(#002935, 0.5);
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%) scaleX(0);
+      transition: all 0.3s ease;
     }
   }
 }

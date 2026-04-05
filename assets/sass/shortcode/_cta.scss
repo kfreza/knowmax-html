@@ -55,17 +55,34 @@
 .cs_cta_style_2 {
   .container {
     padding: 110px 0;
+    @media (max-width: 991px) {
+      padding: 60px 0;
+    }
   }
   .cs_cta_image {
     width: 271px;
     object-fit: cover;
     bottom: 0;
-    left: -205px;
+    left: 4.6%;
+    @media (max-width: 991px) {
+      display: none;
+    }
   }
   .cs_cta_text {
-    padding-left: 136px;
+    display: flex;
+    justify-content: space-between;
+    width: min(1184px, 100%);
+    margin-left: auto;
     align-items: center;
     gap: 20px;
+    position: relative;
+    z-index: 1;
+    @media (max-width: 991px) {
+      flex-direction: column;
+    }
+    @media (max-width: 575px) {
+      text-align: center;
+    }
   }
   .cs_cta_title {
     line-height: 1.4571em;

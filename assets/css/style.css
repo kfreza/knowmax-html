@@ -2380,14 +2380,15 @@ hr {
   line-height: 1.75em;
   border: none;
   width: 100%;
-  padding: 15px 20px;
+  padding: 15px 55px 15px 20px;
   outline: none;
   transition: all 0.3s ease;
   border-bottom: 1px solid transparent;
 }
 .cs_site_header.cs_style_1 .cs_top_header_right .cs_header_submit_btn {
   position: absolute;
-  right: 12px;
+  right: 22px;
+  padding: 0;
   top: 50%;
   transform: translateY(-50%);
   display: flex;
@@ -2495,10 +2496,7 @@ hr {
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
-}
-.cs_site_header.cs_style_2 .cs_top_header_left,
-.cs_site_header.cs_style_2 .cs_main_header_left {
-  height: 100%;
+  position: relative;
 }
 .cs_site_header.cs_style_2 .cs_top_header_center,
 .cs_site_header.cs_style_2 .cs_main_header_center {
@@ -2511,6 +2509,12 @@ hr {
   gap: 36px;
   z-index: 888;
   height: 100%;
+}
+@media (max-width: 767px) {
+  .cs_site_header.cs_style_2 .cs_top_header_right,
+  .cs_site_header.cs_style_2 .cs_main_header_right {
+    gap: 0;
+  }
 }
 .cs_site_header.cs_style_2 {
   /*=======================================================
@@ -2571,6 +2575,11 @@ hr {
 .cs_site_header.cs_style_2 .cs_main_header_in {
   height: 107px;
 }
+@media (max-width: 575px) {
+  .cs_site_header.cs_style_2 .cs_main_header_left {
+    max-width: 150px;
+  }
+}
 .cs_site_header.cs_style_2 .cs_main_header_right .cs_user_access {
   outline: none;
   border: none;
@@ -2580,6 +2589,11 @@ hr {
 .cs_site_header.cs_style_2 .cs_main_header_right .cs_header_search_form {
   position: relative;
   width: 330px;
+}
+@media (max-width: 767px) {
+  .cs_site_header.cs_style_2 .cs_main_header_right .cs_header_search_form {
+    display: none;
+  }
 }
 .cs_site_header.cs_style_2 .cs_main_header_right .cs_header_search_form ::-moz-placeholder {
   color: var(--heading-color);
@@ -2593,13 +2607,14 @@ hr {
   border-radius: 3px;
   background: rgba(0, 122, 112, 0.08);
   line-height: 1.4375em;
-  padding: 12px 22px;
+  padding: 12px 55px 12px 22px;
   transition: all 0.3s ease;
   width: 100%;
 }
 .cs_site_header.cs_style_2 .cs_main_header_right .cs_header_submit_btn {
   position: absolute;
-  right: 14px;
+  right: 22px;
+  padding: 0;
   top: 50%;
   transform: translateY(-50%);
   border: none;
@@ -2693,6 +2708,12 @@ hr {
     transform: translateY(-26%);
     position: absolute;
   }
+  .cs_site_header.cs_style_2 .cs_top_header_left,
+  .cs_site_header.cs_style_2 .cs_main_header_left {
+    height: 100%;
+    max-width: 200px;
+    margin-right: 10px;
+  }
   .cs_site_header.cs_style_2 .cs_main_header_left .cs_site_branding {
     display: none;
   }
@@ -2781,6 +2802,10 @@ hr {
   .cs_site_header .cs_main_header .container {
     max-width: 100%;
   }
+  .cs_site_header .cs_site_branding {
+    position: relative;
+    z-index: 101;
+  }
   .cs_site_header.cs_style_1 {
     top: 0;
   }
@@ -2801,6 +2826,7 @@ hr {
     display: none;
   }
   .cs_site_header.cs_style_2 .cs_main_header_in {
+    height: 80px;
     padding-right: 60px;
   }
 }
@@ -3407,6 +3433,11 @@ hr {
   margin-top: 202px;
   padding: 64px 0 0;
 }
+@media (max-width: 1199px) {
+  .cs_hero_style_2 {
+    margin-top: 80px;
+  }
+}
 .cs_hero_style_2 .cs_hero_text .cs_hero_title {
   line-height: 1.3125em;
 }
@@ -3415,12 +3446,36 @@ hr {
 }
 .cs_hero_style_2 .cs_hero_text .cs_meta {
   gap: 0px 20px;
+  align-items: center;
 }
-.cs_hero_style_2 .cs_hero_text .cs_meta a {
+@media (max-width: 1199px) {
+  .cs_hero_style_2 .cs_hero_text .cs_meta {
+    gap: 0 15px;
+  }
+}
+@media (max-width: 480px) {
+  .cs_hero_style_2 .cs_hero_text .cs_meta {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 24px;
+  }
+}
+.cs_hero_style_2 .cs_hero_text .cs_meta .cs_btn_style_1 {
   font-weight: 600;
+  padding: 16px 27px;
+}
+@media (max-width: 1199px) {
+  .cs_hero_style_2 .cs_hero_text .cs_meta .cs_btn_style_1 {
+    padding: 16px 25px;
+  }
 }
 .cs_hero_style_2 .cs_hero_text .cs_meta .cs_client_wrapper {
   gap: 0px 22px;
+}
+@media (max-width: 1199px) {
+  .cs_hero_style_2 .cs_hero_text .cs_meta .cs_client_wrapper {
+    gap: 0 15px;
+  }
 }
 .cs_hero_style_2 .cs_hero_text .cs_meta .cs_clients .cs_clients_avatar {
   height: 57px;
@@ -3437,29 +3492,85 @@ hr {
   background-color: transparent;
 }
 .cs_hero_style_2 .cs_hero_text .cs_meta .cs_clients img {
-  height: 55px;
-  width: 55px;
-  border-radius: 50%;
+  height: calc(100% - 2px);
+  width: calc(100% - 2px);
+  border-radius: inherit;
 }
 .cs_hero_style_2 .cs_hero_image {
   padding-left: 34px;
-  margin-bottom: 158px;
   z-index: 1;
+}
+@media (max-width: 991px) {
+  .cs_hero_style_2 .cs_hero_image {
+    padding-left: 0;
+  }
+}
+@media (max-width: 575px) {
+  .cs_hero_style_2 .cs_hero_image .cs_dot_shape,
+  .cs_hero_style_2 .cs_hero_image .cs_wave_shape,
+  .cs_hero_style_2 .cs_hero_image .cs_arrow_shape {
+    display: none;
+  }
 }
 .cs_hero_style_2 .cs_hero_image .cs_dot_shape {
   z-index: -1;
   left: 0;
-  top: 52%;
+  top: 51%;
+}
+@media (max-width: 1199px) {
+  .cs_hero_style_2 .cs_hero_image .cs_dot_shape {
+    top: 48%;
+  }
+}
+@media (max-width: 991px) {
+  .cs_hero_style_2 .cs_hero_image .cs_dot_shape {
+    top: 49%;
+  }
 }
 .cs_hero_style_2 .cs_hero_image .cs_wave_shape {
   z-index: -1;
   bottom: 41px;
   left: 59%;
 }
+@media (max-width: 1199px) {
+  .cs_hero_style_2 .cs_hero_image .cs_wave_shape {
+    bottom: 20px;
+    left: 60%;
+  }
+}
+@media (max-width: 991px) {
+  .cs_hero_style_2 .cs_hero_image .cs_wave_shape {
+    bottom: 41px;
+    left: 57%;
+  }
+}
+@media (max-width: 767px) {
+  .cs_hero_style_2 .cs_hero_image .cs_wave_shape {
+    bottom: 20px;
+  }
+}
 .cs_hero_style_2 .cs_hero_image .cs_arrow_shape {
   z-index: -1;
-  right: 0;
-  top: 0;
+  right: -15px;
+  top: -27px;
+}
+@media (max-width: 1199px) {
+  .cs_hero_style_2 .cs_hero_image .cs_arrow_shape {
+    right: -45px;
+    top: -45px;
+  }
+}
+@media (max-width: 991px) {
+  .cs_hero_style_2 .cs_hero_image .cs_arrow_shape {
+    right: 0;
+    top: 0;
+  }
+}
+@media (max-width: 767px) {
+  .cs_hero_style_2 .cs_hero_image .cs_arrow_shape {
+    right: -15px;
+    top: -27px;
+  }
 }
 .cs_hero_style_2 .cs_hero_feature {
   position: relative;
@@ -3469,6 +3580,31 @@ hr {
   gap: 20px;
   padding: 44px 36px;
   box-shadow: 0 0 45px 0 rgba(0, 0, 0, 0.1);
+  height: 100%;
+  display: flex;
+}
+@media (max-width: 1199px) {
+  .cs_hero_style_2 .cs_hero_feature .cs_hero_iconbox {
+    padding: 32px 24px;
+  }
+}
+@media (max-width: 991px) {
+  .cs_hero_style_2 .cs_hero_feature .cs_hero_iconbox {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 767px) {
+  .cs_hero_style_2 .cs_hero_feature .cs_hero_iconbox {
+    flex-direction: row;
+    align-items: unset;
+  }
+}
+@media (max-width: 479px) {
+  .cs_hero_style_2 .cs_hero_feature .cs_hero_iconbox {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .cs_hero_style_2 .cs_hero_feature .cs_hero_iconbox_icon {
   height: 60px;
@@ -3586,17 +3722,42 @@ hr {
 .cs_cta_style_2 .container {
   padding: 110px 0;
 }
+@media (max-width: 991px) {
+  .cs_cta_style_2 .container {
+    padding: 60px 0;
+  }
+}
 .cs_cta_style_2 .cs_cta_image {
   width: 271px;
   -o-object-fit: cover;
      object-fit: cover;
   bottom: 0;
-  left: -205px;
+  left: 4.6%;
+}
+@media (max-width: 991px) {
+  .cs_cta_style_2 .cs_cta_image {
+    display: none;
+  }
 }
 .cs_cta_style_2 .cs_cta_text {
-  padding-left: 136px;
+  display: flex;
+  justify-content: space-between;
+  width: min(1184px, 100%);
+  margin-left: auto;
   align-items: center;
   gap: 20px;
+  position: relative;
+  z-index: 1;
+}
+@media (max-width: 991px) {
+  .cs_cta_style_2 .cs_cta_text {
+    flex-direction: column;
+  }
+}
+@media (max-width: 575px) {
+  .cs_cta_style_2 .cs_cta_text {
+    text-align: center;
+  }
 }
 .cs_cta_style_2 .cs_cta_title {
   line-height: 1.4571em;
@@ -4645,39 +4806,49 @@ hr {
 /*=======================================================
   Course Category Tab 
 =========================================================*/
-.cs_course_category_wrapper {
+.cs_course_category_wrapper_1 {
   gap: 20px 40px;
   flex-wrap: wrap;
   justify-content: flex-end;
 }
 @media (max-width: 1399px) {
-  .cs_course_category_wrapper {
+  .cs_course_category_wrapper_1 {
     gap: 10px 24px;
   }
 }
 @media (max-width: 991px) {
-  .cs_course_category_wrapper {
+  .cs_course_category_wrapper_1 {
     justify-content: flex-start;
   }
 }
-.cs_course_category_wrapper .cs_course_category {
+.cs_course_category_wrapper_1 .cs_course_category {
   text-wrap: nowrap;
 }
 
-.cs_course_category_wrapper_2 .cs_course_category {
-  height: 100%;
-  padding: 6px 34px 9px;
+@media (max-width: 991px) {
+  .cs_course_category_wrapper_2 {
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
 }
-.cs_course_category_wrapper_2 .cs_course_category:first-child {
+.cs_course_category_wrapper_2 .cs_course_category a {
+  display: block;
+  padding: 6px 34px 9px;
+  transition: all 0.4s ease;
+}
+.cs_course_category_wrapper_2 .cs_course_category:first-child a {
   padding-left: 12px;
 }
-.cs_course_category_wrapper_2 .cs_course_category:last-child {
+.cs_course_category_wrapper_2 .cs_course_category:last-child a {
   padding-right: 12px;
 }
 .cs_course_category_wrapper_2 .cs_course_category.active, .cs_course_category_wrapper_2 .cs_course_category:hover {
   clip-path: polygon(18% 0, 100% 0, 82% 100%, 0 100%);
   background-color: var(--accent-color);
-  transition: all 0.4s ease;
+}
+.cs_course_category_wrapper_2 .cs_course_category.active a, .cs_course_category_wrapper_2 .cs_course_category:hover a {
+  color: var(--white-color);
 }
 .cs_course_category_wrapper_2 .cs_course_category.active:first-child, .cs_course_category_wrapper_2 .cs_course_category:hover:first-child {
   clip-path: polygon(0 0, 100% 0, 76% 100%, 0 100%);
@@ -4685,8 +4856,14 @@ hr {
 .cs_course_category_wrapper_2 .cs_course_category.active:last-child, .cs_course_category_wrapper_2 .cs_course_category:hover:last-child {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
 }
-.cs_course_category_wrapper_2 .cs_course_category.active a, .cs_course_category_wrapper_2 .cs_course_category:hover a {
-  color: var(--white-color);
+@media (max-width: 991px) {
+  .cs_course_category_wrapper_2 .cs_course_category a {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .cs_course_category_wrapper_2 .cs_course_category.active a, .cs_course_category_wrapper_2 .cs_course_category:hover a {
+    clip-path: none !important;
+  }
 }
 
 /*=======================================================
@@ -5093,6 +5270,17 @@ hr {
   gap: 0px 27px;
   margin-left: -20px;
 }
+@media (max-width: 1199px) {
+  .cs_about_style_1 .cs_about_image {
+    margin-left: 0;
+  }
+}
+@media (max-width: 450px) {
+  .cs_about_style_1 .cs_about_image {
+    flex-wrap: wrap;
+    gap: 24px 0;
+  }
+}
 .cs_about_style_1 .cs_about_image .cs_about_image_left {
   width: min(307px, 100%);
   height: auto;
@@ -5100,7 +5288,13 @@ hr {
      object-fit: cover;
 }
 .cs_about_style_1 .cs_about_image .cs_about_image_left img {
+  width: 100%;
   border-radius: 2px;
+}
+@media (max-width: 1199px) {
+  .cs_about_style_1 .cs_about_image .cs_about_image_left {
+    width: 100%;
+  }
 }
 .cs_about_style_1 .cs_about_image .cs_about_image_right {
   width: min(291px, 100%);
@@ -5109,12 +5303,28 @@ hr {
      object-fit: cover;
 }
 .cs_about_style_1 .cs_about_image .cs_about_image_right .cs_about_image_right_thumbnail img {
+  width: 100%;
   border-radius: 2px;
+}
+@media (max-width: 1199px) {
+  .cs_about_style_1 .cs_about_image .cs_about_image_right {
+    width: 100%;
+  }
 }
 .cs_about_style_1 .cs_about_image .cs_about_customer {
   padding: 17px 39px;
   gap: 15px;
   box-shadow: 0 0 45px 0 rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 767px) {
+  .cs_about_style_1 .cs_about_image .cs_about_customer {
+    padding: 17px 15px;
+  }
+}
+@media (max-width: 450px) {
+  .cs_about_style_1 .cs_about_image .cs_about_customer {
+    margin-bottom: 24px;
+  }
 }
 .cs_about_style_1 .cs_about_content .cs_minititle {
   text-transform: uppercase;
@@ -5127,6 +5337,12 @@ hr {
 }
 .cs_about_style_1 .cs_about_content .cs_iconbox {
   gap: 36px;
+}
+@media (max-width: 480px) {
+  .cs_about_style_1 .cs_about_content .cs_iconbox {
+    flex-direction: column;
+    gap: 24px 0;
+  }
 }
 .cs_about_style_1 .cs_about_content .cs_iconbox_1,
 .cs_about_style_1 .cs_about_content .cs_iconbox_2 {

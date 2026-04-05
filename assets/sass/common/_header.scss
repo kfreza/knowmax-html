@@ -162,14 +162,15 @@
         line-height: 1.75em;
         border: none;
         width: 100%;
-        padding: 15px 20px;
+        padding: 15px 55px 15px 20px;
         outline: none;
         transition: all 0.3s ease;
         border-bottom: 1px solid transparent;
       }
       .cs_header_submit_btn {
         position: absolute;
-        right: 12px;
+        right: 22px;
+        padding: 0;
         top: 50%;
         transform: translateY(-50%);
         display: flex;
@@ -269,23 +270,18 @@
   }
   // Homepage 2 Custom Design
   &.cs_style_2 {
-    @media (max-width: 1399px) {
-      .container {
-        // max-width: 100%;
-      }
-    }
     .cs_top_header_in,
     .cs_main_header_in {
       display: flex;
       align-items: center;
       flex-wrap: wrap;
       justify-content: space-between;
-      // position: relative;
+      position: relative;
       // transition: all 0.3s ease;
     }
     .cs_top_header_left,
     .cs_main_header_left {
-      height: 100%;
+      // height: 100%;
     }
 
     .cs_top_header_center,
@@ -306,6 +302,9 @@
       gap: 36px;
       z-index: 888;
       height: 100%;
+      @media (max-width: 767px) {
+        gap: 0;
+      }
     }
 
     /*=======================================================
@@ -379,9 +378,9 @@
       height: 107px;
     }
     .cs_main_header_left {
-      // @media (max-width: 575px) {
-      //   max-width: 150px;
-      // }
+      @media (max-width: 575px) {
+        max-width: 150px;
+      }
     }
     .cs_main_header_right {
       .cs_user_access {
@@ -393,6 +392,9 @@
       .cs_header_search_form {
         position: relative;
         width: 330px;
+        @media (max-width: 767px) {
+          display: none;
+        }
         ::placeholder {
           color: var(--heading-color);
         }
@@ -403,13 +405,14 @@
         border-radius: 3px;
         background: rgba(0, 122, 112, 0.08);
         line-height: 1.4375em;
-        padding: 12px 22px;
+        padding: 12px 55px 12px 22px;
         transition: all 0.3s ease;
         width: 100%;
       }
       .cs_header_submit_btn {
         position: absolute;
-        right: 14px;
+        right: 22px;
+        padding: 0;
         top: 50%;
         transform: translateY(-50%);
         border: none;
@@ -537,9 +540,9 @@
     &.cs_style_2 {
       .cs_top_header_left,
       .cs_main_header_left {
-        // height: 100%;
-        // max-width: 200px;
-        // margin-right: 10px;
+        height: 100%;
+        max-width: 200px;
+        margin-right: 10px;
       }
       .cs_main_header_left {
         .cs_site_branding {
@@ -637,16 +640,16 @@
       }
     }
 
-    // .cs_site_branding {
-    //   position: relative;
-    //   z-index: 101;
-    // }
-
     .cs_top_header,
     .cs_main_header {
       .container {
         max-width: 100%;
       }
+    }
+
+    .cs_site_branding {
+      position: relative;
+      z-index: 101;
     }
     // Default Homepage Custom Design
     &.cs_style_1 {
@@ -672,7 +675,7 @@
         display: none;
       }
       .cs_main_header_in {
-        // height: 69px;
+        height: 80px;
         padding-right: 60px;
       }
       .cs_nav {

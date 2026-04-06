@@ -5523,6 +5523,26 @@ hr {
   margin-left: calc(-50vw + 100%);
   margin-bottom: -216px;
 }
+@media (max-width: 1750px) {
+  .cs_registration_section_1 .cs_form_style_1 .cs_form_tagline {
+    width: calc(54vw + 39px);
+  }
+}
+@media (max-width: 1728px) {
+  .cs_registration_section_1 .cs_form_style_1 .cs_form_tagline {
+    padding: 42px 96px 41px;
+  }
+}
+@media (max-width: 1199px) {
+  .cs_registration_section_1 .cs_form_style_1 .cs_form_tagline {
+    padding: 56px 62px;
+  }
+}
+@media (max-width: 1199px) {
+  .cs_registration_section_1 .cs_form_style_1 .cs_form_tagline .cs_fs_45 {
+    font-size: 35px;
+  }
+}
 .cs_registration_section_1 .cs_form_style_1 .cs_registration_form_1 {
   background-color: var(--white-color);
   box-shadow: 0 0 45px 0 rgba(0, 0, 0, 0.1);

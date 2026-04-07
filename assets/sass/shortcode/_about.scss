@@ -1,7 +1,8 @@
 /*=======================================================
   About Style 1
 =========================================================*/
-.cs_about_style_1 {
+.cs_about_style_1,
+.cs_about_style_2 {
   .cs_about_image {
     gap: 0px 27px;
     margin-left: -20px;
@@ -83,6 +84,78 @@
   .cs_btn_style_1 {
     &:hover {
       border-color: var(--accent-color);
+    }
+  }
+}
+/*=======================================================
+  About Style 2
+=========================================================*/
+.cs_about_style_2 {
+  .cs_about_image {
+    margin-left: auto;
+    width: min(605px, 100%);
+    img {
+      width: 100%;
+    }
+  }
+  .cs_about_image_overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 41, 53, 0.2);
+  }
+  .cs_about_image_arrow_shape {
+    position: absolute;
+    right: -25%;
+    top: 3%;
+    img {
+      width: 100%;
+    }
+  }
+  .cs_team_wrapper {
+    gap: 0px 24px;
+    background-color: var(--white-color);
+    border-radius: 5px;
+    padding: 20px;
+    width: min(369px, 100%);
+    position: absolute;
+    bottom: 5%;
+    right: 6%;
+    z-index: 1;
+    // @media (max-width: 1199px) {
+    //   gap: 0 15px;
+    // }
+  }
+  .cs_team {
+  }
+  .cs_team_avatar {
+    height: 56px;
+    width: 56px;
+    border-radius: 50%;
+    background-color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: -21px;
+    &:first-child {
+      margin-left: 0;
+      background-color: transparent;
+    }
+    img {
+      height: calc(100% - 2px);
+      width: calc(100% - 2px);
+      border-radius: inherit;
+    }
+  }
+  .cs_about_content {
+    width: min(571px, 100%);
+  }
+  .cs_about_list_wrapper {
+    width: min(365px, 100%);
+    .cs_about_list:not(:last-child) {
+      margin-bottom: 15px;
+    }
+    .cs_list_title {
+      padding: 1px 0;
     }
   }
 }

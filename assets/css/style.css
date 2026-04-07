@@ -4911,7 +4911,7 @@ hr {
     padding-left: 12px;
     padding-right: 12px;
   }
-  .cs_course_category_wrapper_2 .cs_course_category.active a, .cs_course_category_wrapper_2 .cs_course_category:hover a {
+  .cs_course_category_wrapper_2 .cs_course_category.active, .cs_course_category_wrapper_2 .cs_course_category:hover {
     clip-path: none !important;
   }
 }

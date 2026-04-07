@@ -162,9 +162,7 @@
       }
       &.active,
       &:hover {
-        a {
-          clip-path: none !important;
-        }
+        clip-path: none !important;
       }
     }
   }

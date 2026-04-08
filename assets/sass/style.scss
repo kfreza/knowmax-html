@@ -36,6 +36,8 @@
 33. About
 34. Work
 35. Form
+36. Animation Keyframes
+37. Image Gallery
 --------------------------------------------------------------*/
 @import "default/fonts";
 @import "default/variable";
@@ -47,6 +49,7 @@
 @import "common/video-modal";
 @import "common/header";
 @import "common/footer";
+@import "common/isotope";
 @import "shortcode/hero";
 @import "common/sidebar";
 @import "shortcode/cta";
@@ -72,3 +75,5 @@
 @import "shortcode/about";
 @import "shortcode/work";
 @import "shortcode/form";
+@import "shortcode/keyframe";
+@import "shortcode/gallery";

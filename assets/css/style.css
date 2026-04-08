@@ -36,6 +36,8 @@
 33. About
 34. Work
 35. Form
+36. Animation Keyframes
+37. Image Gallery
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
  ** Google Fonts Integration
@@ -3352,6 +3354,158 @@ hr {
   transition: all 0.3s ease;
 }
 
+/*--------------------------------------------------------------
+  9. Isotope
+----------------------------------------------------------------*/
+.cs_isotop {
+  transition: all 0.4s ease;
+}
+
+.cs_isotop.cs_has_gutter_24 {
+  margin-left: -12px;
+  margin-right: -12px;
+  margin-bottom: -24px;
+}
+.cs_isotop.cs_has_gutter_24 .cs_isotop_item {
+  padding: 0 12px;
+  margin-bottom: 24px;
+}
+
+.cs_isotop_col_6 .cs_grid_sizer,
+.cs_isotop_col_6 .cs_isotop_item {
+  width: 16.666667%;
+}
+
+.cs_isotop_col_5 .cs_grid_sizer,
+.cs_isotop_col_5 .cs_isotop_item {
+  width: 20%;
+}
+
+.cs_isotop_col_4 .cs_grid_sizer,
+.cs_isotop_col_4 .cs_isotop_item {
+  width: 25%;
+}
+
+.cs_isotop_col_3 .cs_grid_sizer,
+.cs_isotop_col_3 .cs_isotop_item {
+  width: 33.333333%;
+}
+
+.cs_isotop_col_2 .cs_grid_sizer,
+.cs_isotop_col_2 .cs_isotop_item {
+  width: 50%;
+}
+
+.cs_isotop_col_1 .cs_grid_sizer,
+.cs_isotop_col_1 .cs_isotop_item {
+  width: 100%;
+}
+
+.cs_grid_sizer {
+  width: 33.333333%;
+}
+
+.cs_isotop_col_5 .cs_w20,
+.cs_isotop_col_4 .cs_w20,
+.cs_isotop_col_3 .cs_w20,
+.cs_isotop_col_2 .cs_w20,
+.cs_isotop_col_1 .cs_w20 {
+  width: 20%;
+}
+
+.cs_isotop_col_5 .cs_w25,
+.cs_isotop_col_4 .cs_w25,
+.cs_isotop_col_3 .cs_w25,
+.cs_isotop_col_2 .cs_w25,
+.cs_isotop_col_1 .cs_w25 {
+  width: 25%;
+}
+
+.cs_isotop_col_5 .cs_w33,
+.cs_isotop_col_4 .cs_w33,
+.cs_isotop_col_3 .cs_w33,
+.cs_isotop_col_2 .cs_w33,
+.cs_isotop_col_1 .cs_w33 {
+  width: 33.333333%;
+}
+
+.cs_isotop_col_5 .cs_w50,
+.cs_isotop_col_4 .cs_w50,
+.cs_isotop_col_3 .cs_w50,
+.cs_isotop_col_2 .cs_w50,
+.cs_isotop_col_1 .cs_w50 {
+  width: 50%;
+}
+
+.cs_isotop_col_5 .cs_w66,
+.cs_isotop_col_4 .cs_w66,
+.cs_isotop_col_3 .cs_w66,
+.cs_isotop_col_2 .cs_w66,
+.cs_isotop_col_1 .cs_w66 {
+  width: 66.666666%;
+}
+
+.cs_isotop_col_5 .cs_w100,
+.cs_isotop_col_4 .cs_w100,
+.cs_isotop_col_3 .cs_w100,
+.cs_isotop_col_2 .cs_w100,
+.cs_isotop_col_1 .cs_w100 {
+  width: 100%;
+}
+
+@media screen and (max-width: 1199px) {
+  .cs_isotop_col_4 .cs_grid_sizer,
+  .cs_isotop_col_4 .cs_isotop_item {
+    width: 33.333333%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .cs_isotop_col_4 .cs_grid_sizer,
+  .cs_isotop_col_4 .cs_isotop_item {
+    width: 50%;
+  }
+  .cs_isotop_col_4 .cs_w50 {
+    width: 100%;
+  }
+  .cs_isotop_col_3 .cs_grid_sizer,
+  .cs_isotop_col_3 .cs_isotop_item {
+    width: 50%;
+  }
+  .cs_isotop_col_2 .cs_grid_sizer,
+  .cs_isotop_col_2 .cs_isotop_item {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .cs_isotop_col_5 .cs_w50,
+  .cs_isotop_col_4 .cs_w50,
+  .cs_isotop_col_3 .cs_w50,
+  .cs_isotop_col_2 .cs_w50,
+  .cs_isotop_col_1 .cs_w50,
+  .cs_isotop_col_5 .cs_w66,
+  .cs_isotop_col_4 .cs_w66,
+  .cs_isotop_col_3 .cs_w66,
+  .cs_isotop_col_2 .cs_w66,
+  .cs_isotop_col_1 .cs_w66 {
+    width: 100%;
+  }
+  .cs_isotop_col_5 .cs_grid_sizer,
+  .cs_isotop_col_5 .cs_isotop_item {
+    width: 100%;
+  }
+  .cs_isotop_col_4 .cs_grid_sizer,
+  .cs_isotop_col_4 .cs_isotop_item {
+    width: 100%;
+  }
+  .cs_isotop_col_3 .cs_grid_sizer,
+  .cs_isotop_col_3 .cs_isotop_item {
+    width: 100%;
+  }
+  .cs_isotop_col_2 .cs_grid_sizer,
+  .cs_isotop_col_2 .cs_isotop_item {
+    width: 100%;
+  }
+}
 /*=======================================================
   Hero Homepage 1
 =========================================================*/
@@ -4287,6 +4441,63 @@ hr {
 /*=======================================================
   Feature
 =========================================================*/
+.cs_feature_section_1 .cs_feature_style_1 {
+  padding: 46px 30px;
+  background-color: var(--white-color);
+  box-shadow: 0 0 55px 0 rgba(0, 0, 0, 0.1);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.cs_feature_section_1 .cs_feature_thumbnail {
+  height: 80px;
+  width: 80px;
+}
+.cs_feature_section_1 .cs_feature_thumbnail img {
+  height: auto;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
+.cs_feature_section_1 .cs_feature_info {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.cs_feature_section_1 .cs_feature_shape {
+  display: flex;
+  gap: 0 4px;
+}
+.cs_feature_section_1 .cs_shape_primary,
+.cs_feature_section_1 .cs_shape_secondary {
+  height: 2px;
+}
+.cs_feature_section_1 .cs_shape_primary {
+  width: 38px;
+  background-color: var(--accent-color);
+}
+.cs_feature_section_1 .cs_shape_secondary {
+  width: 15px;
+  background-color: var(--heading-color);
+}
+.cs_feature_section_1 .cs_btn_style_1 {
+  color: var(--heading-color);
+  background-color: transparent;
+  border: none;
+  padding: 3px 0 2px;
+  font-weight: 400;
+  margin-top: auto;
+}
+.cs_feature_section_1 .cs_btn_style_1 .cs_btn_right_arrow {
+  margin-left: 10px;
+}
+.cs_feature_section_1 .cs_btn_style_1:hover {
+  border: none;
+  color: var(--accent-color);
+}
+
 /*===============================================
  Pricing Controller
  ================================================*/
@@ -4436,9 +4647,72 @@ hr {
   color: var(--white-color);
 }
 
-/*=======================================================
-  Video
-=========================================================*/
+/*==========================================================
+ 22. Video
+============================================================*/
+.cs_video_style_1 {
+  min-height: 500px;
+  padding: 60px;
+}
+.cs_video_style_1 .cs_video_ovrlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 41, 53, 0.55);
+}
+.cs_video_style_1 .cs_video_content {
+  width: min(100%, 600px);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.cs_video_style_1 a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  padding: 15px;
+  position: relative;
+  transition: all 0.6s cubic-bezier(0.7, -0.56, 0.27, 1.6);
+}
+.cs_video_style_1 a img {
+  position: relative;
+  z-index: 1;
+}
+.cs_video_style_1 a::before, .cs_video_style_1 a::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+.cs_video_style_1 a::before {
+  background-color: var(--accent-color);
+  z-index: 1;
+}
+.cs_video_style_1 a::after {
+  background: var(--white-color);
+  opacity: 0.2;
+  transform: translate(-50%, -50%) scale(0.7);
+  animation: border-scale 3s cubic-bezier(0.29, 0.36, 0.13, 0.44) infinite;
+}
+.cs_video_style_1 a:hover {
+  transform: scale(1.2);
+}
+.cs_video_style_1 a:hover::before, .cs_video_style_1 a:hover::after {
+  animation-play-state: paused;
+}
+.cs_video_style_1 .cs_section_title {
+  position: relative;
+  z-index: 1;
+}
+
 /*=======================================================
   Gradients
 =========================================================*/
@@ -4793,7 +5067,7 @@ hr {
 }
 
 /*=======================================================
-    Course Category Card Style 1
+    Course Category Style 1
 =========================================================*/
 .cs_course_category_style_1_wrapper {
   display: grid;
@@ -4870,7 +5144,7 @@ hr {
 }
 
 /*=======================================================
-    Course Category Card Style 2
+    Course Category Style 2
 =========================================================*/
 .cs_course_category_style_2 .cs_course_category_thumbnail {
   border-radius: 3px;
@@ -4886,9 +5160,10 @@ hr {
 }
 .cs_course_category_style_2 .cs_course_category_info {
   width: 100%;
-  bottom: 27px;
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
+  padding: 27px 12px;
 }
 .cs_course_category_style_2 .cs_course_counter {
   gap: 0px 10px;
@@ -5230,51 +5505,58 @@ hr {
 /*=======================================================
     Course Card Style 3
 =========================================================*/
-.cs_course_section_3 .col-lg-6:is(:nth-child(4n+3), :nth-child(4n+4)) .cs_course_thumbnail {
-  order: 2;
-}
-
 .cs_course_style_3 {
   box-shadow: 0 0 45px 0 rgba(0, 0, 0, 0.1);
   background-color: var(--white-color);
-  flex-direction: row;
-}
-.cs_course_style_3 .cs_course_thumbnail {
-  width: 37.58%;
-}
-.cs_course_style_3 .cs_course_thumbnail img {
-  border-radius: 3px 0 0 3px;
-}
-.cs_course_style_3 .cs_course_thumbnail .cs_thumb_dept {
-  left: 0;
-  top: 0;
-  background-color: var(--accent-color);
-  border-color: var(--accent-color);
-  color: var(--white-color);
-}
-.cs_course_style_3 .cs_course_info {
-  padding-top: 29px;
-  padding-bottom: 28px;
-  background-color: var(--white-color);
-}
-.cs_course_style_3 .cs_course_info hr {
-  margin-bottom: 20px;
-}
-.cs_course_style_3 .cs_course_info .cs_course_author {
-  margin-top: auto;
-  margin-bottom: 0;
-}
-.cs_course_style_3 .cs_course_info .cs_price_cart {
-  gap: 0px 10px;
-  padding: 0;
-  border: none;
-  outline: none;
-  background-color: transparent;
-}
-.cs_course_style_3 .cs_course_info .cs_price_cart i {
-  color: var(--accent-color);
 }
 
+@media (min-width: 575px) {
+  .cs_course_section_3 .col-lg-6:is(:nth-child(4n+3), :nth-child(4n+4)) .cs_course_thumbnail {
+    order: 2;
+  }
+  .cs_course_style_3 {
+    flex-direction: row;
+  }
+  .cs_course_style_3 .cs_course_thumbnail {
+    width: 37.58%;
+  }
+  .cs_course_style_3 .cs_course_thumbnail img {
+    border-radius: 3px 0 0 3px;
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .cs_course_style_3 .cs_course_thumbnail .cs_thumb_dept {
+    left: 0;
+    top: 0;
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    color: var(--white-color);
+  }
+  .cs_course_style_3 .cs_course_info {
+    padding-top: 29px;
+    padding-bottom: 28px;
+    background-color: var(--white-color);
+  }
+  .cs_course_style_3 .cs_course_info hr {
+    margin-bottom: 20px;
+  }
+  .cs_course_style_3 .cs_course_info .cs_course_author {
+    margin-top: auto;
+    margin-bottom: 0;
+  }
+  .cs_course_style_3 .cs_course_info .cs_price_cart {
+    gap: 0px 10px;
+    padding: 0;
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+  .cs_course_style_3 .cs_course_info .cs_price_cart i {
+    color: var(--accent-color);
+  }
+}
 /*=======================================================
   Product Style
 =========================================================*/
@@ -5865,4 +6147,75 @@ hr {
   .cs_registration_section_1 .cs_form_style_1 .cs_registration_form_1 {
     padding: 30px 25px;
   }
+}
+
+/*==========================================================
+ Animation Keyframes
+============================================================*/
+@keyframes border-scale {
+  50% {
+    transform: translate(-50%, -50%) scale(1.33);
+  }
+}
+/*=======================================================
+  Image Gallery Homepage 3
+=========================================================*/
+.cs_gallery.cs_style_1 {
+  position: relative;
+  overflow: hidden;
+  height: 322px;
+  transition: all 0.4s ease;
+}
+.cs_gallery.cs_style_1::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: var(--heading-color);
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+.cs_gallery.cs_style_1 img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 0.4s ease;
+}
+.cs_gallery.cs_style_1 .cs_gallery_info_wrap {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 28px 51px;
+}
+.cs_gallery.cs_style_1 .cs_gallery_info {
+  flex-direction: column;
+  padding: 23px 28px 39px;
+  z-index: 2;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: var(--accent-color);
+  backdrop-filter: blur(5px);
+  transition: all 0.4s ease;
+}
+.cs_gallery.cs_style_1 .cs_gallery_info_minititle {
+  text-transform: uppercase;
+  line-height: 3em;
+}
+.cs_gallery.cs_style_1:hover::before {
+  opacity: 0.5;
+  border-radius: 20px;
+}
+.cs_gallery.cs_style_1:hover img {
+  border-radius: 20px;
+}
+.cs_gallery.cs_style_1:hover .cs_gallery_info {
+  opacity: 0.8;
+  transform: scale(1);
+}
+
+.cs_isotop.cs_style_1 > *:nth-child(2) .cs_gallery.cs_style_1, .cs_isotop.cs_style_1 > *:nth-child(4) .cs_gallery.cs_style_1, .cs_isotop.cs_style_1 > *:nth-child(5) .cs_gallery.cs_style_1 {
+  height: 528px;
 }/*# sourceMappingURL=style.css.map */

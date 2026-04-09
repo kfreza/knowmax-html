@@ -1,7 +1,8 @@
 /*=======================================================
   Team
 =========================================================*/
-.cs_team_style_1 {
+.cs_team_style_1,
+.cs_team_style_3 {
   .cs_team_thumb {
     position: relative;
     border-radius: 3px;
@@ -154,5 +155,52 @@
       background-color: transparent;
       border-radius: 50%;
     }
+  }
+}
+// Team Style 3
+.cs_team_style_3 {
+  .cs_team_thumb_img {
+    img {
+      border-radius: 0;
+    }
+  }
+  .cs_social_links {
+    position: absolute;
+    bottom: 9%;
+    left: 0;
+    display: flex;
+    align-items: center;
+    padding-right: 63px;
+    border-radius: 0 50px 50px 0;
+    background-color: var(--accent-color);
+  }
+  .cs_social_btns {
+    gap: 0;
+    a {
+      background-color: var(--accent-color);
+      color: var(--white-color);
+      height: 40px;
+      width: 37px;
+    }
+  }
+
+  .cs_social_toggle {
+    height: 49px;
+    width: 49px;
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    border-radius: 50%;
+    border: 2px solid var(--white-color);
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .cs_team_info {
+    padding: 19px 30px 18px;
+    border-radius: 0 0 5px 5px;
+    background-color: var(--white-color);
+    box-shadow: 2px 3px 50px 0 rgba(188, 188, 188, 0.25);
   }
 }

@@ -159,6 +159,9 @@
 }
 // Team Style 3
 .cs_team_style_3 {
+  .cs_team_thumb {
+    overflow: hidden;
+  }
   .cs_team_thumb_img {
     img {
       border-radius: 0;
@@ -170,14 +173,26 @@
     left: 0;
     display: flex;
     align-items: center;
-    padding-right: 63px;
-    border-radius: 0 50px 50px 0;
-    background-color: var(--accent-color);
+    transform: translateX(calc(-100% + 77px));
+    transition: all 0.4s ease;
+    &.active {
+      transform: translateX(0);
+      .cs_social_btns {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
   }
   .cs_social_btns {
     gap: 0;
+    background-color: var(--accent-color);
+    padding-right: 63px;
+    border-radius: 0 50px 50px 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease;
     a {
-      background-color: var(--accent-color);
+      background-color: transparent;
       color: var(--white-color);
       height: 40px;
       width: 37px;
@@ -195,6 +210,7 @@
     right: 0;
     top: 50%;
     transform: translateY(-50%);
+    cursor: pointer;
   }
 
   .cs_team_info {

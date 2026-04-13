@@ -50,6 +50,7 @@
     languageSwitch();
     tabs();
     isotopInit();
+    socialButtonToggle();
     if ($.exists(".wow")) {
       new WOW().init();
     }
@@ -485,5 +486,75 @@
     });
 
   }
+
+  /*======================================================================
+  Social Toggle Button
+========================================================================*/
+  // function socialButtonToggle() {
+  //   $(".cs_social_toggle").each(function () {
+  //     // Set initial icon
+  //     $(this).html('<i class="fa-solid fa-plus"></i>');
+  //   });
+
+  //   $(".cs_social_toggle").on("click", function () {
+  //     const btn = $(this);
+
+  //     btn
+  //       .toggleClass("active")
+  //       .parent(".cs_social_links")
+  //       .toggleClass("active");
+
+  //     // Toggle icon
+  //     if (btn.hasClass("active")) {
+  //       btn.html('<i class="fa-solid fa-arrow-right-long"></i>');
+  //     } else {
+  //       btn.html('<i class="fa-solid fa-plus"></i>');
+  //     }
+  //   });
+  // }
+
+  function socialButtonToggle() {
+    if ($.exists(".cs_social_toggle")) {
+      const $toggleBtn = $(".cs_social_toggle");
+
+      // Icon Update Function
+      function updateIcon($btn) {
+        const $icon = $btn.find("i");
+        if ($btn.hasClass("active")) {
+          $icon.removeClass("fa-plus").addClass("fa-arrow-right-long");
+        } else {
+          $icon.removeClass("fa-arrow-right-long").addClass("fa-plus");
+        }
+      }
+
+      // Load Check
+      $toggleBtn.each(function () {
+        updateIcon($(this));
+      });
+
+      // Click Event
+      $toggleBtn.on("click", function () {
+        const $this = $(this);
+        const $parent = $this.closest(".cs_social_links");
+
+        // --- NEW LOGIC START ---
+        $toggleBtn.not($this).removeClass("active");
+        $(".cs_social_links").not($parent).removeClass("active");
+
+        $toggleBtn.not($this).each(function () {
+          updateIcon($(this));
+        });
+        // --- NEW LOGIC END ---
+
+        // Current Element Toggle
+        $this.toggleClass("active");
+        $parent.toggleClass("active");
+
+        // Current Icon Update
+        updateIcon($this);
+      });
+    }
+  }
+
 
 })(jQuery); // End of use strict

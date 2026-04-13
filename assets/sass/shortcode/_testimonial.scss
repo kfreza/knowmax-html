@@ -149,6 +149,7 @@
 .cs_testimonial_style_3 {
   padding: 44px 59px;
   box-shadow: 2px 3px 50px 0 rgba(188, 188, 188, 0.25);
+  position: relative;
   @media (max-width: 320px) {
     padding-left: 15px;
     padding-right: 15px;
@@ -158,6 +159,22 @@
   }
   .cs_testrimonial_details {
     padding: 1px 0;
+  }
+  .cs_testimonial_icon {
+    position: absolute;
+    right: 9%;
+    top: 18%;
+    width: 114px;
+    height: 106px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    // @media (max-width: 320px) {
+    //   height: 30px;
+    //   width: 30px;
+    // }
   }
   .cs_testimonial_rating {
     display: flex;

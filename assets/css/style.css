@@ -4025,6 +4025,10 @@ hr {
 /*=======================================================
   CTA Style 3
 =========================================================*/
+.cs_cta_section_3 .cs_iconbox_style_1 .cs_iconbox_info .cs_iconbox_title {
+  display: flex;
+}
+
 /*=======================================================
   Testimonial
 =========================================================*/
@@ -4178,6 +4182,7 @@ hr {
 .cs_testimonial_style_3 {
   padding: 44px 59px;
   box-shadow: 2px 3px 50px 0 rgba(188, 188, 188, 0.25);
+  position: relative;
 }
 @media (max-width: 320px) {
   .cs_testimonial_style_3 {
@@ -4190,6 +4195,19 @@ hr {
 }
 .cs_testimonial_style_3 .cs_testrimonial_details {
   padding: 1px 0;
+}
+.cs_testimonial_style_3 .cs_testimonial_icon {
+  position: absolute;
+  right: 9%;
+  top: 18%;
+  width: 114px;
+  height: 106px;
+}
+.cs_testimonial_style_3 .cs_testimonial_icon img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .cs_testimonial_style_3 .cs_testimonial_rating {
   display: flex;

@@ -34,22 +34,32 @@
   <!-- End Preloader -->
 
   <!-- Start Header Section -->
-  <header class="cs_site_header cs_style_1 cs_sticky_header">
-    <div class="cs_main_header cs_fs_16">
+  <header class="cs_site_header cs_style_3 cs_sticky_header">
+    <div class="cs_main_header cs_fs_16 cs_medium">
       <div class="container">
         <div class="cs_main_header_in">
           <div class="cs_main_header_left">
             <a class="cs_site_branding" href="index.html" aria-label="Home page link">
-              <img src="assets/img/logo.png" alt="Logo">
+              <img src="assets/img/v3_logo.png" alt="Logo">
             </a>
-            <div class="cs_header_search_form_wrap">
-              <form action="#" class="cs_header_search_form">
-                <input type="text" placeholder="Search...." class="cs_header_search_field cs_heading_color cs_fs_16">
+            <form action="#" class="cs_header_search_form">
+              <div class="cs_header_search_form_wrap">
+                <div class="cs_select_wrapper">
+                  <select id="cs_course_category" name="courses" class="cs_course_category">
+                    <option value="" class="cs_course">Courses</option>
+                    <option value="" class="cs_course">Development</option>
+                    <option value="" class="cs_course">Graphic Design</option>
+                    <option value="" class="cs_course">Mobile Application</option>
+                    <option value="" class="cs_course">Art & Humanities</option>
+                  </select>
+                  <i class="fa-solid fa-caret-down"></i>
+                </div>
+                <input type="text" placeholder="Search...." class="cs_header_search_field cs_heading_color ">
                 <button class="cs_header_submit_btn">
                   <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
-              </form>
-            </div>
+              </div>
+            </form>
           </div>
           <div class="cs_main_header_center">
             <div class="cs_nav">

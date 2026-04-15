@@ -98,8 +98,15 @@
     width: 100%;
     padding: 27px 12px;
     @media (max-width: 575px) {
-      bottom: 50%;
-      transform: translateY(50%);
+      padding: 12px;
+      align-items: flex-start;
+      text-align: left !important;
+      .cs_fs_24 {
+        font-size: 18px;
+      }
+      .cs_fs_18 {
+        font-size: 14px;
+      }
     }
   }
   .cs_course_counter {

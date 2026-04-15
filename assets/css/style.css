@@ -5790,8 +5790,15 @@ hr {
 }
 @media (max-width: 575px) {
   .cs_course_category_style_2 .cs_course_category_info {
-    bottom: 50%;
-    transform: translateY(50%);
+    padding: 12px;
+    align-items: flex-start;
+    text-align: left !important;
+  }
+  .cs_course_category_style_2 .cs_course_category_info .cs_fs_24 {
+    font-size: 18px;
+  }
+  .cs_course_category_style_2 .cs_course_category_info .cs_fs_18 {
+    font-size: 14px;
   }
 }
 .cs_course_category_style_2 .cs_course_counter {

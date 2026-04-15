@@ -6482,6 +6482,11 @@ hr {
 .cs_about_style_2 .cs_about_image img {
   width: 100%;
 }
+@media (max-width: 991px) {
+  .cs_about_style_2 .cs_about_image {
+    width: 100%;
+  }
+}
 .cs_about_style_2 .cs_about_image_overlay {
   position: absolute;
   inset: 0;
@@ -6500,11 +6505,26 @@ hr {
   background-color: var(--white-color);
   border-radius: 5px;
   padding: 20px;
-  width: min(369px, 100%);
   position: absolute;
   bottom: 5%;
   right: 6%;
   z-index: 1;
+}
+@media (max-width: 575px) {
+  .cs_about_style_2 .cs_team_wrapper {
+    gap: 0 15px;
+    padding: 15px;
+    right: 3%;
+    bottom: 3%;
+  }
+}
+@media (max-width: 575px) {
+  .cs_about_style_2 .cs_team_info .cs_fs_24 {
+    font-size: 18px;
+  }
+  .cs_about_style_2 .cs_team_info .cs_fs_18 {
+    font-size: 14px;
+  }
 }
 .cs_about_style_2 .cs_team_avatar {
   height: 56px;
@@ -6527,6 +6547,11 @@ hr {
 }
 .cs_about_style_2 .cs_about_content {
   width: min(571px, 100%);
+}
+@media (max-width: 991px) {
+  .cs_about_style_2 .cs_about_content {
+    width: 100%;
+  }
 }
 .cs_about_style_2 .cs_about_list_wrapper {
   width: min(365px, 100%);

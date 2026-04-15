@@ -94,9 +94,13 @@
   .cs_course_category_info {
     width: 100%;
     bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
+    // transform: translateX(-50%);
     padding: 27px 12px;
+    @media (max-width: 575px) {
+      bottom: 50%;
+      transform: translateY(50%);
+    }
   }
   .cs_course_counter {
     gap: 0px 10px;

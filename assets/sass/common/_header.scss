@@ -440,6 +440,11 @@
         max-width: 1724px;
       }
     }
+    @media (max-width: 1399px) {
+      .container {
+        max-width: 100%;
+      }
+    }
     .cs_main_header_in {
       display: flex;
       align-items: center;
@@ -458,12 +463,18 @@
       // @media (max-width: 575px) {
       //   max-width: 150px;
       // }
+      @media (max-width: 1399px) {
+        gap: 0 30px;
+      }
       .cs_header_search_form {
         width: 485px;
         // position: relative;
-        // @media (max-width: 1399px) {
-        //   width: 329px;
-        // }
+        @media (max-width: 1399px) {
+          width: 300px;
+        }
+        @media (max-width: 991px) {
+          display: none;
+        }
       }
 
       .cs_header_search_form_wrap {
@@ -488,6 +499,9 @@
           pointer-events: none;
           color: var(--heading-color);
           font-size: 12px;
+        }
+        @media (max-width: 1399px) {
+          display: none;
         }
       }
       .cs_course_category {
@@ -539,8 +553,14 @@
       z-index: 888;
       position: relative;
       height: 100%;
+      @media (max-width: 1399px) {
+        gap: 0 30px;
+      }
       .cs_main_header_right_shopping_cart {
         gap: 24px;
+        @media (max-width: 1399px) {
+          gap: 18px;
+        }
         .cs_cart_label {
           background-color: var(--accent-color);
           color: var(--white-color);
@@ -551,12 +571,21 @@
           line-height: 1em;
           font-size: 12px;
           border-radius: 50%;
+          @media (max-width: 1199px) {
+            top: 16px;
+          }
         }
       }
       .cs_btn_style_1 {
-        padding: 16px 29px;
+        padding: 11px 29px;
         .cs_btn_right_arrow {
           margin-left: 10px;
+        }
+        @media (max-width: 1399px) {
+          padding: 11px 20px;
+        }
+        @media (max-width: 991px) {
+          display: none;
         }
       }
     }
@@ -830,6 +859,9 @@
       .cs_main_header_in {
         height: 69px;
         padding-right: 60px;
+        @media (max-width: 991px) {
+          padding-right: 45px;
+        }
       }
       .cs_nav {
         display: flex;

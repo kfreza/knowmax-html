@@ -9,6 +9,12 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+    @media (min-width: 992px) and (max-width: 1199px) {
+      padding: 30px 20px;
+    }
+    @media (max-width: 767px) {
+      padding: 30px 20px;
+    }
   }
   .cs_feature_thumbnail {
     height: 80px;
@@ -41,6 +47,11 @@
   .cs_shape_secondary {
     width: 15px;
     background-color: var(--heading-color);
+  }
+  .cs_feature_details {
+    @media (max-width: 575px) {
+      margin-bottom: 20px;
+    }
   }
   .cs_btn_style_1 {
     color: var(--heading-color);

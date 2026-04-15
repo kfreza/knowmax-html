@@ -113,6 +113,9 @@
     img {
       width: 100%;
     }
+    @media (max-width: 575px) {
+      display: none;
+    }
   }
   .cs_team_wrapper {
     gap: 0px 24px;

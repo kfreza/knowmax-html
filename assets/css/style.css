@@ -6141,15 +6141,33 @@ hr {
 /*=======================================================
     Course Card Style 3
 =========================================================*/
+@media (min-width: 992px) {
+  .cs_course_section_3 .col-lg-6:is(:nth-child(4n+3), :nth-child(4n+4)) .cs_course_thumbnail {
+    order: 2;
+  }
+}
+@media (min-width: 576px) and (max-width: 991px) {
+  .cs_course_section_3 .col-lg-6:nth-child(even) .cs_course_thumbnail {
+    order: 2;
+  }
+}
+
 .cs_course_style_3 {
   box-shadow: 0 0 45px 0 rgba(0, 0, 0, 0.1);
   background-color: var(--white-color);
 }
+.cs_course_style_3 .cs_course_thumbnail img {
+  border-radius: 3px 0 0 3px;
+}
+.cs_course_style_3 .cs_course_thumbnail .cs_thumb_dept {
+  left: 0;
+  top: 0;
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  color: var(--white-color);
+}
 
 @media (min-width: 575px) {
-  .cs_course_section_3 .col-lg-6:is(:nth-child(4n+3), :nth-child(4n+4)) .cs_course_thumbnail {
-    order: 2;
-  }
   .cs_course_style_3 {
     flex-direction: row;
   }
@@ -6174,6 +6192,7 @@ hr {
     padding-top: 29px;
     padding-bottom: 28px;
     background-color: var(--white-color);
+    border-radius: 0 3px 3px 0;
   }
   .cs_course_style_3 .cs_course_info hr {
     margin-bottom: 20px;
@@ -6499,6 +6518,11 @@ hr {
 }
 .cs_about_style_2 .cs_about_image_arrow_shape img {
   width: 100%;
+}
+@media (max-width: 575px) {
+  .cs_about_style_2 .cs_about_image_arrow_shape {
+    display: none;
+  }
 }
 .cs_about_style_2 .cs_team_wrapper {
   gap: 0px 24px;

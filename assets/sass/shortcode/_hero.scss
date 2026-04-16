@@ -273,16 +273,21 @@
   .cs_hero_title {
     width: min(100%, 850px);
     text-align: center;
+    @media (max-width: 1199px) {
+      width: min(100%, 720px);
+    }
   }
   .cs_hero_minititle,
   .cs_hero_details {
     width: min(100%, 600px);
     text-align: center;
   }
+  @media (max-width: 991px) {
+    padding-top: 150px;
+  }
 }
 .cs_hero_section_3 {
   .cs_slider_arrows.cs_style_1 {
-    gap: 0;
     .cs_left_arrow,
     .cs_right_arrow {
       position: absolute;
@@ -316,6 +321,18 @@
       &:hover i {
         background-color: var(--white-color);
         color: var(--accent-color);
+      }
+    }
+    @media (max-width: 991px) {
+      position: absolute;
+      bottom: 80px;
+      justify-content: center;
+      width: 100%;
+      .cs_left_arrow,
+      .cs_right_arrow {
+        position: initial;
+        top: initial;
+        transform: translateY(0);
       }
     }
   }

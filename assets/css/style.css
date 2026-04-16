@@ -4324,6 +4324,47 @@ hr {
   }
 }
 
+/*=======================================================
+  Page Header Style 1
+=========================================================*/
+.cs_page_header_style_1 {
+  margin-top: 128px;
+}
+.cs_page_header_style_1 .cs_page_header_overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 41, 53, 0.65);
+}
+.cs_page_header_style_1 .cs_heading_style_3 {
+  padding: 165px 0;
+  position: relative;
+  z-index: 1;
+}
+.cs_page_header_style_1 .cs_breadcrumb_style_1 {
+  padding: 14px 31px;
+  background-color: var(--accent-color);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: min(100%, 495px);
+  z-index: 1;
+}
+
+.breadcrumb-item {
+  color: var(--white-color);
+}
+.breadcrumb-item:hover a {
+  color: var(--heading-color);
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  color: var(--white-color);
+}
+
+.breadcrumb-item.active {
+  color: var(--white-color);
+}
+
 /*--------------------------------------------------------------
   10. Sidebar
 ----------------------------------------------------------------*/
@@ -6572,37 +6613,45 @@ hr {
 /*=======================================================
   About Style 2
 =========================================================*/
-.cs_about_style_2 .cs_about_image {
+.cs_about_style_2 .cs_about_image,
+.cs_about_style_3 .cs_about_image {
   margin-left: auto;
   width: min(605px, 100%);
 }
-.cs_about_style_2 .cs_about_image img {
+.cs_about_style_2 .cs_about_image img,
+.cs_about_style_3 .cs_about_image img {
   width: 100%;
 }
 @media (max-width: 991px) {
-  .cs_about_style_2 .cs_about_image {
+  .cs_about_style_2 .cs_about_image,
+  .cs_about_style_3 .cs_about_image {
     width: 100%;
   }
 }
-.cs_about_style_2 .cs_about_image_overlay {
+.cs_about_style_2 .cs_about_image_overlay,
+.cs_about_style_3 .cs_about_image_overlay {
   position: absolute;
   inset: 0;
   background: rgba(0, 41, 53, 0.2);
 }
-.cs_about_style_2 .cs_about_image_arrow_shape {
+.cs_about_style_2 .cs_about_image_arrow_shape,
+.cs_about_style_3 .cs_about_image_arrow_shape {
   position: absolute;
   right: -25%;
   top: 3%;
 }
-.cs_about_style_2 .cs_about_image_arrow_shape img {
+.cs_about_style_2 .cs_about_image_arrow_shape img,
+.cs_about_style_3 .cs_about_image_arrow_shape img {
   width: 100%;
 }
 @media (max-width: 575px) {
-  .cs_about_style_2 .cs_about_image_arrow_shape {
+  .cs_about_style_2 .cs_about_image_arrow_shape,
+  .cs_about_style_3 .cs_about_image_arrow_shape {
     display: none;
   }
 }
-.cs_about_style_2 .cs_team_wrapper {
+.cs_about_style_2 .cs_team_wrapper,
+.cs_about_style_3 .cs_team_wrapper {
   gap: 0px 24px;
   background-color: var(--white-color);
   border-radius: 5px;
@@ -6613,7 +6662,8 @@ hr {
   z-index: 1;
 }
 @media (max-width: 575px) {
-  .cs_about_style_2 .cs_team_wrapper {
+  .cs_about_style_2 .cs_team_wrapper,
+  .cs_about_style_3 .cs_team_wrapper {
     gap: 0 15px;
     padding: 15px;
     right: 3%;
@@ -6621,14 +6671,17 @@ hr {
   }
 }
 @media (max-width: 575px) {
-  .cs_about_style_2 .cs_team_info .cs_fs_24 {
+  .cs_about_style_2 .cs_team_info .cs_fs_24,
+  .cs_about_style_3 .cs_team_info .cs_fs_24 {
     font-size: 18px;
   }
-  .cs_about_style_2 .cs_team_info .cs_fs_18 {
+  .cs_about_style_2 .cs_team_info .cs_fs_18,
+  .cs_about_style_3 .cs_team_info .cs_fs_18 {
     font-size: 14px;
   }
 }
-.cs_about_style_2 .cs_team_avatar {
+.cs_about_style_2 .cs_team_avatar,
+.cs_about_style_3 .cs_team_avatar {
   height: 56px;
   width: 56px;
   border-radius: 50%;
@@ -6638,31 +6691,71 @@ hr {
   justify-content: flex-end;
   margin-left: -21px;
 }
-.cs_about_style_2 .cs_team_avatar:first-child {
+.cs_about_style_2 .cs_team_avatar:first-child,
+.cs_about_style_3 .cs_team_avatar:first-child {
   margin-left: 0;
   background-color: transparent;
 }
-.cs_about_style_2 .cs_team_avatar img {
+.cs_about_style_2 .cs_team_avatar img,
+.cs_about_style_3 .cs_team_avatar img {
   height: calc(100% - 2px);
   width: calc(100% - 2px);
   border-radius: inherit;
 }
-.cs_about_style_2 .cs_about_content {
+.cs_about_style_2 .cs_about_content,
+.cs_about_style_3 .cs_about_content {
   width: min(571px, 100%);
 }
 @media (max-width: 991px) {
-  .cs_about_style_2 .cs_about_content {
+  .cs_about_style_2 .cs_about_content,
+  .cs_about_style_3 .cs_about_content {
     width: 100%;
   }
 }
-.cs_about_style_2 .cs_about_list_wrapper {
+.cs_about_style_2 .cs_title.cs_fs_48,
+.cs_about_style_3 .cs_title.cs_fs_48 {
+  line-height: 1.1458em;
+}
+.cs_about_style_2 .cs_about_list_wrapper,
+.cs_about_style_3 .cs_about_list_wrapper {
   width: min(365px, 100%);
 }
-.cs_about_style_2 .cs_about_list_wrapper .cs_about_list:not(:last-child) {
+.cs_about_style_2 .cs_about_list_wrapper .cs_about_list:not(:last-child),
+.cs_about_style_3 .cs_about_list_wrapper .cs_about_list:not(:last-child) {
   margin-bottom: 15px;
 }
-.cs_about_style_2 .cs_about_list_wrapper .cs_list_title {
+.cs_about_style_2 .cs_about_list_wrapper .cs_list_title,
+.cs_about_style_3 .cs_about_list_wrapper .cs_list_title {
   padding: 1px 0;
+}
+
+/*=======================================================
+  About Style 3
+=========================================================*/
+.cs_about_style_3 .cs_about_image {
+  margin-left: initial;
+  width: min(529px, 100%);
+}
+.cs_about_style_3 .cs_about_image_arrow_shape {
+  right: -30%;
+  top: 1%;
+}
+.cs_about_style_3 .cs_about_image_wave_shape {
+  position: absolute;
+  bottom: 0;
+  right: 21px;
+}
+.cs_about_style_3 .cs_about_image_wave_shape img {
+  width: 100%;
+}
+.cs_about_style_3 .cs_about_content {
+  width: 100%;
+}
+.cs_about_style_3 .cs_about_sign {
+  width: min(151px, 100%);
+}
+.cs_about_style_3 .cs_about_sign img {
+  width: 100%;
 }
 
 /*=======================================================

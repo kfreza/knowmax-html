@@ -90,7 +90,8 @@
 /*=======================================================
   About Style 2
 =========================================================*/
-.cs_about_style_2 {
+.cs_about_style_2,
+.cs_about_style_3 {
   .cs_about_image {
     margin-left: auto;
     width: min(605px, 100%);
@@ -169,6 +170,11 @@
       width: 100%;
     }
   }
+  .cs_title {
+    &.cs_fs_48 {
+      line-height: 1.1458em;
+    }
+  }
   .cs_about_list_wrapper {
     width: min(365px, 100%);
     .cs_about_list:not(:last-child) {
@@ -176,6 +182,37 @@
     }
     .cs_list_title {
       padding: 1px 0;
+    }
+  }
+}
+/*=======================================================
+  About Style 3
+=========================================================*/
+.cs_about_style_3 {
+  .cs_about_image {
+    margin-left: initial;
+    width: min(529px, 100%);
+  }
+  .cs_about_image_arrow_shape {
+    right: -30%;
+    top: 1%;
+  }
+  .cs_about_image_wave_shape {
+    position: absolute;
+    bottom: 0;
+    right: 21px;
+    img {
+      width: 100%;
+    }
+  }
+
+  .cs_about_content {
+    width: 100%;
+  }
+  .cs_about_sign {
+    width: min(151px, 100%);
+    img {
+      width: 100%;
     }
   }
 }

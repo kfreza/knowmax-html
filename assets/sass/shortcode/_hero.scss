@@ -342,6 +342,9 @@
 =========================================================*/
 .cs_page_header_style_1 {
   margin-top: 128px;
+  @media (max-width: 1199px) {
+    margin-top: 69px;
+  }
   .cs_page_header_overlay {
     position: absolute;
     inset: 0;

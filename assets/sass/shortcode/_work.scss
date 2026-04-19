@@ -11,13 +11,13 @@
   }
 }
 .cs_work_style_1 {
+  padding-top: 41px;
   .cs_work_thumbnail_wrapper {
     padding-left: 36px;
     @media (max-width: 991px) {
       padding-left: 0;
     }
   }
-  padding-top: 41px;
   .cs_work_thumbnail {
     margin-left: 41px;
     padding: 15px;
@@ -27,6 +27,9 @@
     width: 200px;
     transform: rotate(-45deg);
     overflow: hidden;
+    @media (max-width: 991px) {
+      margin-left: initial;
+    }
   }
   .cs_work_thumbnail_in {
     overflow: hidden;
@@ -64,7 +67,7 @@
       left: calc(50% + 116px);
     }
     @media (max-width: 991px) {
-      left: calc(50% + 106px);
+      left: calc(50% + 86px);
     }
   }
   .cs_work_thumb_arrow {

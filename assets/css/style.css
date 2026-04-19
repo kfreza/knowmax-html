@@ -4330,6 +4330,11 @@ hr {
 .cs_page_header_style_1 {
   margin-top: 128px;
 }
+@media (max-width: 1199px) {
+  .cs_page_header_style_1 {
+    margin-top: 69px;
+  }
+}
 .cs_page_header_style_1 .cs_page_header_overlay {
   position: absolute;
   inset: 0;
@@ -6748,6 +6753,11 @@ hr {
 .cs_about_style_3 .cs_about_image_wave_shape img {
   width: 100%;
 }
+@media (max-width: 575px) {
+  .cs_about_style_3 .cs_about_image_wave_shape {
+    display: none;
+  }
+}
 .cs_about_style_3 .cs_about_content {
   width: 100%;
 }
@@ -6759,6 +6769,131 @@ hr {
 }
 
 /*=======================================================
+  Company History
+=========================================================*/
+.cs_company_history {
+  background-color: #f8f9fa;
+}
+.cs_company_history .cs_about_content,
+.cs_company_history .cs_about_feature_list {
+  padding-left: 48px;
+}
+@media (max-width: 1399px) {
+  .cs_company_history .cs_about_content,
+  .cs_company_history .cs_about_feature_list {
+    padding-left: initial;
+  }
+}
+.cs_company_history .cs_section_details {
+  width: min(100%, 550px);
+}
+@media (max-width: 991px) {
+  .cs_company_history .cs_section_details {
+    width: 100%;
+  }
+}
+.cs_company_history .cs_about_feature_list li {
+  position: relative;
+  padding-left: 45px;
+}
+.cs_company_history .cs_about_feature_list li:not(:last-child) {
+  margin-bottom: 40px;
+}
+@media (max-width: 991px) {
+  .cs_company_history .cs_about_feature_list li:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+.cs_company_history .cs_about_feature_list .cs_feature_list_icon {
+  color: var(--accent-color);
+  position: absolute;
+  left: 0;
+  top: 2px;
+}
+.cs_company_history .cs_about_feature_list .cs_feature_list_icon i {
+  font-size: 32px;
+  line-height: 1em;
+}
+.cs_company_history .cs_timeline_wrapper {
+  padding: 42px 48px 18px 40px;
+  border-left: 2px dashed var(--accent-color);
+  margin-left: 18px;
+}
+@media (max-width: 1399px) {
+  .cs_company_history .cs_timeline_wrapper {
+    padding-right: initial;
+  }
+}
+@media (max-width: 767px) {
+  .cs_company_history .cs_timeline_wrapper {
+    padding-left: 24px;
+  }
+}
+.cs_company_history .cs_timeline_wrapper .cs_timeline {
+  padding: 22px 35px 22px 24px;
+  position: relative;
+  background-color: var(--white-color);
+  border: 1px solid rgba(28, 39, 82, 0.2);
+}
+@media (max-width: 767px) {
+  .cs_company_history .cs_timeline_wrapper .cs_timeline {
+    padding: 20px;
+  }
+}
+.cs_company_history .cs_timeline_wrapper .cs_timeline:not(:last-child) {
+  margin-bottom: 60px;
+}
+@media (max-width: 767px) {
+  .cs_company_history .cs_timeline_wrapper .cs_timeline:not(:last-child) {
+    margin-bottom: 45px;
+  }
+}
+.cs_company_history .cs_timeline_wrapper .cs_timeline .cs_year {
+  display: inline-block;
+  padding: 5px 41px;
+  background-color: #1c2752;
+  position: absolute;
+  top: -24px;
+  left: 8px;
+  z-index: 5;
+  transition: all 0.3s ease;
+}
+.cs_company_history .cs_timeline_wrapper .cs_timeline:hover .cs_year {
+  background-color: var(--accent-color);
+}
+.cs_company_history .cs_timeline_wrapper .cs_timeline::after {
+  content: "";
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  border: 1px solid rgba(28, 39, 82, 0.2);
+  left: -9px;
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  background: var(--white-color);
+  border-right: 0;
+  border-top: 0;
+}
+.cs_company_history .cs_timeline_wrapper .cs_timeline::before {
+  content: "\f192";
+  font-family: "Font Awesome 7 Free";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1em;
+  position: absolute;
+  left: -50px;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #1c2752;
+}
+@media (max-width: 767px) {
+  .cs_company_history .cs_timeline_wrapper .cs_timeline::before {
+    left: -34px;
+  }
+}
+
+/*=======================================================
   Work
 =========================================================*/
 @media (max-width: 575px) {
@@ -6767,6 +6902,9 @@ hr {
   }
 }
 
+.cs_work_style_1 {
+  padding-top: 41px;
+}
 .cs_work_style_1 .cs_work_thumbnail_wrapper {
   padding-left: 36px;
 }
@@ -6774,9 +6912,6 @@ hr {
   .cs_work_style_1 .cs_work_thumbnail_wrapper {
     padding-left: 0;
   }
-}
-.cs_work_style_1 {
-  padding-top: 41px;
 }
 .cs_work_style_1 .cs_work_thumbnail {
   margin-left: 41px;
@@ -6787,6 +6922,11 @@ hr {
   width: 200px;
   transform: rotate(-45deg);
   overflow: hidden;
+}
+@media (max-width: 991px) {
+  .cs_work_style_1 .cs_work_thumbnail {
+    margin-left: initial;
+  }
 }
 .cs_work_style_1 .cs_work_thumbnail_in {
   overflow: hidden;
@@ -6831,7 +6971,7 @@ hr {
 }
 @media (max-width: 991px) {
   .cs_work_style_1 .cs_work_thumb_number {
-    left: calc(50% + 106px);
+    left: calc(50% + 86px);
   }
 }
 .cs_work_style_1 .cs_work_thumb_arrow {

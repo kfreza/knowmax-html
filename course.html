@@ -210,7 +210,805 @@
   <!-- End of Page Header Section -->
 
   <!-- Start of Course Section -->
+  <section class="cs_course_section_4 cs_tabs">
+    <div class="cs_height_128 cs_height_lg_80"></div>
+    <div class="container">
+      <div class="cs_filter_style_1">
+        <div class="cs_heading_column_1">
+          <ul class="cs_course_category_wrapper_1 cs_mp_0 cs_fs_18 cs_medium cs_tab_links d-flex">
+            <li class="cs_course_category active">
+              <a href="#engineering" aria-label="Tab link" class=" ">Engineering</a>
+            </li>
+            <li class="cs_course_category">
+              <a href="#datascience" aria-label="Tab link" class=" ">Data Science</a>
+            </li>
+            <li class="cs_course_category">
+              <a href="#engineering1" aria-label="Tab link" class=" ">Engineering</a>
+            </li>
+            <li class="cs_course_category">
+              <a href="#architecture" aria-label="Tab link" class=" ">Architecture</a>
+            </li>
+          </ul>
+        </div>
+        <div class="cs_heading_column_2 ">
+          <div class="cs_select_wrapper">
+            <select id="cs_course_category" name="courses" class="cs_course_category">
+              <option value="" class="cs_course"><span class="cs_semibold">Short By:</span><span
+                  class="cs_body_color">Default</span></option>
+              <option value="" class="cs_course">Development</option>
+              <option value="" class="cs_course">Graphic Design</option>
+              <option value="" class="cs_course">Mobile Application</option>
+              <option value="" class="cs_course">Art &amp; Humanities</option>
+            </select>
+            <i class="fa-solid fa-angle-down"></i>
+          </div>
+        </div>
+      </div>
+      <div class="cs_height_95 cs_height_lg_60"></div>
+      <div class="row cs_gap_y_40">
+        <div class="col-lg-4">
+          <aside class="cs_sidebar cs_style_1">
+            <div class="cs_sidebar_widget">
+              <h3 class="cs_sidebar_widget_title cs_fs_18 cs_medium cs_mb_16">
+                <span>Categories</span>
+                <span class="cs_iconbox">
+                  <i class="fa-solid fa-chevron-up"></i>
+                </span>
+              </h3>
+              <hr>
+              <div class="cs_sidebar_widget_content">
+                <ul class="cs_sidebar_widget_list cs_mp_0">
+                  <li>
+                    <div class="cs_custom_checkbox">
+                      <input type="checkbox" id="development">
+                      <label for="development">Development</label>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="cs_sidebar_widget">
+              <h3 class="cs_sidebar_widget_title cs_fs_18 cs_medium cs_mb_16">
+                <span>Course Level</span>
+                <span class="cs_iconbox">
+                  <i class="fa-solid fa-chevron-up"></i>
+                </span>
+              </h3>
+              <hr>
+              <div class="cs_sidebar_widget_content">
+                <ul class="cs_sidebar_widget_list cs_mp_0">
+                  <li>
+                    <div class="cs_custom_checkbox">
+                      <input type="checkbox" id="higher">
+                      <label for="higher">Higher</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="cs_custom_checkbox">
+                      <input type="checkbox" id="medium">
+                      <label for="medium">Medium</label>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="cs_sidebar_widget">
+              <h3 class="cs_sidebar_widget_title cs_fs_18 cs_medium cs_mb_16">
+                <span>Rating</span>
+                <span class="cs_iconbox">
+                  <i class="fa-solid fa-chevron-up"></i>
+                </span>
+              </h3>
+              <hr>
+              <div class="cs_sidebar_widget_content">
+                <ul class="cs_sidebar_widget_list cs_mp_0">
+                  <li>
+                    <div class="cs_custom_checkbox">
+                      <input type="checkbox" id="5star">
+                      <label for="5star">
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span>5 Star</span>
+                      </label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="cs_custom_checkbox">
+                      <input type="checkbox" id="4star">
+                      <label for="4star">
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span>4 Star or Above</span>
+                      </label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="cs_custom_checkbox">
+                      <input type="checkbox" id="3star">
+                      <label for="3star">
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span>3 Star or Above</span>
+                      </label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="cs_custom_checkbox">
+                      <input type="checkbox" id="2star">
+                      <label for="2star">
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span>2 Star or Above</span>
+                      </label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="cs_custom_checkbox">
+                      <input type="checkbox" id="1star">
+                      <label for="1star">
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span>1 Star or Above</span>
+                      </label>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="cs_sidebar_widget">
+              <h3 class="cs_sidebar_widget_title cs_fs_18 cs_medium cs_mb_16">
+                <span>Price</span>
+                <span class="cs_iconbox">
+                  <i class="fa-solid fa-chevron-up"></i>
+                </span>
+              </h3>
+              <hr>
+              <div class="cs_sidebar_widget_content">
+                <ul class="cs_sidebar_widget_list cs_mp_0">
+                  <li>
+                    <div class="cs_custom_checkbox">
+                      <input type="checkbox" id="free">
+                      <label for="free">Free</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="cs_custom_checkbox">
+                      <input type="checkbox" id="paid">
+                      <label for="paid">Paid</label>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="cs_sidebar_widget">
+              <h3 class="cs_sidebar_widget_title cs_fs_18 cs_medium cs_mb_16">
+                <span>Duration</span>
+                <span class="cs_iconbox">
+                  <i class="fa-solid fa-chevron-up"></i>
+                </span>
+              </h3>
+              <hr>
+              <div class="cs_sidebar_widget_content">
+                <ul class="cs_sidebar_widget_list cs_mp_0">
+                  <li>
+                    <div class="cs_custom_checkbox">
+                      <input type="checkbox" id="24hours">
+                      <label for="24hours">Less Than 24 Hours</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="cs_custom_checkbox">
+                      <input type="checkbox" id="36hours">
+                      <label for="36hours">24 to 36 Hours</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="cs_custom_checkbox">
+                      <input type="checkbox" id="72hours">
+                      <label for="72hours">36 to 72 Hours</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="cs_custom_checkbox">
+                      <input type="checkbox" id="72hoursplus">
+                      <label for="72hoursplus">Above 72 Hours</label>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </aside>
+        </div>
+        <div class="col-lg-8">
+          <div class="cs_tab_body">
+            <div class="cs_tab active" id="engineering">
+              <div class="row cs_gap_y_30">
+                <div class="col-lg-6 col-md-12">
+                  <div class="cs_course_style_1">
+                    <div class="cs_course_thumbnail position-relative">
+                      <div class="cs_thumb_overlay position-absolute"></div>
+                      <img src="assets/img/course_thumb_5.jpg" alt="Card image">
+                      <div class="cs_thumb_meta cs_center justify-content-between position-absolute w-100">
+                        <div class="cs_thumb_dept cs_btn_style_1 cs_radius_3"><a href="#">Data & Tech</a></div>
+                        <div class="cs_thumb_shopping d-flex">
+                          <button class="cs_thumb_wishlist"><i class="fa-regular fa-heart"></i></button>
+                          <button class="cs_thumb_cart"><i class="fa-solid fa-bag-shopping"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cs_course_info ">
+                      <div class="cs_course_meta cs_mb_20 d-flex justify-content-between">
+                        <div class="cs_meta_lesson cs_center">
+                          <span><i class="fa-solid fa-swatchbook"></i></span>
+                          <span>23 Lesson</span>
+                        </div>
+                        <div class="cs_meta_time cs_center">
+                          <span><i class="fa-regular fa-clock"></i></span>
+                          <span class="cs_meta_time_hour">1 hr</span>
+                          <span class="cs_meta_time_minutes">30 min</span>
+                        </div>
+                      </div>
+                      <div class="cs_course_title cs_heading_color cs_fs_22 cs_medium cs_mb_20">
+                        <a href="#">Foundation Course to Under Stand About Softwere</a>
+                      </div>
+                      <div class="cs_cource_price cs_mb_25">
+                        <p class="cs_price cs_medium mb-0">
+                          <span class="cs_price_option">
+                            <span class="cs_regular_price cs_fs_20 cs_heading_color">$32.00</span>
+                            <span class="cs_price_devider cs_fs_20 cs_heading_color">/</span>
+                            <s class="cs_discounted_price cs_fs_18">$67.00</s>
+                          </span>
+                        </p>
+                      </div>
+                      <hr class="cs_body_color_op15">
+                      <div class="cs_course_author d-flex justify-content-between">
+                        <div class="cs_author_info cs_center">
+                          <div class="cs_author_avatar">
+                            <img src="assets/img/course_avatar_2.jpg" alt="">
+                          </div>
+                          <h3 class="cs_author_title cs_fs_16 cs_medium cs_body_color mb-0">Lora Smith</h3>
+                        </div>
+                        <div class="cs_author_rating cs_center">
+                          <div class="cs_rating_wrapper">
+                            <div class="cs_rating z-1" data-rating="5">
+                              <div class="cs_rating_percentage"></div>
+                            </div>
+                          </div>
+                          <div class="cs_rated_number cs_fs_14 cs_medium cs_center">(29)</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                  <div class="cs_course_style_1">
+                    <div class="cs_course_thumbnail position-relative">
+                      <div class="cs_thumb_overlay position-absolute"></div>
+                      <img src="assets/img/course_thumb_6.jpg" alt="Card image">
+                      <div class="cs_thumb_meta cs_center justify-content-between position-absolute w-100">
+                        <div class="cs_thumb_dept cs_btn_style_1 cs_radius_3"><a href="#">Web Design</a></div>
+                        <div class="cs_thumb_shopping d-flex">
+                          <button class="cs_thumb_wishlist"><i class="fa-regular fa-heart"></i></button>
+                          <button class="cs_thumb_cart"><i class="fa-solid fa-bag-shopping"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cs_course_info ">
+                      <div class="cs_course_meta cs_mb_20 d-flex justify-content-between">
+                        <div class="cs_meta_lesson cs_center">
+                          <span><i class="fa-solid fa-swatchbook"></i></span>
+                          <span>23 Lesson</span>
+                        </div>
+                        <div class="cs_meta_time cs_center">
+                          <span><i class="fa-regular fa-clock"></i></span>
+                          <span class="cs_meta_time_hour">1 hr</span>
+                          <span class="cs_meta_time_minutes">30 min</span>
+                        </div>
+                      </div>
+                      <div class="cs_course_title cs_heading_color cs_fs_22 cs_medium cs_mb_20">
+                        <a href="#">Theory Learn New Student And Fundamentals</a>
+                      </div>
+                      <div class="cs_cource_price cs_mb_25">
+                        <p class="cs_price cs_medium mb-0">
+                          <span class="cs_price_option">
+                            <span class="cs_regular_price cs_fs_20 cs_heading_color">$32.00</span>
+                            <span class="cs_price_devider cs_fs_20 cs_heading_color">/</span>
+                            <s class="cs_discounted_price cs_fs_18">$67.00</s>
+                          </span>
+                        </p>
+                      </div>
+                      <hr class="cs_body_color_op15">
+                      <div class="cs_course_author d-flex justify-content-between">
+                        <div class="cs_author_info cs_center">
+                          <div class="cs_author_avatar">
+                            <img src="assets/img/course_avatar_3.jpg" alt="">
+                          </div>
+                          <h3 class="cs_author_title cs_fs_16 cs_medium cs_body_color mb-0">Robot Smith</h3>
+                        </div>
+                        <div class="cs_author_rating cs_center">
+                          <div class="cs_rating_wrapper">
+                            <div class="cs_rating z-1" data-rating="5">
+                              <div class="cs_rating_percentage"></div>
+                            </div>
+                          </div>
+                          <div class="cs_rated_number cs_fs_14 cs_medium cs_center">(29)</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                  <div class="cs_course_style_1">
+                    <div class="cs_course_thumbnail position-relative">
+                      <div class="cs_thumb_overlay position-absolute"></div>
+                      <img src="assets/img/course_thumb_8.jpg" alt="Card image">
+                      <div class="cs_thumb_meta cs_center justify-content-between position-absolute w-100">
+                        <div class="cs_thumb_dept cs_btn_style_1 cs_radius_3"><a href="#">Graphic</a></div>
+                        <div class="cs_thumb_shopping d-flex">
+                          <button class="cs_thumb_wishlist"><i class="fa-regular fa-heart"></i></button>
+                          <button class="cs_thumb_cart"><i class="fa-solid fa-bag-shopping"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cs_course_info ">
+                      <div class="cs_course_meta cs_mb_20 d-flex justify-content-between">
+                        <div class="cs_meta_lesson cs_center">
+                          <span><i class="fa-solid fa-swatchbook"></i></span>
+                          <span>23 Lesson</span>
+                        </div>
+                        <div class="cs_meta_time cs_center">
+                          <span><i class="fa-regular fa-clock"></i></span>
+                          <span class="cs_meta_time_hour">1 hr</span>
+                          <span class="cs_meta_time_minutes">30 min</span>
+                        </div>
+                      </div>
+                      <div class="cs_course_title cs_heading_color cs_fs_22 cs_medium cs_mb_20">
+                        <a href="#">Microservices with Node JS and React</a>
+                      </div>
+                      <div class="cs_cource_price cs_mb_25">
+                        <p class="cs_price cs_medium mb-0">
+                          <span class="cs_price_option">
+                            <span class="cs_regular_price cs_fs_20 cs_heading_color">$32.00</span>
+                            <span class="cs_price_devider cs_fs_20 cs_heading_color">/</span>
+                            <s class="cs_discounted_price cs_fs_18">$67.00</s>
+                          </span>
+                        </p>
+                      </div>
+                      <hr class="cs_body_color_op15">
+                      <div class="cs_course_author d-flex justify-content-between">
+                        <div class="cs_author_info cs_center">
+                          <div class="cs_author_avatar">
+                            <img src="assets/img/course_avatar_5.jpg" alt="">
+                          </div>
+                          <h3 class="cs_author_title cs_fs_16 cs_medium cs_body_color mb-0">Angel Mili</h3>
+                        </div>
+                        <div class="cs_author_rating cs_center">
+                          <div class="cs_rating_wrapper">
+                            <div class="cs_rating z-1" data-rating="5">
+                              <div class="cs_rating_percentage"></div>
+                            </div>
+                          </div>
+                          <div class="cs_rated_number cs_fs_14 cs_medium cs_center">(29)</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                  <div class="cs_course_style_1">
+                    <div class="cs_course_thumbnail position-relative">
+                      <div class="cs_thumb_overlay position-absolute"></div>
+                      <img src="assets/img/course_thumb_1.jpg" alt="Card image">
+                      <div class="cs_thumb_meta cs_center justify-content-between position-absolute w-100">
+                        <div class="cs_thumb_dept cs_btn_style_1 cs_radius_3"><a href="#">Data & Tech</a></div>
+                        <div class="cs_thumb_shopping d-flex">
+                          <button class="cs_thumb_wishlist"><i class="fa-regular fa-heart"></i></button>
+                          <button class="cs_thumb_cart"><i class="fa-solid fa-bag-shopping"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cs_course_info ">
+                      <div class="cs_course_meta cs_mb_20 d-flex justify-content-between">
+                        <div class="cs_meta_lesson cs_center">
+                          <span><i class="fa-solid fa-swatchbook"></i></span>
+                          <span>23 Lesson</span>
+                        </div>
+                        <div class="cs_meta_time cs_center">
+                          <span><i class="fa-regular fa-clock"></i></span>
+                          <span class="cs_meta_time_hour">1 hr</span>
+                          <span class="cs_meta_time_minutes">30 min</span>
+                        </div>
+                      </div>
+                      <div class="cs_course_title cs_heading_color cs_fs_22 cs_medium cs_mb_20">
+                        <a href="#">Python for Beginers - Learn Programming</a>
+                      </div>
+                      <div class="cs_cource_price cs_mb_25">
+                        <p class="cs_price cs_medium mb-0">
+                          <span class="cs_price_option">
+                            <span class="cs_regular_price cs_fs_20 cs_heading_color">$32.00</span>
+                            <span class="cs_price_devider cs_fs_20 cs_heading_color">/</span>
+                            <s class="cs_discounted_price cs_fs_18">$67.00</s>
+                          </span>
+                        </p>
+                      </div>
+                      <hr class="cs_body_color_op15">
+                      <div class="cs_course_author d-flex justify-content-between">
+                        <div class="cs_author_info cs_center">
+                          <div class="cs_author_avatar">
+                            <img src="assets/img/course_avatar_6.jpg" alt="">
+                          </div>
+                          <h3 class="cs_author_title cs_fs_16 cs_medium cs_body_color mb-0">Wade Warren</h3>
+                        </div>
+                        <div class="cs_author_rating cs_center">
+                          <div class="cs_rating_wrapper">
+                            <div class="cs_rating z-1" data-rating="5">
+                              <div class="cs_rating_percentage"></div>
+                            </div>
+                          </div>
+                          <div class="cs_rated_number cs_fs_14 cs_medium cs_center">(29)</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cs_tab" id="datascience">
+              <div class="row cs_gap_y_30">
+                <div class="col-lg-6 col-md-12">
+                  <div class="cs_course_style_1">
+                    <div class="cs_course_thumbnail position-relative">
+                      <div class="cs_thumb_overlay position-absolute"></div>
+                      <img src="assets/img/course_thumb_4.jpg" alt="Card image">
+                      <div class="cs_thumb_meta cs_center justify-content-between position-absolute w-100">
+                        <div class="cs_thumb_dept cs_btn_style_1 cs_radius_3"><a href="#">Engineering</a></div>
+                        <div class="cs_thumb_shopping d-flex">
+                          <button class="cs_thumb_wishlist"><i class="fa-regular fa-heart"></i></button>
+                          <button class="cs_thumb_cart"><i class="fa-solid fa-bag-shopping"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cs_course_info ">
+                      <div class="cs_course_meta cs_mb_20 d-flex justify-content-between">
+                        <div class="cs_meta_lesson cs_center">
+                          <span><i class="fa-solid fa-swatchbook"></i></span>
+                          <span>23 Lesson</span>
+                        </div>
+                        <div class="cs_meta_time cs_center">
+                          <span><i class="fa-regular fa-clock"></i></span>
+                          <span class="cs_meta_time_hour">1 hr</span>
+                          <span class="cs_meta_time_minutes">30 min</span>
+                        </div>
+                      </div>
+                      <div class="cs_course_title cs_heading_color cs_fs_22 cs_medium cs_mb_20">
+                        <a href="#">Certified Graphic Design with Free Project Course</a>
+                      </div>
+                      <div class="cs_cource_price cs_mb_25">
+                        <p class="cs_price cs_medium mb-0">
+                          <span class="cs_price_option">
+                            <span class="cs_regular_price cs_fs_20 cs_heading_color">$32.00</span>
+                            <span class="cs_price_devider cs_fs_20 cs_heading_color">/</span>
+                            <s class="cs_discounted_price cs_fs_18">$67.00</s>
+                          </span>
+                        </p>
+                      </div>
+                      <hr class="cs_body_color_op15">
+                      <div class="cs_course_author d-flex justify-content-between">
+                        <div class="cs_author_info cs_center">
+                          <div class="cs_author_avatar">
+                            <img src="assets/img/course_avatar_1.jpg" alt="">
+                          </div>
+                          <h3 class="cs_author_title cs_fs_16 cs_medium cs_body_color mb-0">William Smith</h3>
+                        </div>
+                        <div class="cs_author_rating cs_center">
+                          <div class="cs_rating_wrapper">
+                            <div class="cs_rating z-1" data-rating="5">
+                              <div class="cs_rating_percentage"></div>
+                            </div>
+                          </div>
+                          <div class="cs_rated_number cs_fs_14 cs_medium cs_center">(29)</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                  <div class="cs_course_style_1">
+                    <div class="cs_course_thumbnail position-relative">
+                      <div class="cs_thumb_overlay position-absolute"></div>
+                      <img src="assets/img/course_thumb_6.jpg" alt="Card image">
+                      <div class="cs_thumb_meta cs_center justify-content-between position-absolute w-100">
+                        <div class="cs_thumb_dept cs_btn_style_1 cs_radius_3"><a href="#">Web Design</a></div>
+                        <div class="cs_thumb_shopping d-flex">
+                          <button class="cs_thumb_wishlist"><i class="fa-regular fa-heart"></i></button>
+                          <button class="cs_thumb_cart"><i class="fa-solid fa-bag-shopping"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cs_course_info ">
+                      <div class="cs_course_meta cs_mb_20 d-flex justify-content-between">
+                        <div class="cs_meta_lesson cs_center">
+                          <span><i class="fa-solid fa-swatchbook"></i></span>
+                          <span>23 Lesson</span>
+                        </div>
+                        <div class="cs_meta_time cs_center">
+                          <span><i class="fa-regular fa-clock"></i></span>
+                          <span class="cs_meta_time_hour">1 hr</span>
+                          <span class="cs_meta_time_minutes">30 min</span>
+                        </div>
+                      </div>
+                      <div class="cs_course_title cs_heading_color cs_fs_22 cs_medium cs_mb_20">
+                        <a href="#">Theory Learn New Student And Fundamentals</a>
+                      </div>
+                      <div class="cs_cource_price cs_mb_25">
+                        <p class="cs_price cs_medium mb-0">
+                          <span class="cs_price_option">
+                            <span class="cs_regular_price cs_fs_20 cs_heading_color">$32.00</span>
+                            <span class="cs_price_devider cs_fs_20 cs_heading_color">/</span>
+                            <s class="cs_discounted_price cs_fs_18">$67.00</s>
+                          </span>
+                        </p>
+                      </div>
+                      <hr class="cs_body_color_op15">
+                      <div class="cs_course_author d-flex justify-content-between">
+                        <div class="cs_author_info cs_center">
+                          <div class="cs_author_avatar">
+                            <img src="assets/img/course_avatar_3.jpg" alt="">
+                          </div>
+                          <h3 class="cs_author_title cs_fs_16 cs_medium cs_body_color mb-0">Robot Smith</h3>
+                        </div>
+                        <div class="cs_author_rating cs_center">
+                          <div class="cs_rating_wrapper">
+                            <div class="cs_rating z-1" data-rating="5">
+                              <div class="cs_rating_percentage"></div>
+                            </div>
+                          </div>
+                          <div class="cs_rated_number cs_fs_14 cs_medium cs_center">(29)</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cs_tab" id="engineering1">
+              <div class="row cs_gap_y_30">
+                <div class="col-lg-6 col-md-12">
+                  <div class="cs_course_style_1">
+                    <div class="cs_course_thumbnail position-relative">
+                      <div class="cs_thumb_overlay position-absolute"></div>
+                      <img src="assets/img/course_thumb_5.jpg" alt="Card image">
+                      <div class="cs_thumb_meta cs_center justify-content-between position-absolute w-100">
+                        <div class="cs_thumb_dept cs_btn_style_1 cs_radius_3"><a href="#">Data & Tech</a></div>
+                        <div class="cs_thumb_shopping d-flex">
+                          <button class="cs_thumb_wishlist"><i class="fa-regular fa-heart"></i></button>
+                          <button class="cs_thumb_cart"><i class="fa-solid fa-bag-shopping"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cs_course_info ">
+                      <div class="cs_course_meta cs_mb_20 d-flex justify-content-between">
+                        <div class="cs_meta_lesson cs_center">
+                          <span><i class="fa-solid fa-swatchbook"></i></span>
+                          <span>23 Lesson</span>
+                        </div>
+                        <div class="cs_meta_time cs_center">
+                          <span><i class="fa-regular fa-clock"></i></span>
+                          <span class="cs_meta_time_hour">1 hr</span>
+                          <span class="cs_meta_time_minutes">30 min</span>
+                        </div>
+                      </div>
+                      <div class="cs_course_title cs_heading_color cs_fs_22 cs_medium cs_mb_20">
+                        <a href="#">Foundation Course to Under Stand About Softwere</a>
+                      </div>
+                      <div class="cs_cource_price cs_mb_25">
+                        <p class="cs_price cs_medium mb-0">
+                          <span class="cs_price_option">
+                            <span class="cs_regular_price cs_fs_20 cs_heading_color">$32.00</span>
+                            <span class="cs_price_devider cs_fs_20 cs_heading_color">/</span>
+                            <s class="cs_discounted_price cs_fs_18">$67.00</s>
+                          </span>
+                        </p>
+                      </div>
+                      <hr class="cs_body_color_op15">
+                      <div class="cs_course_author d-flex justify-content-between">
+                        <div class="cs_author_info cs_center">
+                          <div class="cs_author_avatar">
+                            <img src="assets/img/course_avatar_2.jpg" alt="">
+                          </div>
+                          <h3 class="cs_author_title cs_fs_16 cs_medium cs_body_color mb-0">Lora Smith</h3>
+                        </div>
+                        <div class="cs_author_rating cs_center">
+                          <div class="cs_rating_wrapper">
+                            <div class="cs_rating z-1" data-rating="5">
+                              <div class="cs_rating_percentage"></div>
+                            </div>
+                          </div>
+                          <div class="cs_rated_number cs_fs_14 cs_medium cs_center">(29)</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                  <div class="cs_course_style_1">
+                    <div class="cs_course_thumbnail position-relative">
+                      <div class="cs_thumb_overlay position-absolute"></div>
+                      <img src="assets/img/course_thumb_7.jpg" alt="Card image">
+                      <div class="cs_thumb_meta cs_center justify-content-between position-absolute w-100">
+                        <div class="cs_thumb_dept cs_btn_style_1 cs_radius_3"><a href="#">Data & Tech</a></div>
+                        <div class="cs_thumb_shopping d-flex">
+                          <button class="cs_thumb_wishlist"><i class="fa-regular fa-heart"></i></button>
+                          <button class="cs_thumb_cart"><i class="fa-solid fa-bag-shopping"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cs_course_info ">
+                      <div class="cs_course_meta cs_mb_20 d-flex justify-content-between">
+                        <div class="cs_meta_lesson cs_center">
+                          <span><i class="fa-solid fa-swatchbook"></i></span>
+                          <span>23 Lesson</span>
+                        </div>
+                        <div class="cs_meta_time cs_center">
+                          <span><i class="fa-regular fa-clock"></i></span>
+                          <span class="cs_meta_time_hour">1 hr</span>
+                          <span class="cs_meta_time_minutes">30 min</span>
+                        </div>
+                      </div>
+                      <div class="cs_course_title cs_heading_color cs_fs_22 cs_medium cs_mb_20">
+                        <a href="#">WordPress & Elementor for Beginers</a>
+                      </div>
+                      <div class="cs_cource_price cs_mb_25">
+                        <p class="cs_price cs_medium mb-0">
+                          <span class="cs_price_option">
+                            <span class="cs_regular_price cs_fs_20 cs_heading_color">$32.00</span>
+                            <span class="cs_price_devider cs_fs_20 cs_heading_color">/</span>
+                            <s class="cs_discounted_price cs_fs_18">$67.00</s>
+                          </span>
+                        </p>
+                      </div>
+                      <hr class="cs_body_color_op15">
+                      <div class="cs_course_author d-flex justify-content-between">
+                        <div class="cs_author_info cs_center">
+                          <div class="cs_author_avatar">
+                            <img src="assets/img/course_avatar_4.jpg" alt="">
+                          </div>
+                          <h3 class="cs_author_title cs_fs_16 cs_medium cs_body_color mb-0">Zinnat Zaara</h3>
+                        </div>
+                        <div class="cs_author_rating cs_center">
+                          <div class="cs_rating_wrapper">
+                            <div class="cs_rating z-1" data-rating="5">
+                              <div class="cs_rating_percentage"></div>
+                            </div>
+                          </div>
+                          <div class="cs_rated_number cs_fs_14 cs_medium cs_center">(29)</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cs_tab" id="architecture">
+              <div class="row cs_gap_y_30">
+                <div class="col-lg-6 col-md-12">
+                  <div class="cs_course_style_1">
+                    <div class="cs_course_thumbnail position-relative">
+                      <div class="cs_thumb_overlay position-absolute"></div>
+                      <img src="assets/img/course_thumb_4.jpg" alt="Card image">
+                      <div class="cs_thumb_meta cs_center justify-content-between position-absolute w-100">
+                        <div class="cs_thumb_dept cs_btn_style_1 cs_radius_3"><a href="#">Engineering</a></div>
+                        <div class="cs_thumb_shopping d-flex">
+                          <button class="cs_thumb_wishlist"><i class="fa-regular fa-heart"></i></button>
+                          <button class="cs_thumb_cart"><i class="fa-solid fa-bag-shopping"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cs_course_info ">
+                      <div class="cs_course_meta cs_mb_20 d-flex justify-content-between">
+                        <div class="cs_meta_lesson cs_center">
+                          <span><i class="fa-solid fa-swatchbook"></i></span>
+                          <span>23 Lesson</span>
+                        </div>
+                        <div class="cs_meta_time cs_center">
+                          <span><i class="fa-regular fa-clock"></i></span>
+                          <span class="cs_meta_time_hour">1 hr</span>
+                          <span class="cs_meta_time_minutes">30 min</span>
+                        </div>
+                      </div>
+                      <div class="cs_course_title cs_heading_color cs_fs_22 cs_medium cs_mb_20">
+                        <a href="#">Certified Graphic Design with Free Project Course</a>
+                      </div>
+                      <div class="cs_cource_price cs_mb_25">
+                        <p class="cs_price cs_medium mb-0">
+                          <span class="cs_price_option">
+                            <span class="cs_regular_price cs_fs_20 cs_heading_color">$32.00</span>
+                            <span class="cs_price_devider cs_fs_20 cs_heading_color">/</span>
+                            <s class="cs_discounted_price cs_fs_18">$67.00</s>
+                          </span>
+                        </p>
+                      </div>
+                      <hr class="cs_body_color_op15">
+                      <div class="cs_course_author d-flex justify-content-between">
+                        <div class="cs_author_info cs_center">
+                          <div class="cs_author_avatar">
+                            <img src="assets/img/course_avatar_1.jpg" alt="">
+                          </div>
+                          <h3 class="cs_author_title cs_fs_16 cs_medium cs_body_color mb-0">William Smith</h3>
+                        </div>
+                        <div class="cs_author_rating cs_center">
+                          <div class="cs_rating_wrapper">
+                            <div class="cs_rating z-1" data-rating="5">
+                              <div class="cs_rating_percentage"></div>
+                            </div>
+                          </div>
+                          <div class="cs_rated_number cs_fs_14 cs_medium cs_center">(29)</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                  <div class="cs_course_style_1">
+                    <div class="cs_course_thumbnail position-relative">
+                      <div class="cs_thumb_overlay position-absolute"></div>
+                      <img src="assets/img/course_thumb_8.jpg" alt="Card image">
+                      <div class="cs_thumb_meta cs_center justify-content-between position-absolute w-100">
+                        <div class="cs_thumb_dept cs_btn_style_1 cs_radius_3"><a href="#">Graphic</a></div>
+                        <div class="cs_thumb_shopping d-flex">
+                          <button class="cs_thumb_wishlist"><i class="fa-regular fa-heart"></i></button>
+                          <button class="cs_thumb_cart"><i class="fa-solid fa-bag-shopping"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cs_course_info ">
+                      <div class="cs_course_meta cs_mb_20 d-flex justify-content-between">
+                        <div class="cs_meta_lesson cs_center">
+                          <span><i class="fa-solid fa-swatchbook"></i></span>
+                          <span>23 Lesson</span>
+                        </div>
+                        <div class="cs_meta_time cs_center">
+                          <span><i class="fa-regular fa-clock"></i></span>
+                          <span class="cs_meta_time_hour">1 hr</span>
+                          <span class="cs_meta_time_minutes">30 min</span>
+                        </div>
+                      </div>
+                      <div class="cs_course_title cs_heading_color cs_fs_22 cs_medium cs_mb_20">
+                        <a href="#">Microservices with Node JS and React</a>
+                      </div>
+                      <div class="cs_cource_price cs_mb_25">
+                        <p class="cs_price cs_medium mb-0">
+                          <span class="cs_price_option">
+                            <span class="cs_regular_price cs_fs_20 cs_heading_color">$32.00</span>
+                            <span class="cs_price_devider cs_fs_20 cs_heading_color">/</span>
+                            <s class="cs_discounted_price cs_fs_18">$67.00</s>
+                          </span>
+                        </p>
+                      </div>
+                      <hr class="cs_body_color_op15">
+                      <div class="cs_course_author d-flex justify-content-between">
+                        <div class="cs_author_info cs_center">
+                          <div class="cs_author_avatar">
+                            <img src="assets/img/course_avatar_5.jpg" alt="">
+                          </div>
+                          <h3 class="cs_author_title cs_fs_16 cs_medium cs_body_color mb-0">Angel Mili</h3>
+                        </div>
+                        <div class="cs_author_rating cs_center">
+                          <div class="cs_rating_wrapper">
+                            <div class="cs_rating z-1" data-rating="5">
+                              <div class="cs_rating_percentage"></div>
+                            </div>
+                          </div>
+                          <div class="cs_rated_number cs_fs_14 cs_medium cs_center">(29)</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
+    </div>
+    <div class="cs_height_120 cs_height_lg_80"></div>
+  </section>
   <!-- End of Course Section -->
 
   <!-- Starts of Client/Brand Section -->

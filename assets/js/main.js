@@ -51,6 +51,7 @@
     tabs();
     isotopInit();
     socialButtonToggle();
+    elementToggle();
     if ($.exists(".wow")) {
       new WOW().init();
     }
@@ -554,6 +555,27 @@
         updateIcon($this);
       });
     }
+  }
+
+  /*=====================================================================
+      14. heart toggle
+    =======================================================================*/
+  function elementToggle() {
+    $(".cs_heart_toggler i").on("click", function () {
+      $(this).toggleClass("fa-solid");
+    });
+    // Category Widget Toggle
+    $(".cs_sidebar_widget_title").on("click", function () {
+      $(this)
+        .toggleClass("active")
+        .siblings(".cs_sidebar_widget_content")
+        .slideToggle()
+        .parent(".cs_sidebar_widget")
+        .toggleClass("active");
+    });
+    $(".cs_dashboard_nav li").on("click", function () {
+      $(this).addClass("active").siblings().slideToggle().removeClass("active");
+    });
   }
 
 

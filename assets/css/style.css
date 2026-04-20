@@ -6337,6 +6337,153 @@ hr {
   }
 }
 /*=======================================================
+    Course Card Style 3
+=========================================================*/
+.cs_course_section_4 .cs_filter_style_1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+.cs_course_section_4 .cs_heading_column_1 .cs_course_category_wrapper_1 {
+  gap: 20px 45px;
+}
+.cs_course_section_4 .cs_heading_column_1 .cs_course_category {
+  padding: 10px 0px 9px 0px;
+}
+.cs_course_section_4 .cs_heading_column_1 .cs_course_category.active {
+  color: var(--accent-color);
+}
+.cs_course_section_4 .cs_select_wrapper {
+  position: relative;
+  border: 1px solid #f0f0f0;
+  border-radius: 2px;
+}
+.cs_course_section_4 .cs_select_wrapper i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 17px;
+  pointer-events: none;
+  color: var(--accent-color);
+  font-size: 12px;
+}
+@media (max-width: 1399px) {
+  .cs_course_section_4 .cs_select_wrapper {
+    display: none;
+  }
+}
+.cs_course_section_4 .cs_course_category {
+  border: none;
+  outline: none;
+  padding: 11px 45px 10px 17px;
+  font-weight: 500;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
+}
+.cs_course_section_4 .cs_sidebar.cs_style_1 {
+  padding: 25px 16px 25px 15px;
+  border: 1px solid #ddd;
+}
+.cs_course_section_4 .cs_sidebar.cs_style_1 .cs_sidebar_widget hr {
+  color: #ddd;
+  margin-bottom: 15px;
+}
+.cs_course_section_4 .cs_sidebar.cs_style_1 .cs_sidebar_widget:not(:last-child) {
+  padding-bottom: 15px;
+}
+.cs_course_section_4 .cs_sidebar.cs_style_1 .cs_sidebar_widget:not(:first-child) {
+  padding-top: 15px;
+}
+.cs_course_section_4 .cs_sidebar.cs_style_1 li:not(:last-child) {
+  margin-bottom: 8px;
+}
+.cs_course_section_4 .cs_sidebar.cs_style_1 li label {
+  margin-bottom: 0;
+}
+.cs_course_section_4 .cs_sidebar.cs_style_1 .cs_sidebar_widget_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.cs_course_section_4 .cs_sidebar.cs_style_1 .cs_sidebar_widget_title .cs_iconbox {
+  height: 25px;
+  width: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--accent-color);
+  border-radius: 50%;
+  color: var(--accent-color);
+}
+.cs_course_section_4 .cs_sidebar.cs_style_1 .cs_sidebar_widget_title i {
+  font-size: 11px;
+  transition: all 0.3s ease-in-out;
+}
+.cs_course_section_4 .cs_sidebar.cs_style_1 .cs_sidebar_widget_title.active i {
+  transform: rotatex(180deg);
+}
+.cs_course_section_4 .cs_custom_checkbox {
+  display: inline-block;
+  position: relative;
+  min-height: 24px;
+}
+.cs_course_section_4 .cs_custom_checkbox input {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  cursor: pointer;
+  opacity: 0;
+}
+.cs_course_section_4 .cs_custom_checkbox input:checked + label::before {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+.cs_course_section_4 .cs_custom_checkbox input:checked + label::after {
+  border-color: var(--accent-color);
+  opacity: 1;
+}
+.cs_course_section_4 .cs_custom_checkbox > label {
+  display: inline-block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 0;
+  transition: all 0.3s ease;
+}
+.cs_course_section_4 .cs_custom_checkbox > label::before, .cs_course_section_4 .cs_custom_checkbox > label::after {
+  position: absolute;
+  transition: all 0.3s ease;
+  height: 20px;
+  width: 20px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.cs_course_section_4 .cs_custom_checkbox > label::before {
+  content: "";
+  border: 1px solid #ddd;
+}
+.cs_course_section_4 .cs_custom_checkbox > label::after {
+  content: "\f00c";
+  font-family: "Font Awesome 7 Free";
+  font-weight: 900;
+  font-size: 10px;
+  color: var(--white-color);
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+
+/*=======================================================
   Product Style
 =========================================================*/
 .cs_product_style_1,

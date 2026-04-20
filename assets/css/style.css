@@ -6358,6 +6358,21 @@ hr {
   position: relative;
   border: 1px solid #f0f0f0;
   border-radius: 2px;
+  padding-left: 17px;
+  display: flex;
+  align-items: center;
+  gap: 27px;
+}
+.cs_course_section_4 .cs_select_wrapper .cs_course_category {
+  border: none;
+  outline: none;
+  padding: 11px 45px 10px 0;
+  font-weight: 400;
+  color: var(--body-color);
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
 }
 .cs_course_section_4 .cs_select_wrapper i {
   position: absolute;
@@ -6367,21 +6382,6 @@ hr {
   pointer-events: none;
   color: var(--accent-color);
   font-size: 12px;
-}
-@media (max-width: 1399px) {
-  .cs_course_section_4 .cs_select_wrapper {
-    display: none;
-  }
-}
-.cs_course_section_4 .cs_course_category {
-  border: none;
-  outline: none;
-  padding: 11px 45px 10px 17px;
-  font-weight: 500;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  cursor: pointer;
 }
 .cs_course_section_4 .cs_sidebar.cs_style_1 {
   padding: 25px 16px 25px 15px;
@@ -6426,6 +6426,18 @@ hr {
 }
 .cs_course_section_4 .cs_sidebar.cs_style_1 .cs_sidebar_widget_title.active i {
   transform: rotatex(180deg);
+}
+.cs_course_section_4 .cs_sidebar.cs_style_1 .cs_sidebar_widget_content .cs_sidebar_widget .cs_sidebar_widget_title.cs_fs_16 {
+  line-height: 1.4375em;
+}
+.cs_course_section_4 .cs_sidebar.cs_style_1 .cs_sidebar_widget_content .cs_sidebar_widget .cs_sidebar_widget_title .cs_iconbox {
+  height: 23px;
+  width: 23px;
+  border: none;
+  color: var(--body-color);
+}
+.cs_course_section_4 .cs_sidebar.cs_style_1 .cs_sidebar_widget_content .cs_sidebar_widget .cs_sidebar_widget_title.active i {
+  transform: rotate(-90deg);
 }
 .cs_course_section_4 .cs_custom_checkbox {
   display: inline-block;
@@ -6481,6 +6493,10 @@ hr {
   align-items: center;
   justify-content: center;
   opacity: 0;
+}
+.cs_course_section_4 .cs_custom_checkbox > label .cs_star_ixonbox {
+  color: var(--rating-color);
+  padding-right: 5px;
 }
 
 /*=======================================================

@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="assets/css/animate.css" />
   <link rel="stylesheet" href="assets/css/lightgallery.min.css" />
   <link rel="stylesheet" href="assets/css/odometer.css" />
+  <link rel="stylesheet" href="assets/css/flag-icon.min.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
@@ -232,13 +233,11 @@
         </div>
         <div class="cs_heading_column_2 ">
           <div class="cs_select_wrapper">
+            <span class="cs_short_by cs_heading_color cs_medium">Short By:</span>
             <select id="cs_course_category" name="courses" class="cs_course_category">
-              <option value="" class="cs_course"><span class="cs_semibold">Short By:</span><span
-                  class="cs_body_color">Default</span></option>
-              <option value="" class="cs_course">Development</option>
-              <option value="" class="cs_course">Graphic Design</option>
-              <option value="" class="cs_course">Mobile Application</option>
-              <option value="" class="cs_course">Art &amp; Humanities</option>
+              <option value="" class="cs_course">Default</option>
+              <option value="" class="cs_course">Arts</option>
+              <!-- <option value="" class="cs_course">Mobile App</option> -->
             </select>
             <i class="fa-solid fa-angle-down"></i>
           </div>
@@ -259,9 +258,103 @@
               <div class="cs_sidebar_widget_content">
                 <ul class="cs_sidebar_widget_list cs_mp_0">
                   <li>
-                    <div class="cs_custom_checkbox">
-                      <input type="checkbox" id="development">
-                      <label for="development">Development</label>
+                    <div class="cs_sidebar_widget">
+                      <h3 class="cs_sidebar_widget_title cs_fs_16 cs_normal cs_body_color cs_mb_16">
+                        <span>Development</span>
+                        <span class="cs_iconbox">
+                          <i class="fa-solid fa-minus"></i>
+                        </span>
+                      </h3>
+                      <div class="cs_sidebar_widget_content">
+                        <ul class="cs_sidebar_widget_list cs_mp_0">
+                          <li>
+                            <div class="cs_custom_checkbox">
+                              <input type="checkbox" id="higher">
+                              <label for="higher">Web Development</label>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="cs_sidebar_widget">
+                      <h3 class="cs_sidebar_widget_title cs_fs_16 cs_normal cs_body_color cs_mb_16">
+                        <span>Business</span>
+                        <span class="cs_iconbox">
+                          <i class="fa-solid fa-minus"></i>
+                        </span>
+                      </h3>
+                      <div class="cs_sidebar_widget_content">
+                        <ul class="cs_sidebar_widget_list cs_mp_0">
+                          <li>
+                            <div class="cs_custom_checkbox">
+                              <input type="checkbox" id="higher">
+                              <label for="higher">Business Development</label>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="cs_sidebar_widget">
+                      <h3 class="cs_sidebar_widget_title cs_fs_16 cs_normal cs_body_color cs_mb_16">
+                        <span>Data & Tech</span>
+                        <span class="cs_iconbox">
+                          <i class="fa-solid fa-minus"></i>
+                        </span>
+                      </h3>
+                      <div class="cs_sidebar_widget_content">
+                        <ul class="cs_sidebar_widget_list cs_mp_0">
+                          <li>
+                            <div class="cs_custom_checkbox">
+                              <input type="checkbox" id="higher">
+                              <label for="higher">Data Analysis</label>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="cs_sidebar_widget">
+                      <h3 class="cs_sidebar_widget_title cs_fs_16 cs_normal cs_body_color cs_mb_16">
+                        <span>Web Design</span>
+                        <span class="cs_iconbox">
+                          <i class="fa-solid fa-minus"></i>
+                        </span>
+                      </h3>
+                      <div class="cs_sidebar_widget_content">
+                        <ul class="cs_sidebar_widget_list cs_mp_0">
+                          <li>
+                            <div class="cs_custom_checkbox">
+                              <input type="checkbox" id="higher">
+                              <label for="higher">Web Design</label>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="cs_sidebar_widget">
+                      <h3 class="cs_sidebar_widget_title cs_fs_16 cs_normal cs_body_color cs_mb_16">
+                        <span>Engineering</span>
+                        <span class="cs_iconbox">
+                          <i class="fa-solid fa-minus"></i>
+                        </span>
+                      </h3>
+                      <div class="cs_sidebar_widget_content">
+                        <ul class="cs_sidebar_widget_list cs_mp_0">
+                          <li>
+                            <div class="cs_custom_checkbox">
+                              <input type="checkbox" id="higher">
+                              <label for="higher">Software Engineering</label>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                   </li>
                 </ul>
@@ -306,7 +399,7 @@
                     <div class="cs_custom_checkbox">
                       <input type="checkbox" id="5star">
                       <label for="5star">
-                        <span><i class="fa-solid fa-star"></i></span>
+                        <span class="cs_star_ixonbox"><i class="fa-solid fa-star"></i></span>
                         <span>5 Star</span>
                       </label>
                     </div>
@@ -315,7 +408,7 @@
                     <div class="cs_custom_checkbox">
                       <input type="checkbox" id="4star">
                       <label for="4star">
-                        <span><i class="fa-solid fa-star"></i></span>
+                        <span class="cs_star_ixonbox"><i class="fa-solid fa-star"></i></span>
                         <span>4 Star or Above</span>
                       </label>
                     </div>
@@ -324,7 +417,7 @@
                     <div class="cs_custom_checkbox">
                       <input type="checkbox" id="3star">
                       <label for="3star">
-                        <span><i class="fa-solid fa-star"></i></span>
+                        <span class="cs_star_ixonbox"><i class="fa-solid fa-star"></i></span>
                         <span>3 Star or Above</span>
                       </label>
                     </div>
@@ -333,7 +426,7 @@
                     <div class="cs_custom_checkbox">
                       <input type="checkbox" id="2star">
                       <label for="2star">
-                        <span><i class="fa-solid fa-star"></i></span>
+                        <span class="cs_star_ixonbox"><i class="fa-solid fa-star"></i></span>
                         <span>2 Star or Above</span>
                       </label>
                     </div>
@@ -342,7 +435,7 @@
                     <div class="cs_custom_checkbox">
                       <input type="checkbox" id="1star">
                       <label for="1star">
-                        <span><i class="fa-solid fa-star"></i></span>
+                        <span class="cs_star_ixonbox"><i class="fa-solid fa-star"></i></span>
                         <span>1 Star or Above</span>
                       </label>
                     </div>

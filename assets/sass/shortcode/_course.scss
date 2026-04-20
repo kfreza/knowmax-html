@@ -483,6 +483,19 @@
     position: relative;
     border: 1px solid #f0f0f0;
     border-radius: 2px;
+    padding-left: 17px;
+    display: flex;
+    align-items: center;
+    gap: 27px;
+    .cs_course_category {
+      border: none;
+      outline: none;
+      padding: 11px 45px 10px 0;
+      font-weight: 400;
+      color: var(--body-color);
+      appearance: none;
+      cursor: pointer;
+    }
     i {
       position: absolute;
       top: 50%;
@@ -492,17 +505,9 @@
       color: var(--accent-color);
       font-size: 12px;
     }
-    @media (max-width: 1399px) {
-      display: none;
-    }
-  }
-  .cs_course_category {
-    border: none;
-    outline: none;
-    padding: 11px 45px 10px 17px;
-    font-weight: 500;
-    appearance: none;
-    cursor: pointer;
+    // @media (max-width: 1399px) {
+    //   display: none;
+    // }
   }
 
   // Sidebar
@@ -521,7 +526,6 @@
         padding-top: 15px;
       }
     }
-
     li {
       &:not(:last-child) {
         margin-bottom: 8px;
@@ -530,14 +534,12 @@
         margin-bottom: 0;
       }
     }
-
     .cs_sidebar_widget_title {
       display: flex;
       align-items: center;
       justify-content: space-between;
       cursor: pointer;
       transition: all 0.4s ease;
-
       .cs_iconbox {
         height: 25px;
         width: 25px;
@@ -548,16 +550,35 @@
         border-radius: 50%;
         color: var(--accent-color);
       }
-
       i {
         font-size: 11px;
         transition: all 0.3s ease-in-out;
       }
-
       &.active {
         // margin-bottom: 0;
         i {
           transform: rotatex(180deg);
+        }
+      }
+    }
+
+    .cs_sidebar_widget_content {
+      .cs_sidebar_widget {
+        .cs_sidebar_widget_title {
+          &.cs_fs_16 {
+            line-height: 1.4375em;
+          }
+          .cs_iconbox {
+            height: 23px;
+            width: 23px;
+            border: none;
+            color: var(--body-color);
+          }
+          &.active {
+            i {
+              transform: rotate(-90deg);
+            }
+          }
         }
       }
     }
@@ -622,6 +643,11 @@
         align-items: center;
         justify-content: center;
         opacity: 0;
+      }
+
+      .cs_star_ixonbox {
+        color: var(--rating-color);
+        padding-right: 5px;
       }
     }
   }

@@ -560,19 +560,56 @@
   /*=====================================================================
       14. heart toggle
     =======================================================================*/
+  // function elementToggle() {
+  //   $(".cs_heart_toggler i").on("click", function () {
+  //     $(this).toggleClass("fa-solid");
+  //   });
+  //   // Category Widget Toggle
+  //   $(".cs_sidebar_widget_title").on("click", function () {
+  //     $(this)
+  //       .toggleClass("active")
+  //       .siblings(".cs_sidebar_widget_content")
+  //       .slideToggle()
+  //       .parent(".cs_sidebar_widget")
+  //       .toggleClass("active");
+  //   });
+  //   $(".cs_dashboard_nav li").on("click", function () {
+  //     $(this).addClass("active").siblings().slideToggle().removeClass("active");
+  //   });
+  // }
+
+
+
+
   function elementToggle() {
+    // 1. Heart Toggler (Existing)
     $(".cs_heart_toggler i").on("click", function () {
       $(this).toggleClass("fa-solid");
     });
-    // Category Widget Toggle
+
+    // 2. Category Widget Toggle (Optimized)
     $(".cs_sidebar_widget_title").on("click", function () {
-      $(this)
-        .toggleClass("active")
+      const $this = $(this);
+
+      // Toggle Active Class & Content
+      $this.toggleClass("active")
         .siblings(".cs_sidebar_widget_content")
         .slideToggle()
         .parent(".cs_sidebar_widget")
         .toggleClass("active");
+
+      // Icon Change Logic (Conflict-free)
+      const icon = $this.find('i');
+
+      // Check for Plus/Minus (Nested Widget)
+      if (icon.hasClass('fa-plus') || icon.hasClass('fa-minus')) {
+        icon.toggleClass('fa-plus fa-minus');
+      }
+
+      // Note: Chevron rotate-er logic CSS die handle kora bhalo (ja tumi already korcho)
     });
+
+    // 3. Dashboard Nav (Existing)
     $(".cs_dashboard_nav li").on("click", function () {
       $(this).addClass("active").siblings().slideToggle().removeClass("active");
     });

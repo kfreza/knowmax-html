@@ -576,9 +576,12 @@
           }
           &.active {
             i {
-              transform: rotate(-90deg);
+              transform: rotate(180deg);
             }
           }
+        }
+        .cs_sidebar_widget_content {
+          display: none;
         }
       }
     }

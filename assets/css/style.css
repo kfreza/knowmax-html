@@ -6437,7 +6437,10 @@ hr {
   color: var(--body-color);
 }
 .cs_course_section_4 .cs_sidebar.cs_style_1 .cs_sidebar_widget_content .cs_sidebar_widget .cs_sidebar_widget_title.active i {
-  transform: rotate(-90deg);
+  transform: rotate(180deg);
+}
+.cs_course_section_4 .cs_sidebar.cs_style_1 .cs_sidebar_widget_content .cs_sidebar_widget .cs_sidebar_widget_content {
+  display: none;
 }
 .cs_course_section_4 .cs_custom_checkbox {
   display: inline-block;

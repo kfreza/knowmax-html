@@ -665,7 +665,9 @@
     Course Detail Page
 =========================================================*/
 .cs_course_sidebar_style_1 {
-  // background-color: rebeccapurple;
+  border-radius: 2px;
+  background-color: var(--white-color);
+  box-shadow: 0 0 35px 0 rgba(0, 0, 0, 0.1);
   .cs_sidebar_thumbnail {
     position: relative;
     img {

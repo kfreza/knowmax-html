@@ -6337,19 +6337,27 @@ hr {
   }
 }
 /*=======================================================
-    Course Card Style 3
+    Course Page
 =========================================================*/
 .cs_course_section_4 .cs_filter_style_1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 30px;
+  gap: 24px;
+}
+@media (max-width: 991px) {
+  .cs_course_section_4 .cs_filter_style_1 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 .cs_course_section_4 .cs_heading_column_1 .cs_course_category_wrapper_1 {
   gap: 20px 45px;
 }
-.cs_course_section_4 .cs_heading_column_1 .cs_course_category {
-  padding: 10px 0px 9px 0px;
+@media (max-width: 767px) {
+  .cs_course_section_4 .cs_heading_column_1 .cs_course_category_wrapper_1 {
+    gap: 20px 40px;
+  }
 }
 .cs_course_section_4 .cs_heading_column_1 .cs_course_category.active {
   color: var(--accent-color);
@@ -6500,6 +6508,98 @@ hr {
 .cs_course_section_4 .cs_custom_checkbox > label .cs_star_ixonbox {
   color: var(--rating-color);
   padding-right: 5px;
+}
+
+/*=======================================================
+    Course Detail Page
+=========================================================*/
+.cs_course_sidebar_style_1 .cs_sidebar_thumbnail {
+  position: relative;
+}
+.cs_course_sidebar_style_1 .cs_sidebar_thumbnail img {
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+}
+.cs_course_sidebar_style_1 .cs_sidebar_thumb_overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 41, 53, 0.1);
+}
+.cs_course_sidebar_style_1 .cs_sidebar_info {
+  padding: 30px 23px 57px;
+}
+.cs_course_sidebar_style_1 .cs_sidebar_list_item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cs_course_sidebar_style_1 .cs_sidebar_list_item .cs_item_name {
+  display: flex;
+  align-items: center;
+  gap: 0 15px;
+}
+.cs_course_sidebar_style_1 .cs_sidebar_list_item .cs_item_name .cs_item_icon {
+  height: 20px;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: brightness(0) saturate(100%) invert(45%) sepia(100%) saturate(6402%) hue-rotate(243deg) brightness(97%) contrast(108%);
+}
+.cs_course_sidebar_style_1 .cs_sidebar_list_item .cs_item_name .cs_item_icon img {
+  height: auto;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.cs_course_sidebar_style_1 .cs_sidebar_list_item:not(:last-child) {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+.cs_course_sidebar_style_1 .cs_sidebar_list_item:not(:first-child) {
+  padding-top: 20px;
+}
+.cs_course_sidebar_style_1 .cs_purchase_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.cs_course_sidebar_style_1 .cs_purchase_wrapper .cs_btn_style_1 {
+  border-radius: 2px;
+  width: min(300px, 100%);
+}
+.cs_course_sidebar_style_1 .cs_purchase_wrapper .cs_custom_btn {
+  background-color: #f6f4ff;
+  color: var(--heading-color);
+  transition: all 0.4s ease;
+}
+.cs_course_sidebar_style_1 .cs_purchase_wrapper .cs_custom_btn:hover {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+.cs_course_sidebar_style_1 .cs_purchase_wrapper button {
+  outline: none;
+  line-height: 1.1818em;
+}
+.cs_course_sidebar_style_1 .cs_share {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.cs_course_sidebar_style_1 .cs_share .cs_share_title {
+  line-height: 1.1818em;
+}
+.cs_course_sidebar_style_1 .cs_share .cs_social_btns {
+  margin-top: 0;
+  gap: 25px;
+}
+.cs_course_sidebar_style_1 .cs_share .cs_social_btns a {
+  height: 26px;
+  width: 26px;
 }
 
 /*=======================================================

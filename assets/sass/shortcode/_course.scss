@@ -683,9 +683,9 @@
   }
   .cs_sidebar_info {
     padding: 30px 23px 57px;
-    //  @media (max-width: 575px) {
-    //   padding: 20px;
-    // }
+    @media (max-width: 575px) {
+      padding: 20px;
+    }
   }
   .cs_sidebar_list_item {
     display: flex;
@@ -761,7 +761,7 @@
     }
   }
 }
-
+// Course Details Style
 .cs_course_details_style_1 {
   .cs_course_style_1 {
     &:hover {
@@ -822,7 +822,6 @@
       img {
         width: 100%;
         height: auto;
-        // border-radius: 3px;
         object-fit: cover;
       }
     }
@@ -849,3 +848,4 @@
     }
   }
 }
+// End of Course Details Page

@@ -6534,6 +6534,11 @@ hr {
 .cs_course_sidebar_style_1 .cs_sidebar_info {
   padding: 30px 23px 57px;
 }
+@media (max-width: 575px) {
+  .cs_course_sidebar_style_1 .cs_sidebar_info {
+    padding: 20px;
+  }
+}
 .cs_course_sidebar_style_1 .cs_sidebar_list_item {
   display: flex;
   align-items: center;

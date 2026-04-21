@@ -6607,6 +6607,96 @@ hr {
   width: 26px;
 }
 
+.cs_course_details_style_1 .cs_course_style_1:hover {
+  box-shadow: initial;
+}
+.cs_course_details_style_1 .cs_course_style_1 .cs_course_thumbnail {
+  border-radius: 2px;
+}
+.cs_course_details_style_1 .cs_course_style_1 .cs_course_thumbnail img {
+  border-radius: 2px;
+}
+.cs_course_details_style_1 .cs_course_style_1 .cs_thumb_meta {
+  padding: 26px 25px;
+}
+.cs_course_details_style_1 .cs_course_style_1 .cs_thumb_dept {
+  padding: 6px 16px;
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  color: var(--white-color);
+}
+.cs_course_details_style_1 .cs_course_style_1 .cs_thumb_dept:hover {
+  background-color: transparent;
+}
+.cs_course_details_style_1 .cs_course_style_1 .cs_course_info {
+  padding: 42px 41px 23px 0;
+}
+@media (max-width: 1199px) {
+  .cs_course_details_style_1 .cs_course_style_1 .cs_course_info {
+    padding: 30px 0 20px;
+  }
+}
+.cs_course_details_style_1 .cs_course_style_1 .cs_course_title {
+  width: min(600px, 100%);
+}
+.cs_course_details_style_1 .cs_course_style_1 .cs_course_navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 0px 20px;
+  padding: 0 30px;
+  border-radius: 3px;
+  background: #f6f4ff;
+}
+@media (max-width: 575px) {
+  .cs_course_details_style_1 .cs_course_style_1 .cs_course_navigation {
+    justify-content: flex-start;
+  }
+}
+.cs_course_details_style_1 .cs_course_style_1 .cs_course_navigation_item {
+  padding: 16px 0;
+  transition: all 0.4s ease;
+  border-bottom: 2px solid transparent;
+}
+.cs_course_details_style_1 .cs_course_style_1 .cs_course_navigation_item.active {
+  border-color: var(--accent-color);
+}
+.cs_course_details_style_1 .cs_course_style_1 .cs_course_subtitle {
+  padding: 2px 0;
+}
+.cs_course_details_style_1 .cs_course_style_1 .cs_course_feature_image img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.cs_course_details_style_1 .cs_course_style_1 .cs_feature_wrapper {
+  margin-left: 6px;
+}
+@media (max-width: 991px) {
+  .cs_course_details_style_1 .cs_course_style_1 .cs_feature_wrapper {
+    margin-left: 0;
+  }
+}
+.cs_course_details_style_1 .cs_course_style_1 .cs_feature_list_item {
+  display: flex;
+  align-items: center;
+  gap: 0 17px;
+  transition: all 0.4s ease;
+}
+.cs_course_details_style_1 .cs_course_style_1 .cs_feature_list_item:not(:last-child) {
+  margin-bottom: 24px;
+}
+@media (max-width: 991px) {
+  .cs_course_details_style_1 .cs_course_style_1 .cs_feature_list_item:not(:last-child) {
+    margin-bottom: 18px;
+  }
+}
+.cs_course_details_style_1 .cs_course_style_1 .cs_feature_list_item:hover {
+  color: var(--accent-color);
+}
+
 /*=======================================================
   Product Style
 =========================================================*/

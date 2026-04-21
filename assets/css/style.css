@@ -6538,6 +6538,7 @@ hr {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 0 20px;
 }
 .cs_course_sidebar_style_1 .cs_sidebar_list_item .cs_item_name {
   display: flex;

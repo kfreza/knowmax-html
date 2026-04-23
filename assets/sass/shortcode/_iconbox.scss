@@ -44,3 +44,31 @@
     }
   }
 }
+
+// Contact Page
+.cs_iconbox_style_2 {
+  .cs_iconbox_icon_wrapper {
+    height: 120px;
+    width: 120px;
+    background-color: #faf9ff;
+    border: 1px solid var(--accent-color);
+    border-radius: 50%;
+    transition: all 0.4s ease;
+    .cs_iconbox_icon {
+      height: 41px;
+      width: 41px;
+      color: var(--accent-color);
+      transition: all 0.4s ease;
+    }
+    &:hover {
+      background-color: var(--accent-color);
+      .cs_iconbox_icon {
+        color: var(--white-color);
+      }
+    }
+  }
+  .cs_iconbox_info_meta {
+    display: flex;
+    gap: 49px;
+  }
+}

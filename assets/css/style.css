@@ -5109,29 +5109,8 @@ hr {
   resize: none;
   transition: all 0.3s ease;
 }
-.cs_reply_form .cs_form_field:focus, .cs_reply_form .cs_form_field:valid {
-  border-color: var(--accent-color);
-  background-color: transparent;
-}
-.cs_reply_form .cs_form_field:focus + label, .cs_reply_form .cs_form_field:valid + label {
-  transform: translate(0, -30px) scale(0.9);
-  color: var(--accent-color);
-}
-.cs_reply_form label {
-  position: absolute;
-  left: 29px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: var(--body-color);
-  z-index: 1;
-  transition: all 0.3s ease;
-  pointer-events: none;
-}
 .cs_reply_form textarea {
   resize: none;
-}
-.cs_reply_form textarea:focus + label, .cs_reply_form textarea:valid + label {
-  transform: translate(0, -95px) scale(0.9) !important;
 }
 .cs_reply_form .cs_btn_style_1 {
   margin-top: 6px;
@@ -6448,6 +6427,31 @@ hr {
 }
 .cs_iconbox_style_1 .cs_iconbox_info .cs_iconbox_details {
   line-height: 1.364em;
+}
+
+.cs_iconbox_style_2 .cs_iconbox_icon_wrapper {
+  height: 120px;
+  width: 120px;
+  background-color: #faf9ff;
+  border: 1px solid var(--accent-color);
+  border-radius: 50%;
+  transition: all 0.4s ease;
+}
+.cs_iconbox_style_2 .cs_iconbox_icon_wrapper .cs_iconbox_icon {
+  height: 41px;
+  width: 41px;
+  color: var(--accent-color);
+  transition: all 0.4s ease;
+}
+.cs_iconbox_style_2 .cs_iconbox_icon_wrapper:hover {
+  background-color: var(--accent-color);
+}
+.cs_iconbox_style_2 .cs_iconbox_icon_wrapper:hover .cs_iconbox_icon {
+  color: var(--white-color);
+}
+.cs_iconbox_style_2 .cs_iconbox_info_meta {
+  display: flex;
+  gap: 49px;
 }
 
 /*=======================================================

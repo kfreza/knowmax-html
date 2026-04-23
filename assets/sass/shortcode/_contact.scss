@@ -14,34 +14,34 @@
     background-color: #f8f8f8;
     resize: none;
     transition: all 0.3s ease;
-    &:focus,
-    &:valid {
-      border-color: var(--accent-color);
-      background-color: transparent;
-      + label {
-        transform: translate(0, -30px) scale(0.9);
-        color: var(--accent-color);
-      }
-    }
+    // &:focus,
+    // &:valid {
+    //   border-color: var(--accent-color);
+    //   background-color: transparent;
+    //   + label {
+    //     transform: translate(0, -30px) scale(0.9);
+    //     color: var(--accent-color);
+    //   }
+    // }
   }
-  label {
-    position: absolute;
-    left: 29px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: var(--body-color);
-    z-index: 1;
-    transition: all 0.3s ease;
-    pointer-events: none;
-  }
+  // label {
+  //   position: absolute;
+  //   left: 29px;
+  //   top: 50%;
+  //   transform: translateY(-50%);
+  //   color: var(--body-color);
+  //   z-index: 1;
+  //   transition: all 0.3s ease;
+  //   pointer-events: none;
+  // }
   textarea {
     resize: none;
-    &:focus,
-    &:valid {
-      + label {
-        transform: translate(0, -95px) scale(0.9) !important;
-      }
-    }
+    // &:focus,
+    // &:valid {
+    //   + label {
+    //     transform: translate(0, -95px) scale(0.9) !important;
+    //   }
+    // }
   }
   .cs_btn_style_1 {
     margin-top: 6px;
@@ -52,3 +52,5 @@
     }
   }
 }
+
+

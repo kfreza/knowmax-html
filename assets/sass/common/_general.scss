@@ -15,7 +15,6 @@
 .cs_fs_14 {
   font-size: 14px;
   line-height: 2em;
-  // 20px, 26px
 }
 .cs_fs_15 {
   font-size: 15px;
@@ -24,35 +23,51 @@
 .cs_fs_16 {
   font-size: 16px;
   line-height: 1.625em;
-  // 16px, 20px, 25px, 28px
 }
 .cs_fs_17 {
   font-size: 17px;
   line-height: 2.12em;
-  // 16px
 }
 .cs_fs_18 {
   font-size: 18px;
   line-height: 1.445em;
-  //28px
 }
 .cs_fs_20 {
   font-size: 20px;
   line-height: 1.3em;
+  @media (max-width: 991px) {
+    font-size: 18px;
+  }
 }
 .cs_fs_22 {
   font-size: 22px;
   line-height: 1.5em;
-  // 30px, 32px, 34px
+  @media (max-width: 991px) {
+    font-size: 20px;
+  }
+  @media (max-width: 767px) {
+    font-size: 18px;
+  }
 }
 .cs_fs_24 {
   font-size: 24px;
   line-height: 1.5em;
-  // 26px, 34px, 35px
+  @media (max-width: 991px) {
+    font-size: 22px;
+  }
+  @media (max-width: 767px) {
+    font-size: 20px;
+  }
 }
 .cs_fs_25 {
   font-size: 25px;
   line-height: 1.4em;
+  @media (max-width: 991px) {
+    font-size: 22px;
+  }
+  @media (max-width: 767px) {
+    font-size: 20px;
+  }
 }
 .cs_fs_26 {
   font-size: 26px;
@@ -61,6 +76,12 @@
 .cs_fs_30 {
   font-size: 30px;
   line-height: 1.4em;
+  @media (max-width: 991px) {
+    font-size: 28px;
+  }
+  @media (max-width: 767px) {
+    font-size: 24px;
+  }
 }
 .cs_fs_32 {
   font-size: 32px;
@@ -72,10 +93,22 @@
 .cs_fs_35 {
   font-size: 35px;
   line-height: 1.2em;
+  @media (max-width: 991px) {
+    font-size: 32px;
+  }
+  @media (max-width: 767px) {
+    font-size: 26px;
+  }
 }
 .cs_fs_36 {
   font-size: 36px;
   line-height: 1.25em;
+  @media (max-width: 991px) {
+    font-size: 34px;
+  }
+  @media (max-width: 767px) {
+    font-size: 28px;
+  }
 }
 .cs_fs_42 {
   font-size: 42px;
@@ -88,14 +121,22 @@
   font-size: 45px;
   line-height: 1.4445em;
   @media (max-width: 991px) {
+    font-size: 40px;
     line-height: 1.2em;
+  }
+  @media (max-width: 767px) {
+    font-size: 34px;
   }
 }
 .cs_fs_48 {
   font-size: 48px;
   line-height: 1.4375em;
   @media (max-width: 991px) {
+    font-size: 45px;
     line-height: 1.2em;
+  }
+  @media (max-width: 767px) {
+    font-size: 38px;
   }
 }
 .cs_fs_54 {
@@ -117,10 +158,28 @@
 .cs_fs_55 {
   font-size: 55px;
   line-height: 1.18em;
+  @media (max-width: 991px) {
+    font-size: 50px;
+  }
+  @media (max-width: 767px) {
+    font-size: 44px;
+  }
+  @media (max-width: 575px) {
+    font-size: 36px;
+  }
 }
 .cs_fs_65 {
   font-size: 65px;
   line-height: 1.154em;
+  @media (max-width: 991px) {
+    font-size: 58px;
+  }
+  @media (max-width: 767px) {
+    font-size: 44px;
+  }
+  @media (max-width: 575px) {
+    font-size: 38px;
+  }
 }
 .cs_fs_72 {
   font-size: 72px;

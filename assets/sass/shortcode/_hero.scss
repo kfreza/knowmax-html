@@ -339,6 +339,15 @@
         background-color: var(--white-color);
         color: var(--accent-color);
       }
+      @media (max-width: 991px) {
+        height: 75px;
+        width: 75px;
+        i {
+          height: 60px;
+          width: 60px;
+          font-size: 20px;
+        }
+      }
     }
     @media (max-width: 991px) {
       position: absolute;

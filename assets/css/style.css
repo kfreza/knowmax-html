@@ -4692,6 +4692,7 @@ hr {
 /*=======================================================
   CTA Style 3
 =========================================================*/
+.cs_cta_section_1 .cs_iconbox_style_1 .cs_iconbox_info .cs_iconbox_title,
 .cs_cta_section_3 .cs_iconbox_style_1 .cs_iconbox_info .cs_iconbox_title {
   display: flex;
 }

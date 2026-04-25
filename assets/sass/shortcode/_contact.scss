@@ -55,7 +55,32 @@
 
 // Contact Page Contact Form
 .cs_contact_form_section_1 {
-  background-color: rebeccapurple;
+  background: #f7f8fd;
+}
+.cs_contact_form_style_1 {
+  .cs_input_label {
+    margin-bottom: 9px;
+  }
+  .cs_form_field {
+    padding: 16px 19px;
+    outline: none;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  select {
+    appearance: none;
+    width: 100%;
+  }
+  .cs_form_field_wrapper {
+    position: relative;
+    i {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 20px;
+      color: var(--accent-color);
+    }
+  }
 }
 
 /*===========================================

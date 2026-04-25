@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="assets/css/animate.css" />
     <link rel="stylesheet" href="assets/css/lightgallery.min.css" />
     <link rel="stylesheet" href="assets/css/odometer.css" />
+    <link rel="stylesheet" href="assets/css/flag-icon.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
@@ -216,7 +217,7 @@
         <div class="cs_height_120 cs_height_lg_80"></div>
         <div class="container">
             <div class="row cs_gap_y_24">
-                <div class="col-md-3">
+                <div class="col-lg-3 col-sm-6">
                     <div class="cs_iconbox_style_2 cs_center_column">
                         <div class="cs_iconbox_icon_wrapper cs_mb_27 cs_mb_lg_20 cs_center">
                             <div class="cs_iconbox_icon cs_center">
@@ -235,7 +236,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-lg-3 col-sm-6">
                     <div class="cs_iconbox_style_2 cs_center_column">
                         <div class="cs_iconbox_icon_wrapper cs_mb_27 cs_mb_lg_20 cs_center">
                             <div class="cs_iconbox_icon cs_center">
@@ -257,7 +258,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-lg-3 col-sm-6">
                     <div class="cs_iconbox_style_2 cs_center_column">
                         <div class="cs_iconbox_icon_wrapper cs_mb_27 cs_mb_lg_20 cs_center">
                             <div class="cs_iconbox_icon cs_center">
@@ -276,7 +277,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-lg-3 col-sm-6">
                     <div class="cs_iconbox_style_2 cs_center_column">
                         <div class="cs_iconbox_icon_wrapper cs_mb_27 cs_mb_lg_20 cs_center">
                             <div class="cs_iconbox_icon cs_center">
@@ -320,46 +321,44 @@
     <section class="cs_contact_form_section_1">
         <div class="cs_height_118 cs_height_lg_80"></div>
         <div class="container">
-
-
-            <!-- Heading -->
-
-
-            <form action="https://api.web3forms.com/submit" method="POST"
-                class="cs_contact_form_style_1 row cs_gap_y_24 cs_fs_18" id="cs_form">
+            <div class="cs_heading_style_2 cs_center_column text-center">
+                <h2 class="cs_title cs_fs_48 mb-0">Feel free to Contact With Us</h2>
+            </div>
+            <div class="cs_height_65 cs_height_lg_50"></div>
+            <form action="https://api.web3forms.com/submit" method="POST" class="cs_contact_form_style_1 row cs_fs_18"
+                id="cs_form">
                 <!-- <input type="hidden" name="access_key" value="cd98b256-0db3-478c-ab28-1ec94f80447c"> -->
-
-                <div class="col-lg-5 offset-lg-1">
-                    <label class="cs_input_label cs_heading_color">Name</label>
-                    <input type="text" class="cs_form_field" placeholder="Type your name">
-                    <div class="cs_mb_42 cs_mb_xl_25"></div>
+                <div class="col-lg-5 offset-lg-1 d-flex flex-column">
+                    <label class="cs_input_label cs_heading_color cs_fs_17 cs_semibold">Name</label>
+                    <input type="text" class="cs_form_field cs_fs_16 cs_mb_8" placeholder="Type your name">
                 </div>
-
-                <div class="col-lg-5">
-                    <label class="cs_input_label cs_heading_color">Phone</label>
-                    <input type="tel" class="cs_form_field" placeholder="Type your phone number">
-                    <div class="cs_mb_42 cs_mb_xl_25"></div>
+                <div class="col-lg-5 d-flex flex-column">
+                    <label class="cs_input_label cs_heading_color cs_fs_17 cs_semibold">Phone</label>
+                    <input type="tel" class="cs_form_field cs_fs_16 cs_mb_8" placeholder="Type your phone number">
                 </div>
-
-                <div class="col-lg-5 offset-lg-1">
-                    <label class="cs_input_label cs_heading_color">Email</label>
-                    <input type="email" class="cs_form_field" placeholder="Type your email">
-                    <div class="cs_mb_42 cs_mb_xl_25"></div>
+                <div class="col-lg-5 offset-lg-1 d-flex flex-column">
+                    <label class="cs_input_label cs_heading_color cs_fs_17 cs_semibold">Email</label>
+                    <input type="email" class="cs_form_field cs_fs_16 cs_mb_8" placeholder="Type your email">
                 </div>
-
-                <div class="col-lg-5">
-                    <label class="cs_input_label cs_heading_color">Subject</label>
-                    <input type="text" class="cs_form_field" placeholder="Select subject">
-                    <div class="cs_mb_42 cs_mb_xl_25"></div>
+                <div class="col-lg-5 d-flex flex-column">
+                    <label class="cs_input_label cs_heading_color cs_fs_17 cs_semibold">Subject</label>
+                    <div class="cs_form_field_wrapper cs_mb_8">
+                        <select class="cs_form_field cs_fs_16">
+                            <option value="" disabled selected>Select subject</option>
+                            <option value="development">Development</option>
+                            <option value="graphic-design">Graphic Design</option>
+                            <option value="mobile-application">Mobile Application</option>
+                            <option value="art-humanities">Art & Humanities</option>
+                        </select>
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
                 </div>
-
-                <div class="col-lg-11 offset-lg-1">
-                    <label class="cs_input_label cs_heading_color">Requirements</label>
-                    <textarea cols="30" rows="10" class="cs_form_field" placeholder="Type your requirements"></textarea>
-                    <div class="cs_mb_42 cs_mb_xl_25"></div>
+                <div class="col-lg-10 offset-lg-1 d-flex flex-column">
+                    <label class="cs_input_label cs_heading_color cs_fs_17 cs_semibold">Requirements</label>
+                    <textarea rows="2" class="cs_form_field cs_fs_16 cs_mb_47 cs_mb_lg_25"
+                        placeholder="Type your requirements"></textarea>
                 </div>
-
-                <div class="col-lg-12 ">
+                <div class="col-lg-12 d-flex justify-content-center">
                     <button class="cs_btn_style_1 cs_fs_18 cs_medium " type="submit">
                         <span>Submit Now</span>
                         <div class="cs_btn_right_arrow cs_center">
@@ -523,28 +522,28 @@
                             <li>
                                 <span class="cs_footer_widget_menu_icon_style_2"><i
                                         class="fa-solid fa-location-dot"></i></span>
-                                <span>
+                                <div>
                                     <h3 class="cs_mb_5 cs_white_color cs_fs_18 cs_medium">Address</h3>
                                     <p class="mb-0 cs_fs_16">244, First Floor, 11 St Roots Terrace, Los Angeles</p>
-                                </span>
+                                </div>
                             </li>
                             <li>
                                 <span class="cs_footer_widget_menu_icon_style_2 ">
                                     <i class="fa-solid fa-phone-volume"></i>
                                 </span>
-                                <span>
+                                <div>
                                     <h3 class="cs_mb_5 cs_white_color cs_fs_18 cs_medium">Phone</h3>
                                     <a href="tel:+1234567890" class="cs_fs_16">(+01)123 456 7890</a>
-                                </span>
+                                </div>
                             </li>
                             <li>
                                 <span class="cs_footer_widget_menu_icon_style_2 ">
                                     <i class="fa-regular fa-envelope"></i>
                                 </span>
-                                <span>
+                                <div>
                                     <h3 class="cs_mb_5 cs_white_color cs_fs_18 cs_medium">Email</h3>
                                     <a href="mailto:info@example.com" class="mb-0 cs_fs_16">info@example.com</a>
-                                </span>
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -562,7 +561,7 @@
                                 autocomplete="email">
                             <button type="submit" class="cs_newsletter_btn cs_fs_18 wow fadeInRight">
                                 <Span>Subscribe</Span>
-                                <div class="cs_btn_right_arrow cs_center ">
+                                <span class="cs_btn_right_arrow cs_center ">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
                                         fill="none">
                                         <path
@@ -572,7 +571,7 @@
                                             d="M16.3435 14.4236C16.2384 14.4236 16.1333 14.3838 16.0538 14.3031C15.8935 14.1428 15.8935 13.8825 16.0538 13.7223L19.2487 10.5274C19.4089 10.3672 19.6692 10.3672 19.8294 10.5274C19.9897 10.6877 19.9897 10.9479 19.8294 11.1082L16.6346 14.3031C16.5538 14.3838 16.4487 14.4236 16.3435 14.4236Z"
                                             fill="currentColor" />
                                     </svg>
-                                </div>
+                                </span>
                             </button>
                         </form>
                     </div>

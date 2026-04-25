@@ -2527,9 +2527,6 @@ hr {
 .cs_site_header.cs_style_1 .cs_main_header_right_cta_wrapper li div {
   gap: 0px 20px;
 }
-.cs_site_header.cs_style_1 .cs_main_header_right_cta_wrapper li span {
-  gap: 25px;
-}
 .cs_site_header.cs_style_1 .cs_main_header_right_cta_wrapper li span:first-child {
   font-size: 45px;
   line-height: 1em;
